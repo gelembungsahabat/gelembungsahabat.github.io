@@ -1,13 +1,24 @@
 <template>
   <div class="navbar">
+
+    <!-- logo JDD -->
+    <div class="logo">
+      <a href="/">
+
+        <img
+          class="textlogo"
+          src="../static/WELLDONE.svg"
+          alt="text logo JDD"
+        ></a>
     <ul>
       <li>
-        <nuxt-link to="/">HOME</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/about">ABOUT</nuxt-link>
+        <nuxt-link to="/about">
+          ABOUT
+        </nuxt-link>
       </li>
     </ul>
+    </div>
+
   </div>
 </template>
 
@@ -27,6 +38,14 @@ export default {};
   height: 60px;
 }
 
+.logo img {
+  @apply pt-3 pl-24;
+  @apply float-left;
+}
+img.textlogo {
+  @apply pt-5 pr-10 pl-4;
+}
+
 ul {
   list-style-type: none;
   margin-top: 0px;
@@ -34,10 +53,14 @@ ul {
   padding: 0;
   overflow: hidden;
 }
+/* ul {
+  @apply pt-3 overflow-hidden list-none;
+} */
 
 li {
-  float: left;
+  @apply float-right;
 }
+
 
 li a {
   display: block;

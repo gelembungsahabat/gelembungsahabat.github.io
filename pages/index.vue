@@ -1,30 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container-main">
     <NavBar/>
-    <div>
-      <Logo />
       <h1 class="title">
         HOME
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -42,12 +22,13 @@ export default {
 }
 */
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-image: url("../assets/images/landingbackground.jpg");
+  background-size: cover;
+}
+/* main */
+.container-main {
+  background-image: url("../assets/images/landingbackground.jpg");
+  @apply h-screen justify-center w-full bg-cover;
 }
 
 .title {
