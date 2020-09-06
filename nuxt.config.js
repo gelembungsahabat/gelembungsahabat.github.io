@@ -10,7 +10,7 @@ export default {
   */
   target: 'static',
   router:{
-    base:'/gelembungsahabat.github.io/'
+    base:'/'
   },/*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
