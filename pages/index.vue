@@ -2,9 +2,9 @@
   <div class="container-main">
     <NavBar/>
       <h1 class="title">
-        HOME
-      </h1>
+        Welcome to My Personal Blog!  <br/>
 
+      </h1>
   </div>
 </template>
 
@@ -21,13 +21,9 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  background-image: url("../assets/images/landingbackground.jpg");
-  background-size: cover;
-}
 /* main */
 .container-main {
-  background-image: url("../assets/images/landingbackground.jpg");
+  background-image: url("../assets/images/Confetti-Doodles.svg");
   @apply h-screen justify-center w-full bg-cover;
 }
 
@@ -43,19 +39,21 @@ export default {
     Arial,
     sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  padding-top: 18%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: #ffffff;
   letter-spacing: 1px;
 }
-
+/*
 .subtitle {
   font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
+} */
 
 .links {
   padding-top: 15px;
