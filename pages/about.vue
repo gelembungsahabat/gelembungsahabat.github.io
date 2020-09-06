@@ -4,7 +4,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        HOME
+        ABOUT
       </h1>
       <div class="links">
         <a
