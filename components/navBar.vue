@@ -43,7 +43,7 @@ export default {};
   @apply float-left;
 }
 img.textlogo {
-  @apply pt-5 pr-10 pl-4;
+  @apply pt-5 pr-10 pl-4 pb-4;
 }
 
 ul {

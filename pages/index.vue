@@ -1,10 +1,15 @@
 <template>
-  <div class="container-main">
+  <div>
     <NavBar/>
-      <h1 class="title">
-        Welcome to My Personal Blog!  <br/>
+    <div class="container-main">
 
-      </h1>
+        <h1 class="title">
+          Welcome to My Personal Blog!
+        </h1>
+        <h4 class="subtitle">
+          Sorry, this blog is under construction :(
+        </h4>
+    </div>
   </div>
 </template>
 
@@ -23,8 +28,9 @@ export default {
 */
 /* main */
 .container-main {
-  background-image: url("../assets/images/Confetti-Doodles.svg");
+  background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1);
   @apply h-screen justify-center w-full bg-cover;
+
 }
 
 .title {
@@ -39,21 +45,22 @@ export default {
     Arial,
     sans-serif;
   display: block;
-  padding-top: 18%;
+  padding-top: 17%;
   text-align: center;
   font-weight: bold;
   font-size: 60px;
   color: #ffffff;
   letter-spacing: 1px;
 }
-/*
+
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: #ffffff;
   word-spacing: 5px;
   padding-bottom: 15px;
-} */
+  text-align: center;
+}
 
 .links {
   padding-top: 15px;
