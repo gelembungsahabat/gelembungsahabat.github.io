@@ -3,8 +3,12 @@
     <NavBar/>
     <div>
       <h1 class="title">
-        ABOUT
+        About
       </h1>
+      <h4 class="subtitle">
+        blog ini dibuat menggunakan framework NuxtJS,<br>
+         kenapa pake NuxtJS, ko ngga VueJS langsung ? ya karna simple aja wakaka
+      </h4>
 
     </div>
   </div>
