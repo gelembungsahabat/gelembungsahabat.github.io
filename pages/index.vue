@@ -15,10 +15,9 @@
 
     </div>
     <div class="container">
-      <h1>
-        ldaskjdalkjdalskjdalk <br>
-        askdajds <br>
-        askdjasldkja
+      <h1 class="text-4xl text-center">
+        Masih bingung cuy mau ngisi konten apaan <br>
+        kasih ide dungs :( <br>
       </h1>
     </div>
     <Footer/>
@@ -107,7 +106,4 @@ window.addEventListener('scroll',function(){
   text-align: center;
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>

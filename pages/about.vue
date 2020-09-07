@@ -14,19 +14,22 @@
       </div>
 
     </div>
-    <div>
-      <h1>
-        ldaskjdalkjdalskjdalk <br>
-        askdajds <br>
-        askdjasldkja
+    <div class="container">
+       <h1 class="text-4xl text-center">
+        Blog ini dibangun menggunakan framework NuxtJS, <br>
+        knapa ga pake VueJS langsung aja? <br>
+         ya karna uda nyaman pake NuxtJS wkaka
       </h1>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavBar from "~/components/navBar.vue"
+import Footer from "~/components/footer.vue"
 export default {
-  NavBar
+  NavBar,
+  Footer
 }
 </script>
