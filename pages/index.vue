@@ -14,20 +14,23 @@
       </div>
 
     </div>
-    <div>
+    <div class="container">
       <h1>
         ldaskjdalkjdalskjdalk <br>
         askdajds <br>
         askdjasldkja
       </h1>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavBar from "~/components/navBar.vue"
+import Footer from "~/components/footer.vue"
 export default {
-  NavBar
+  NavBar,
+  Footer
 }
 window.addEventListener('scroll',function(){
   var headerbg = document.getElementById('bg')
@@ -69,6 +72,10 @@ window.addEventListener('scroll',function(){
   /* background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1); */
   @apply h-screen justify-center w-full bg-cover bg-fixed;
 
+}
+
+.container {
+  @apply h-screen w-full
 }
 
 .title {
