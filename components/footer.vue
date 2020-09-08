@@ -1,6 +1,6 @@
 <template>
   <div>
-  <div class="footer flex justify-center ">
+  <div class="footer flex flex-wrap justify-center ">
     <div class="flex-initial text-gray-700 text-center bg-gray-200 px-10 mx-10 rounded-lg py-2 m-10">
       <p class="text-bottom my-2 font-normal text-base">
         Social Media
@@ -54,7 +54,7 @@
 <style>
 .footer{
   background: rgb(102, 98, 98);
-  height: 200px;
+  /* height: 200px; */
   /* background: rgb(209, 209, 209); */
 }
 .text-bottom{
