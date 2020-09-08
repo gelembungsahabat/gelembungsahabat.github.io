@@ -42,10 +42,10 @@
       </div>
     </div>
   </div>
-  <hr style="height:2px; border-width:0; color:black; background-color:rgb(209, 209, 209)">
-  <div>
-      <p class="text-black text-center py-2">
-        © Muhammad Wildan Nur Karim, Gresik, Indonesia
+  <!-- <hr style="height:2px; border-width:0; color:black; background-color:rgb(209, 209, 209)"> -->
+    <div class="bg-gray-200 py-5">
+      <p class="text-gray-700 text-center py-2 font-bold text-md ">
+        © 2020 Muhammad Wildan Nur Karim
       </p>
     </div>
     </div>

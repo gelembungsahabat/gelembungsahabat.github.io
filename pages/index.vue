@@ -74,7 +74,7 @@ window.addEventListener('scroll',function(){
 }
 
 .container {
-  @apply h-screen w-full
+  @apply h-screen justify-center min-w-full;
 }
 
 .title {
