@@ -9,8 +9,8 @@
         class="closebtn"
         @click="closeNav()"
       >&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
+      <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/about">About</nuxt-link>
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
@@ -29,9 +29,9 @@
         <ul>
           <li>
             <button
-              class="openbtn"
+              class="openbtn pt-4 pb-3 px-5"
               @click="openNav()"
-            >&#9776; Open Sidebar</button>
+            >&#9776; </button>
 
           </li>
         </ul>
@@ -63,7 +63,7 @@ export default {
 <style>
 .navbar {
   position: fixed;
-  opacity: 1;
+  opacity: 0.7;
   background-color: #333;
   top: 0;
   left: 0;
@@ -95,18 +95,6 @@ li {
   @apply float-right;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 18px 20px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
 /* ini untuk sidebar */
 
 /* The sidebar menu */
@@ -117,7 +105,7 @@ li a:hover:not(.active) {
   z-index: 3; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #111; /* Black*/
+  background-color: rgb(226, 226, 226); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -128,21 +116,21 @@ li a:hover:not(.active) {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #424242;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 15px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -151,9 +139,8 @@ li a:hover:not(.active) {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  /* background-color: rgb(211, 204, 204); */
   color: white;
-  padding: 10px 15px;
   border: none;
 }
 
