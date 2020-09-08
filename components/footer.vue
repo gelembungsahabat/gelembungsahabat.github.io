@@ -1,7 +1,7 @@
 <template>
   <div>
   <div class="footer flex flex-wrap justify-center ">
-    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-10 mx-10 rounded-lg py-2 m-10">
+    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-10  rounded-lg py-2 my-5 mx-10">
       <p class="text-bottom my-2 font-normal text-base">
         Social Media
       </p>
@@ -17,7 +17,7 @@
         </a>
       </div>
     </div>
-    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-8 mx-10 rounded-lg py-2 m-10">
+    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-8 rounded-lg py-2 my-5 mx-10">
       <p class="text-bottom my-2 font-normal text-base">
         Community
       </p>
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-8 mx-10 rounded-lg py-2 m-10">
+    <div class="flex-initial text-gray-700 text-center bg-gray-200 px-8  rounded-lg py-2 my-5 mx-10">
       <p class="text-bottom my-2 font-normal text-base">
         Portfolio
       </p>
