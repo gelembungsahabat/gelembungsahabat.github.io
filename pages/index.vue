@@ -86,7 +86,7 @@ window.addEventListener('scroll', function () {
 /* main */
 .container-main {
   /* background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1); */
-  @apply h-screen justify-center w-full bg-cover bg-fixed;
+  @apply justify-center w-full bg-cover bg-fixed;
 }
 
 .container {
