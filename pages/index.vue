@@ -1,26 +1,26 @@
 <template>
   <div>
-    <NavBar/>
+    <NavBar />
     <div class="container-main">
       <div class="header">
         <div id="bg">
           <h1 class="title">
-          Welcome to My Personal Blog!
-        </h1>
-        <h4 class="subtitle">
-          Sorry, this blog is under construction :(
-        </h4>
+            Welcome to My Personal Blog!
+          </h1>
+          <h4 class="subtitle">
+            Sorry, this blog is under construction :(
+          </h4>
         </div>
       </div>
 
     </div>
     <div class="container">
-      <h1 class="text-4xl text-center">
+      <h1 class="text-4xl sm:text-sm md:text-2xl lg:text-3xl xl:text-6xl text-center">
         Masih bingung cuy mau ngisi konten apaan <br>
         kasih ide dungs :( <br>
       </h1>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -31,11 +31,11 @@ export default {
   NavBar,
   Footer
 }
-window.addEventListener('scroll',function(){
+window.addEventListener('scroll', function () {
   var headerbg = document.getElementById('bg')
-  headerbg.style.opacity = 1 - +window.pageYOffset/500+''
-  headerbg.style.top = +window.pageYOffset/2+'px'
-  headerbg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
+  headerbg.style.opacity = 1 - +window.pageYOffset / 500 + ''
+  headerbg.style.top = +window.pageYOffset / 2 + 'px'
+  headerbg.style.backgroundPositionY = - +window.pageYOffset / 2 + 'px'
 })
 </script>
 
@@ -46,7 +46,26 @@ window.addEventListener('scroll',function(){
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: block;
+  padding-top: 17%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
 
+.subtitle {
+  font-weight: 300;
+  font-size: 10px;
+  color: #ffffff;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+}
 
 .header {
   position: relative;
@@ -54,56 +73,180 @@ window.addEventListener('scroll',function(){
   height: 100vh;
   overflow: hidden;
   background: #000;
-
 }
 .header #bg {
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   background: url("../assets/images/Confetti-Doodles.svg");
 }
-
 
 /* main */
 .container-main {
   /* background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1); */
   @apply h-screen justify-center w-full bg-cover bg-fixed;
-
 }
 
 .container {
   @apply h-screen justify-center min-w-full;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  padding-top: 17%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 60px;
-  color: #ffffff;
-  letter-spacing: 1px;
+/* responsive */
+
+@screen sm {
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    display: block;
+    padding-top: 17%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 13px;
+    color: #ffffff;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    background: #000;
+  }
+  .header #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Confetti-Doodles.svg");
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 30px;
-  color: #ffffff;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  text-align: center;
+@screen md {
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    display: block;
+    padding-top: 17%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: #000;
+  }
+  .header #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Confetti-Doodles.svg");
+  }
 }
 
+@screen lg {
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    display: block;
+    padding-top: 17%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background: #000;
+  }
+  .header #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Confetti-Doodles.svg");
+  }
+}
+
+@screen xl {
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    display: block;
+    padding-top: 17%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+  }
+  .header #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/Confetti-Doodles.svg");
+  }
+}
 </style>

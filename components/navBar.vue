@@ -22,7 +22,7 @@
         <a href="/">
 
           <img
-            class="textlogo"
+            class="textlogo md:w-10h-4"
             src="../static/WELLDONE.svg"
             alt="text logo JDD"
           ></a>
@@ -32,11 +32,9 @@
               class="openbtn pt-4 pb-3 px-5"
               @click="openNav()"
             >&#9776; </button>
-
           </li>
         </ul>
       </div>
-
     </div>
   </div>
 </template>
@@ -164,21 +162,21 @@ li {
   }
 }
 
-/* @screen sm {
+@screen sm {
   .navbar {
-    @apply bg-red-400 h-10;
+    @apply bg-red-400;
   }
 }
 
 @screen md {
   .navbar {
-    @apply bg-blue-100 h-16;
+    @apply bg-blue-100;
   }
 }
 
 @screen lg {
   .navbar {
-    @apply bg-green-500 h-12;
+    @apply bg-green-500;
   }
-} */
+}
 </style>
