@@ -15,7 +15,7 @@
 
     </div>
     <div class="container">
-      <h1 class="text-4xl sm:text-sm md:text-2xl lg:text-3xl xl:text-6xl text-center">
+      <h1 class="text-md sm:text-sm md:text-2xl lg:text-3xl xl:text-6xl text-center">
         Masih bingung cuy mau ngisi konten apaan <br>
         kasih ide dungs :( <br>
       </h1>
@@ -50,7 +50,7 @@ window.addEventListener('scroll', function () {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
-  padding-top: 17%;
+  padding-top: 25%;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
@@ -70,7 +70,7 @@ window.addEventListener('scroll', function () {
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
   background: #000;
 }
