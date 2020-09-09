@@ -50,7 +50,7 @@ window.addEventListener('scroll', function () {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
-  padding-top: 25%;
+  padding-top: 35%;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
