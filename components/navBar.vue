@@ -163,20 +163,11 @@ li {
 }
 
 @screen sm {
-  .navbar {
-    @apply bg-red-400;
-  }
 }
 
 @screen md {
-  .navbar {
-    @apply bg-blue-100;
-  }
 }
 
 @screen lg {
-  .navbar {
-    @apply bg-green-500;
-  }
 }
 </style>
