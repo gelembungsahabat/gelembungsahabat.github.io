@@ -86,7 +86,7 @@ window.addEventListener('scroll', function () {
 /* main */
 .container-main {
   /* background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1); */
-  @apply justify-center w-full bg-cover bg-fixed;
+  @apply justify-center w-full bg-cover;
 }
 
 .container {
@@ -119,7 +119,7 @@ window.addEventListener('scroll', function () {
   .header {
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 50vh;
     overflow: hidden;
     background: #000;
   }
@@ -139,7 +139,7 @@ window.addEventListener('scroll', function () {
       BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
       sans-serif;
     display: block;
-    padding-top: 17%;
+    padding-top: 35%;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -158,7 +158,7 @@ window.addEventListener('scroll', function () {
   .header {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     overflow: hidden;
     background: #000;
   }
