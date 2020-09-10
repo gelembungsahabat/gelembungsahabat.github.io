@@ -45,13 +45,11 @@ export default {
 
     openNav () {
       document.getElementById("mySidebar").style.width = "250px";
-      // document.getElementById("main").style.marginRight = "250px";
     },
 
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     closeNav () {
       document.getElementById("mySidebar").style.width = "0";
-      // document.getElementById("main").style.marginRight = "0";
     }
   }
 }
@@ -74,6 +72,7 @@ export default {
   @apply pt-3 pl-24;
   @apply float-left;
 }
+
 img.textlogo {
   @apply pt-5 pr-10 pl-4 pb-4;
 }
@@ -85,17 +84,12 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-/* ul {
-  @apply pt-3 overflow-hidden list-none;
-} */
 
 li {
   @apply float-right;
 }
 
 /* ini untuk sidebar */
-
-/* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -128,7 +122,8 @@ li {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 0;
+  padding-right: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -140,6 +135,8 @@ li {
   /* background-color: rgb(211, 204, 204); */
   color: white;
   border: none;
+  text-decoration: none;
+  outline: none !important;
 }
 
 .openbtn:hover {

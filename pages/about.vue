@@ -12,7 +12,6 @@
           </h4>
         </div>
       </div>
-
     </div>
     <div class="container">
       <h1 class="text-md sm:text-sm md:text-2xl lg:text-3xl xl:text-6xl text-center">
