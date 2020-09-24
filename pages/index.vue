@@ -8,7 +8,7 @@
             Welcome to My Personal Blog!
           </h1>
           <h4 class="subtitle">
-            Sorry, this blog is under construction :(
+            Odading Mang Oleh Rasanya Seperti Anda Menjadi Iron Men
           </h4>
         </div>
       </div>
