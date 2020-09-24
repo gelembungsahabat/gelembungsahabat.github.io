@@ -11,8 +11,8 @@
       >&times;</a>
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/about">About</nuxt-link>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <nuxt-link to="/client">Clients</nuxt-link>
+      <nuxt-link to="/contact">Contacts</nuxt-link>
     </div>
 
     <div class="navbar">
