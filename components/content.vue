@@ -5,8 +5,9 @@
     </h1>
     <div class="flex flex-wrap py-10 justify-center">
 
-      <a href="https://medium.com/@gelembungsahabat/deteksi-warna-dengan-metode-image-thresholding-opencv-python-3-f3686de4308">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <a href="https://medium.com/@gelembungsahabat/deteksi-warna-dengan-metode-image-thresholding-opencv-python-3-f3686de4308">
+
           <img
             src="../assets/images/imagethres.png"
             alt="image thresholding"
@@ -23,11 +24,12 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#Python</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#OpenCV</span>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
-      <a href="https://medium.com/@gelembungsahabat/pengenalan-reactjs-40ffa31ae9c7">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <a href="https://medium.com/@gelembungsahabat/pengenalan-reactjs-40ffa31ae9c7">
+
           <img
             src="../assets/images/reactjs.png"
             alt="pengenalan reactjs"
@@ -44,10 +46,10 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#Javascript</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#ReactJS</span>
           </div>
-        </div>
-      </a>
-      <a href="https://medium.com/@gelembungsahabat/persiapan-membuat-website-dengan-reactjs-435ccac65c54">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        </a>
+      </div>
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <a href="https://medium.com/@gelembungsahabat/persiapan-membuat-website-dengan-reactjs-435ccac65c54">
           <img
             src="../assets/images/persiapanreact.png"
             alt="persiapan bikin project reactjs"
@@ -64,10 +66,10 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#Javascript</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#ReactJS</span>
           </div>
-        </div>
-      </a>
-      <a href="https://medium.com/@gelembungsahabat/belajar-membuat-static-site-menggunakan-reactjs-part1-4bb9a3a02307">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        </a>
+      </div>
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <a href="https://medium.com/@gelembungsahabat/belajar-membuat-static-site-menggunakan-reactjs-part1-4bb9a3a02307">
           <img
             src="../assets/images/staticwebreact1.png"
             alt="bikin static web pake reactjs part 1"
@@ -84,10 +86,11 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#Javascript</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700 mr-2 mb-2">#ReactJS</span>
           </div>
-        </div>
-      </a>
-      <nuxt-link to="/about">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        </a>
+      </div>
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <nuxt-link to="/about">
+
           <img
             src="../assets/images/mirai.jpg"
             alt="mirai"
@@ -104,10 +107,10 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Javascript</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ReactJS</span>
           </div>
-        </div>
-      </nuxt-link>
-      <nuxt-link to="/about">
-        <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        </nuxt-link>
+      </div>
+      <div class="max-w-md my-5 rounded overflow-hidden shadow-lg mx-5">
+        <nuxt-link to="/about">
           <img
             src="../assets/images/mirai.jpg"
             alt="mirai"
@@ -124,8 +127,8 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Python</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#OpenCV</span>
           </div>
-        </div>
-      </nuxt-link>
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
