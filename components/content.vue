@@ -11,7 +11,7 @@
           <div class="font-bold text-xl mb-2">
             coba
           </div>
-          <p class="text-gray-700 text-base"> wakkwakaksaksdjaksldjalksdjalksjda<br>lksjdalksjdal</p>
+          <p class="text-gray-700 text-base break-word">aku bingug kate lapo iki akuu bingung gingkjaksjd asdakh askdjahd askdha </p>
         </div>
 
       </div>
