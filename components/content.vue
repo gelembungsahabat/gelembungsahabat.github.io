@@ -11,7 +11,7 @@
           <div class="font-bold text-xl mb-2">
             coba
           </div>
-          <p class="text-gray-700 text-base"> wakkwakaksaksdjaksldjalksd <br> jalksjdalksjdalksjdal</p>
+          <p class="text-gray-700 text-base"> wakkwakaksaksdjaksldjalksdjalksjdalksjdal<br>ksjdal</p>
         </div>
 
       </div>
