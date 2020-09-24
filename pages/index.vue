@@ -14,42 +14,7 @@
       </div>
 
     </div>
-    <div class="flex flex-wrap py-20 justify-center">
-      <div class="max-w-sm my-5 rounded overflow-hidden shadow-lg mx-5">
-        <img
-          src="../assets/images/mirai.jpg"
-          alt="mirai"
-          class="w-full"
-        >
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">
-            coba
-          </div>
-          <p class="text-gray-700 text-base"> wakkwakaksaksdjaksldjalksdjalksjdalksjdalksjdal</p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-
-        </div>
-
-      </div>
-      <div class="max-w-sm my-5 rounded overflow-hidden shadow-lg mx-5 ">
-        <img
-          src="../assets/images/mirai.jpg"
-          alt="mirai"
-          class="w-full"
-        >
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">
-            coba
-          </div>
-          <p class="text-gray-700 text-base"> wakkwakaksaksdjaksldjalksdjalksjdalksjdalksjdal</p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-
-        </div>
-
-      </div>
-    </div>
+    <Content />
     <Footer />
   </div>
 </template>
@@ -57,9 +22,11 @@
 <script>
 import NavBar from "~/components/navBar.vue"
 import Footer from "~/components/footer.vue"
+import Content from "~/components/content.vue"
 export default {
   NavBar,
-  Footer
+  Footer,
+  Content
 }
 window.addEventListener('scroll', function () {
   var headerbg = document.getElementById('bg')
