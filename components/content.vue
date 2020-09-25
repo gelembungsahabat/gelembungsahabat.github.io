@@ -89,25 +89,26 @@
         </a>
       </div>
       <div class="cards max-w-md mb-auto mt-5 rounded overflow-hidden shadow-lg mx-5">
-        <nuxt-link to="/about">
+        <a href="https://medium.com/@gelembungsahabat/dasar-vcs-version-control-system-789b6793bcb9">
 
           <img
-            src="../assets/images/mirai.jpg"
-            alt="mirai"
+            src="../assets/images/git.png"
+            alt="basic Git"
             class="w-full"
           >
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">
-              coba
+              Dasar VCS (Version Control System)
             </div>
-            <p class="text-gray-700 text-base break-word">aku bingug kate lapo iki akuu bingung gingkjaksjd asdakh askdjahd askdha </p>
+            <p class="text-gray-700 text-base break-word">ini pengetahuan dasar tentang cara pengoperasian VCS.
+              VCS Bukan singkatan dari Video Call S*x ya, tapi Version Control System. Dalam hal ini mengarah ke Git </p>
           </div>
           <div class="px-6 pt-4 pb-2">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Programming</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Javascript</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ReactJS</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Git</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Basic</span>
           </div>
-        </nuxt-link>
+        </a>
       </div>
       <div class="cards max-w-md mb-auto mt-5 rounded overflow-hidden shadow-lg mx-5">
         <nuxt-link to="/about">
