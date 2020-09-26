@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold text-center pt-12">
+    <h1 class="text-2xl font-bold text-center pt-12">
       Kumpulan Konten Menarik
     </h1>
-    <div class="flex flex-wrap py-10 justify-center">
+    <div class="flex flex-wrap py-5 justify-center">
 
       <div class="cards max-w-md mb-auto mt-5 rounded overflow-hidden shadow-lg mx-5">
         <a href="https://medium.com/@gelembungsahabat/deteksi-warna-dengan-metode-image-thresholding-opencv-python-3-f3686de4308">
