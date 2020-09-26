@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold text-center pt-12">
-      Konten Mendidik
+      Kumpulan Konten Menarik
     </h1>
     <div class="flex flex-wrap py-10 justify-center">
 

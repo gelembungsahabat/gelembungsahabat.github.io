@@ -8,11 +8,10 @@
             Welcome to My Personal Blog!
           </h1>
           <h4 class="subtitle">
-            Odading Mang Oleh Rasanya Seperti Anda Menjadi Iron Men
+            Disini kita akan belajar tentang programming
           </h4>
         </div>
       </div>
-
     </div>
     <Content />
     <Footer />
@@ -30,6 +29,7 @@ export default {
 }
 window.addEventListener('scroll', function () {
   var headerbg = document.getElementById('bg')
+  var arrowDown = document.getElementById('down-arrow')
   headerbg.style.opacity = 1 - +window.pageYOffset / 500 + ''
   headerbg.style.top = +window.pageYOffset / 2 + 'px'
   headerbg.style.backgroundPositionY = - +window.pageYOffset / 2 + 'px'
@@ -84,6 +84,10 @@ window.addEventListener('scroll', function () {
 .container-main {
   /* background: url("../assets/images/Confetti-Doodles.svg"), rgba(0, 0, 0, 1); */
   @apply justify-center w-full bg-cover;
+}
+
+.img {
+  @apply max-w-xs;
 }
 
 .container {
