@@ -113,20 +113,21 @@
       <div class="cards max-w-md mb-auto mt-5 rounded overflow-hidden shadow-lg mx-5">
         <nuxt-link to="/about">
           <img
-            src="../assets/images/mirai.jpg"
+            src="../assets/images/pyqt5.jpg"
             alt="mirai"
             class="w-full"
           >
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">
-              coba
+              Raspibot with PyQt5
             </div>
-            <p class="text-gray-700 text-base break-word">aku bingug kate lapo iki akuu bingung gingkjaksjd asdakh askdjahd askdha </p>
+            <p class="text-gray-700 text-base break-word">Membuat Raspibot dengan menggunakan Desktop App PyQt5</p>
           </div>
           <div class="px-6 pt-4 pb-2">
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Programming</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Python</span>
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#OpenCV</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#PyQt5</span>
           </div>
         </nuxt-link>
       </div>
