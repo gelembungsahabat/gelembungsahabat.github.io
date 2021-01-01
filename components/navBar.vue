@@ -17,7 +17,6 @@
 
     <div class="navbar">
 
-      <!-- logo JDD -->
       <div class="logo">
         <a href="/">
 
