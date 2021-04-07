@@ -20,6 +20,11 @@
                 <p class="is-size-6">
                     Pengenalan dasar image thresholding beserta source codenya
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-info is-light">#Python</span>
+                    <span class="tag is-danger is-light">#OpenCV</span>
+                </div>
             </Card>
         </div>
         <div class="column is-3 mx-3 my-3">
@@ -35,6 +40,11 @@
                     Pengenalan salah satu framework JS paling populer yaitu
                     ReactJS
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-info ">#JavaScript</span>
+                    <span class="tag is-link">#ReactJS</span>
+                </div>
             </Card>
         </div>
         <div class="column is-3 mx-3 my-3">
@@ -49,6 +59,11 @@
                 <p class="is-size-6">
                     Materi tentang setup project ReactJS beserta penjelasannya
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-info ">#JavaScript</span>
+                    <span class="tag is-link">#ReactJS</span>
+                </div>
             </Card>
         </div>
     </div>
@@ -67,6 +82,11 @@
                     Belajar membuat skeleton atau kerangka dari project web dan
                     belajar mengenai `Components`
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-info ">#JavaScript</span>
+                    <span class="tag is-link">#ReactJS</span>
+                </div>
             </Card>
         </div>
         <div class="column is-3 mx-3 my-3">
@@ -83,6 +103,11 @@
                     Bukan singkatan dari Video Call S*x ya, tapi Version Control
                     System. Dalam hal ini mengarah ke Git
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-warning is-light ">#Git</span>
+                    <span class="tag">#Basic</span>
+                </div>
             </Card>
         </div>
         <div class="column is-3 mx-3 my-3">
@@ -97,6 +122,12 @@
                 <p class="is-size-6">
                     Membuat Raspibot dengan menggunakan Desktop App PyQt5
                 </p>
+                <div class="tags mt-6">
+                    <span class="tag is-primary is-light">#Programming</span>
+                    <span class="tag is-info is-light">#Python</span>
+                    <span class="tag is-danger is-light">#OpenCV</span>
+                    <span class="tag is-primary">#PyQt5</span>
+                </div>
             </Card>
         </div>
     </div>
