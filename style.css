@@ -4,6 +4,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  opacity: 70%;
 }
 
 li {
@@ -14,8 +15,9 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 li a:hover:not(.active) {
@@ -23,10 +25,17 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #020e09;
 }
 
 body { 
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-link {
+  float: right;
+  margin: 4px;
+  padding: 0;
 }
