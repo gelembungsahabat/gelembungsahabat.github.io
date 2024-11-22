@@ -17,30 +17,36 @@
         <a href="/index.html"> <img src="wd.svg" /></a>
       </li>
       <div class="navbar-link">
-        <li><a href="#about">Project List</a></li>
-        <li><a href="#about">Anime Recommendation</a></li>
-        <li><a href="#about">Fun Things</a></li>
+        <li>
+          <a hx-get="/hx/pages/project-list" hx-target="page-content">
+            Project List
+          </a>
+        </li>
+        <li><a href="#anime-recommendation">Anime Recommendation</a></li>
+        <li><a href="#fun-things">Fun Things</a></li>
         <li><a href="#about">About</a></li>
       </div>
     </ul>
-    <div>Welcome to My Personal Blog</div>
-    <div>content - projects - anime recommendation - some fun things ?</div>
-    <div>
-      features:
-      <br />
-      - darkmode
-      <br />
-      - animation
-      <br />
-      - benchmark html vs htmx
-      <br />
-      - benchmark htmx vs react
-      <br />
-      - project list page
-      <br />
-      - anime recommendation page
-      <br />
-      - pixel anime game (like holocure)?
+    <div id="page-content">
+      <div>Welcome to My Personal Blog</div>
+      <div>content - projects - anime recommendation - some fun things ?</div>
+      <div>
+        features:
+        <br />
+        - darkmode
+        <br />
+        - animation
+        <br />
+        - benchmark html vs htmx
+        <br />
+        - benchmark htmx vs react
+        <br />
+        - project list page
+        <br />
+        - anime recommendation page
+        <br />
+        - pixel anime game (like holocure)?
+      </div>
     </div>
   </body>
 </html>
