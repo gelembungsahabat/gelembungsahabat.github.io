@@ -5,6 +5,8 @@ ul {
   overflow: hidden;
   background-color: #333;
   opacity: 70%;
+  position: sticky;
+  top: 0;
 }
 
 li {
@@ -39,4 +41,11 @@ body {
   float: right;
   margin: 4px;
   padding: 0;
+}
+
+.page-content {
+  margin-top: 30vh;
+  height: 80vh;
+  text-align: center;
+  vertical-align: middle;
 }
