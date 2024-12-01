@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Muhammad Wildan</title>
+    <title>Wildan</title>
   </head>
   <body>
     <ul>
@@ -25,29 +25,6 @@
         </a>
       </li>
       <div class="navbar-link">
-        <!-- <li>
-          <a
-            hx-get="/hx/pages/project-list.html"
-            hx-target="#page-content"
-            hx-swap="innerHTML"
-            hx-push-url="/project-list"
-          >
-            Project List
-          </a>
-        </li>
-        <li>
-          <a
-            hx-get="/hx/pages/anime-recommendation.html"
-            hx-target="#page-content"
-            hx-swap="innerHTML"
-            hx-push-url="/anime-recommendation"
-          >
-            Anime Recommendation
-          </a>
-        </li>
-        <li>
-          <a href="/hx/pages/fun-things.html"> Fun Things </a>
-        </li> -->
         <li>
           <a
             hx-get="/hx/pages/about.html"
@@ -74,5 +51,16 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-content">
+        Copyright © <span id="copyright"></span> All Rights Reserved. Muhammad
+        Wildan Nur Karim
+      </div>
+    </footer>
   </body>
+  <script>
+    document
+      .getElementById("copyright")
+      .appendChild(document.createTextNode(new Date().getFullYear()));
+  </script>
 </html>

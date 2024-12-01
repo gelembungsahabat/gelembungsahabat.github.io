@@ -74,7 +74,7 @@ li a:hover:not(.active) {
 
 .homepage {
   margin-top: 30vh;
-  height: 80vh;
+  height: 65vh;
   text-align:left;
   margin-left: 5rem;
   vertical-align: middle;
@@ -84,4 +84,17 @@ li a:hover:not(.active) {
   float: right;
   margin: 4px;
   padding: 0;
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-size: small;
+}
+
+.footer-content {
+  vertical-align: middle;
+  padding-top: 2rem;
 }
