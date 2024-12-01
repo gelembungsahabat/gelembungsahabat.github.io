@@ -1,21 +1,20 @@
-<div class="page-content">
-  <h1>Welcome to My Personal Blog</h1>
-  <h2>content - projects - anime recommendation - some fun things ?</h2>
-  <div>
-    features:
-    <br />
-    - darkmode
-    <br />
-    - animation
-    <br />
-    - benchmark html vs htmx
-    <br />
-    - benchmark htmx vs react
-    <br />
-    - project list page
-    <br />
-    - anime recommendation page
-    <br />
-    - pixel anime game (like holocure)?
+<div class="homepage">
+  <div class="flex-container">
+    <div>
+      <h1>Hi, I'm Muhammad Wildan</h1>
+      <h2>Welcome to my personal blog!</h2>
+    </div>
+    <div class="card-container">
+      <a
+        class="card"
+        hx-get="/hx/pages/project-list.html"
+        hx-target="#page-content"
+        hx-swap="innerHTML"
+        hx-replace-url="/"
+        >Project List</a
+      >
+      <div class="card">Anime Recommendation</div>
+      <div class="card">Fun Things</div>
+    </div>
   </div>
 </div>

@@ -42,9 +42,17 @@
         <div class="flex-container">
           <div>
             <h1>Hi, I'm Muhammad Wildan</h1>
+            <h2>Welcome to my personal blog!</h2>
           </div>
           <div class="card-container">
-            <div class="card">Project List</div>
+            <a
+              class="card"
+              hx-get="/hx/pages/project-list.html"
+              hx-target="#page-content"
+              hx-swap="innerHTML"
+              hx-replace-url="/"
+              >Project List</a
+            >
             <div class="card">Anime Recommendation</div>
             <div class="card">Fun Things</div>
           </div>
