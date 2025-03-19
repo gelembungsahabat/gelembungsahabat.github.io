@@ -51,14 +51,17 @@ li a:hover:not(.active) {
 }
 
 .card {
-  background-color: white;
   width: 20rem;
   height: 20rem;
   border-color: grey;
   border-radius: 10px;
   box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
-  color: black;
   cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .flex-container {
