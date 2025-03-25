@@ -51,6 +51,9 @@ li a:hover:not(.active) {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
   width: 20rem;
   height: 20rem;
   border-color: grey;
@@ -59,9 +62,16 @@ li a:hover:not(.active) {
   cursor: pointer;
 }
 
-.card-title {
-  align-self: flex-end;
+.card-title-container {
   padding: 0.5rem;
+  align-self: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,.50);
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.card-title {
   color: rgba(255,255,255,.90);
   font-size: 2rem;
   line-height: 1;
