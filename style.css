@@ -60,6 +60,12 @@ li a:hover:not(.active) {
   border-radius: 10px;
   box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
   cursor: pointer;
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 500ms;
 }
 
 .card-title-container {
