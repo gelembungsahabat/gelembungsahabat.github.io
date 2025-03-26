@@ -4,19 +4,41 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-ul {
-  list-style-type: none;
+.navbar-container {
+  position: sticky;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   opacity: 70%;
-  position: sticky;
-  top: 0;
+  top: 1rem;
+  left: 50%; /* Move the element to the center */
+  width: 20rem;
+  border-radius: 50px;
+  transform: translateX(-50%); /* Adjust the element's position to truly center it */
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 100%;
 }
 
 li {
   float: left;
+}
+
+.navbar-page-title {
+  margin: .56rem 0;
+  padding: 1.04rem 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: #020e09;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
 .icon {
@@ -27,10 +49,11 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 4px 20px;
+  padding: 0 20px;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
+  margin: .5rem;
 }
 
 li a:hover:not(.active) {
@@ -104,28 +127,24 @@ li a:hover:not(.active) {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  background-color: rgba(255,97,97,.2);
+  background-color: rgba(255,97,97,.1);
   color: rgba(255,97,97);
   border-radius: 10px;
   padding: 0 1rem;
-  width: 20rem;
+  width: 19rem;
 }
 
 .homepage {
-  margin-top: 30vh;
+  margin-top: 27vh;
   height: 65vh;
   text-align:left;
   margin-left: 5rem;
   vertical-align: middle;
 }
 
-.navbar-link {
-  float: right;
-  margin-top: 1rem;
-}
 
 footer {
-  height: 10vh;
+  height: 9vh;
   text-align: center;
   background-color: #333;
   color: white;
