@@ -19,6 +19,10 @@ li {
   float: left;
 }
 
+.icon {
+  margin: 1rem 0;
+}
+
 li a {
   display: block;
   color: white;
@@ -94,6 +98,17 @@ li a:hover:not(.active) {
   .flex-container {
     flex-direction: column;
   }
+}
+
+.warning-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #ff6161;
+  color: white;
+  border-radius: 10px;
+  padding: 0 1rem;
+  width: 20rem;
 }
 
 .homepage {

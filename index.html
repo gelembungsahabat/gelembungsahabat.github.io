@@ -6,6 +6,7 @@
       integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/eva-icons"></script>
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,6 +50,14 @@
           <div>
             <h1>Hi, I'm Muhammad Wildan</h1>
             <h2>Welcome to my personal blog!</h2>
+            <div class="warning-container">
+              <i
+                data-eva="alert-triangle-outline"
+                data-eva-fill="#ffffff"
+                class="icon"
+              ></i>
+              <p>This Website is under development</p>
+            </div>
           </div>
           <div class="card-container">
             <!-- <a
@@ -89,5 +98,7 @@
     document
       .getElementById("copyright-year")
       .appendChild(document.createTextNode(new Date().getFullYear()));
+
+    eva.replace();
   </script>
 </html>
