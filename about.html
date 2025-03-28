@@ -30,7 +30,7 @@
             hx-swap="innerHTML"
             hx-replace-url="/"
             hx-push-url="/"
-            hx-on::after-request="
+            hx-on:click="
               htmx.ajax('GET', '/hx/components/navbar-home-active.html', {target:'#navbar', swap:'outerHTML'})
             "
           >
@@ -46,7 +46,7 @@
             hx-swap="innerHTML"
             hx-replace-url="/"
             hx-push-url="/about"
-            hx-on::after-request="
+            hx-on:click="
               htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
             "
           >
