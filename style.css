@@ -14,33 +14,41 @@ body {
   opacity: 70%;
   top: 1rem;
   left: 50%; /* Move the element to the center */
-  width: 20rem;
+  width: 24rem;
   border-radius: 50px;
   transform: translateX(-50%); /* Adjust the element's position to truly center it */
   animation-name: navbar-container;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .navbar-page-title {
   margin: .56rem 0;
-  padding: 1.04rem 1.5rem;
+  padding: 1.04rem 3rem;
   text-align: center;
   color: white;
   background-color: black;
   overflow: hidden;
   border-radius: 50px;
   animation-name: navbar-page-title;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes navbar-page-title {
-  from {padding: 1.04rem 10rem;}
-  to {padding: 1.04rem 1.5rem;}
+  0%, 100% {
+    padding: 1.04rem 3rem;
+  }
+  50% {
+    padding: 1.04rem 10rem;
+  }
 }
 
 @keyframes navbar-container {
-  from {width: 50rem;}
-  to {width: 20rem;}
+  0%, 100% {
+    width: 24rem;
+  }
+  50% {
+    width: 50rem;
+  }
 }
 
 ul {
