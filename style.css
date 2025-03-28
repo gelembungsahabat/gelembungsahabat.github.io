@@ -17,6 +17,30 @@ body {
   width: 20rem;
   border-radius: 50px;
   transform: translateX(-50%); /* Adjust the element's position to truly center it */
+  animation-name: navbar-container;
+  animation-duration: 2s;
+}
+
+.navbar-page-title {
+  margin: .56rem 0;
+  padding: 1.04rem 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50px;
+  animation-name: navbar-page-title;
+  animation-duration: 2s;
+}
+
+@keyframes navbar-page-title {
+  from {padding: 1.04rem 10rem;}
+  to {padding: 1.04rem 1.5rem;}
+}
+
+@keyframes navbar-container {
+  from {width: 50rem;}
+  to {width: 20rem;}
 }
 
 ul {
@@ -38,16 +62,6 @@ h1 {
 
 h2 {
   color: white;
-}
-
-.navbar-page-title {
-  margin: .56rem 0;
-  padding: 1.04rem 1.5rem;
-  text-align: center;
-  color: white;
-  background-color: black;
-  overflow: hidden;
-  border-radius: 50px;
 }
 
 .icon {
