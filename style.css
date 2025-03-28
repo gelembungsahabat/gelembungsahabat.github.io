@@ -110,7 +110,7 @@ li a:hover:not(.active) {
   width: 100%;
   height: auto;
   background-color: rgba(0,0,0,.50);
-  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent 0%, #1e2124 100%);
 }
 
 .card-title {
