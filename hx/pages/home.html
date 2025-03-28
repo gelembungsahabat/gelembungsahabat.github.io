@@ -3,18 +3,38 @@
     <div>
       <h1>Hi, I'm Muhammad Wildan</h1>
       <h2>Welcome to my personal blog!</h2>
+      <div class="warning-container">
+        <i
+          data-eva="alert-triangle-outline"
+          data-eva-fill="#ff6161"
+          class="icon"
+        ></i>
+        <p>This Website is under development</p>
+      </div>
     </div>
     <div class="card-container">
-      <a
-        class="card"
+      <div
+        class="card has-bg-img project-list-img"
         hx-get="/hx/pages/project-list.html"
         hx-target="#page-content"
         hx-swap="innerHTML"
         hx-replace-url="/"
-        >Project List</a
+        hx-push-url="/project-list"
       >
-      <div class="card">Anime Recommendation</div>
-      <div class="card">Fun Things</div>
+        <div class="card-title-container">
+          <span class="card-title">Project List</span>
+        </div>
+      </div>
+      <div class="card has-bg-img anime-recommendation-img">
+        <div class="card-title-container">
+          <span class="card-title">Anime Recommendation</span>
+        </div>
+      </div>
+      <div class="card has-bg-img fun-things-img">
+        <div class="card-title-container">
+          <span class="card-title">Fun Things</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

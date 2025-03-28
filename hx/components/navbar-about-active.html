@@ -1,0 +1,36 @@
+<ul id="navbar-ul">
+  <li>
+    <a
+      hx-get="/hx/pages/home.html"
+      hx-target="#page-content"
+      hx-swap="innerHTML"
+      hx-replace-url="/"
+      hx-push-url="/"
+      hx-on::after-request="
+        htmx.ajax('GET', '/hx/components/navbar-home-active.html', '#navbar-ul')
+      "
+    >
+      <i data-eva="home-outline" data-eva-fill="#ffffff" class="icon"></i>
+    </a>
+  </li>
+  <li class="navbar-page-title">About Me</li>
+  <li>
+    <a
+      class="active"
+      hx-get="/hx/pages/about.html"
+      hx-target="#page-content"
+      hx-swap="innerHTML"
+      hx-replace-url="/"
+      hx-push-url="/about"
+      hx-on::after-request="
+        htmx.ajax('GET', '/hx/components/navbar-about-active.html', '#navbar-ul')
+      "
+    >
+      <i data-eva="person-outline" data-eva-fill="#21ff5c" class="icon"></i>
+    </a>
+  </li>
+</ul>
+
+<script>
+  eva.replace();
+</script>

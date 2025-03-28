@@ -22,9 +22,19 @@
   <body>
     <!-- navbar -->
     <div class="navbar-container">
-      <ul>
+      <ul id="navbar-ul">
         <li>
-          <a href="/">
+          <a
+            class="active"
+            hx-get="/hx/pages/home.html"
+            hx-target="#page-content"
+            hx-swap="innerHTML"
+            hx-replace-url="/"
+            hx-push-url="/"
+            hx-on::after-request="
+              htmx.ajax('GET', '/hx/components/navbar-home-active.html', '#navbar-ul')
+            "
+          >
             <i data-eva="home-outline" data-eva-fill="#ffffff" class="icon"></i>
           </a>
         </li>

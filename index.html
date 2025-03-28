@@ -22,15 +22,34 @@
   <body>
     <!-- navbar -->
     <div class="navbar-container">
-      <ul>
+      <ul id="navbar-ul">
         <li>
-          <a href="/" class="active">
+          <a
+            class="active"
+            hx-get="/hx/pages/home.html"
+            hx-target="#page-content"
+            hx-swap="innerHTML"
+            hx-replace-url="/"
+            hx-push-url="/"
+            hx-on::after-request="
+              htmx.ajax('GET', '/hx/components/navbar-home-active.html', '#navbar-ul')
+            "
+          >
             <i data-eva="home-outline" data-eva-fill="#21ff5c" class="icon"></i>
           </a>
         </li>
         <li class="navbar-page-title">Homepage</li>
         <li>
-          <a href="/about">
+          <a
+            hx-get="/hx/pages/about.html"
+            hx-target="#page-content"
+            hx-swap="innerHTML"
+            hx-replace-url="/"
+            hx-push-url="/about"
+            hx-on::after-request="
+              htmx.ajax('GET', '/hx/components/navbar-about-active.html', '#navbar-ul')
+            "
+          >
             <i
               data-eva="person-outline"
               data-eva-fill="#ffffff"
@@ -57,15 +76,14 @@
             </div>
           </div>
           <div class="card-container">
-            <!-- <a
-              class="card"
+            <div
+              class="card has-bg-img project-list-img"
               hx-get="/hx/pages/project-list.html"
               hx-target="#page-content"
               hx-swap="innerHTML"
               hx-replace-url="/"
-              >Project List</a
-            > -->
-            <div class="card has-bg-img project-list-img">
+              hx-push-url="/project-list"
+            >
               <div class="card-title-container">
                 <span class="card-title">Project List</span>
               </div>
