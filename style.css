@@ -18,7 +18,7 @@ body {
   border-radius: 50px;
   transform: translateX(-50%); /* Adjust the element's position to truly center it */
   animation-name: navbar-container;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .navbar-page-title {
@@ -30,7 +30,7 @@ body {
   overflow: hidden;
   border-radius: 50px;
   animation-name: navbar-page-title;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes navbar-page-title {
