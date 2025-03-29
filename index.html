@@ -80,23 +80,29 @@
             </div>
           </div>
           <div class="card-container">
-            <div
+            <a
+              href="https://github.com/gelembungsahabat?tab=repositories"
               class="card has-bg-img project-list-img"
-              hx-get="/hx/pages/project-list.html"
-              hx-target="#page-content"
-              hx-swap="innerHTML"
-              hx-replace-url="/"
-              hx-push-url="/project-list"
             >
               <div class="card-title-container">
                 <span class="card-title">Project List</span>
               </div>
-            </div>
-            <div class="card has-bg-img anime-recommendation-img">
+            </a>
+            <a
+              class="card has-bg-img anime-recommendation-img"
+              hx-get="/hx/pages/anime-recommendation.html"
+              hx-target="#page-content"
+              hx-swap="innerHTML"
+              hx-replace-url="/"
+              hx-push-url="/anime-recommendation"
+              hx-on:click="
+                htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
+              "
+            >
               <div class="card-title-container">
                 <span class="card-title">Anime Recommendation</span>
               </div>
-            </div>
+            </a>
             <div class="card has-bg-img fun-things-img">
               <div class="card-title-container">
                 <span class="card-title">Fun Things</span>

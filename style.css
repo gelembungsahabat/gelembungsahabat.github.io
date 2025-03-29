@@ -5,6 +5,10 @@ body {
   background-color: #282b30;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar-container {
   position: sticky;
   margin: 0;
