@@ -112,9 +112,8 @@
   </body>
 
   <script>
-    document
-      .getElementById("copyright-year")
-      .appendChild(document.createTextNode(new Date().getFullYear()));
+    const year = new Date().getFullYear();
+    document.getElementById("copyright-year").innerText = year;
 
     eva.replace();
   </script>
