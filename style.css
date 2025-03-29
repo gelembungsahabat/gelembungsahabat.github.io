@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-.navbar-container {
+.navbar-container-home {
   position: sticky;
   margin: 0;
   padding: 0;
@@ -18,25 +18,54 @@ a {
   opacity: 70%;
   top: 1rem;
   left: 50%; /* Move the element to the center */
-  width: 15rem;
+  width: 17rem;
   border-radius: 50px;
   transform: translateX(-50%); /* Adjust the element's position to truly center it */
-  animation-name: navbar-container;
+  animation-name: navbar-container-home;
   animation-duration: 2s;
 }
 
-.navbar-page-title {
+.navbar-container-pages {
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.3);
+  opacity: 70%;
+  top: 1rem;
+  left: 50%; /* Move the element to the center */
+  width: 27rem;
+  border-radius: 50px;
+  transform: translateX(-30%); /* Adjust the element's position to truly center it */
+  animation-name: navbar-container-pages;
+  animation-duration: 2s;
+}
+
+.navbar-title-home {
   text-align: center;
   color: white;
   background-color: black;
   overflow: hidden;
   border-radius: 50px;
-  animation-name: navbar-page-title;
+  animation-name: navbar-title-home;
   animation-duration: 2s;
   visibility: hidden;
+  white-space: nowrap;
 }
 
-@keyframes navbar-page-title {
+.navbar-title-pages {
+  text-align: center;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50px;
+  animation-name: navbar-title-pages;
+  animation-duration: 2s;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+@keyframes navbar-title-home {
   17%, 68% {
     margin: .56rem 0;
     padding: 1.04rem 1.5rem;
@@ -51,12 +80,36 @@ a {
   }
 }
 
-@keyframes navbar-container {
-  0%, 100% {
-    width: 15rem;
+@keyframes navbar-title-pages {
+  20%, 68% {
+    margin: .56rem 0;
+    padding: 1.04rem 1.5rem;
+    visibility: hidden;
+    opacity: 0;
   }
   50% {
-    width: 24rem;
+    margin: .56rem 0;
+    padding: 1.04rem 3rem;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes navbar-container-home {
+  0%, 100% {
+    width: 17rem;
+  }
+  50% {
+    width: 27rem;
+  }
+}
+
+@keyframes navbar-container-pages {
+  0%, 100% {
+    width: 27rem;
+  }
+  50% {
+    width: 42rem;
   }
 }
 

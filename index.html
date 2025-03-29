@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="navbar-container" id="navbar">
+    <div class="navbar-container-home" id="navbar">
       <ul id="navbar-ul">
         <li>
           <a
@@ -42,7 +42,7 @@
             <i data-eva="home-outline" data-eva-fill="#21ff5c" class="icon"></i>
           </a>
         </li>
-        <li class="navbar-page-title">Homepage</li>
+        <li class="navbar-title-home">Homepage</li>
         <li>
           <a
             hx-get="/hx/pages/about.html"
@@ -96,7 +96,7 @@
               hx-replace-url="/"
               hx-push-url="/anime-recommendation"
               hx-on:click="
-                htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
+                htmx.ajax('GET', '/hx/components/navbar-anime-recommendation-active.html', {target:'#navbar', swap:'outerHTML'})
               "
             >
               <div class="card-title-container">
