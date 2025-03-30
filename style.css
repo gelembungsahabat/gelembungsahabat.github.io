@@ -34,9 +34,9 @@ a {
   opacity: 70%;
   top: 1rem;
   left: 50%; /* Move the element to the center */
-  width: 27rem;
+  width: 17rem;
   border-radius: 50px;
-  transform: translateX(-30%); /* Adjust the element's position to truly center it */
+  transform: translateX(-50%); /* Adjust the element's position to truly center it */
   animation-name: navbar-container-pages;
   animation-duration: 2s;
 }
@@ -106,10 +106,10 @@ a {
 
 @keyframes navbar-container-pages {
   0%, 100% {
-    width: 27rem;
+    width: 17rem;
   }
   50% {
-    width: 42rem;
+    width: 30rem;
   }
 }
 
@@ -136,6 +136,21 @@ h2 {
 
 .icon {
   margin: 1rem 0;
+}
+
+.icon-pages {
+  margin: 1rem 0;
+  animation-name: icon-pages;
+  animation-duration: 2s;
+}
+
+@keyframes icon-pages {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 li a {

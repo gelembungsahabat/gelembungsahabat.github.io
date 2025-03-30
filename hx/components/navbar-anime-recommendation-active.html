@@ -1,4 +1,4 @@
-<div class="navbar-container-home" id="navbar">
+<div class="navbar-container-pages" id="navbar">
   <ul id="navbar-ul">
     <li>
       <a
@@ -18,16 +18,20 @@
     <li>
       <a
         class="active"
-        hx-get="/hx/pages/about.html"
+        hx-get="/hx/pages/anime-recommendation.html"
         hx-target="#page-content"
         hx-swap="innerHTML"
         hx-replace-url="/"
-        hx-push-url="/about"
+        hx-push-url="/anime-recommendation"
         hx-on:click="
-        htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
-      "
+          htmx.ajax('GET', '/hx/components/navbar-anime-recommendation-active.html', {target:'#navbar', swap:'outerHTML'})
+        "
       >
-        <i data-eva="star-outline" data-eva-fill="#21ff5c" class="icon"></i>
+        <i
+          data-eva="star-outline"
+          data-eva-fill="#21ff5c"
+          class="icon-pages"
+        ></i>
       </a>
     </li>
   </ul>

@@ -2,32 +2,32 @@
   <ul id="navbar-ul">
     <li>
       <a
+        class="active"
         hx-get="/hx/pages/home.html"
         hx-target="#page-content"
         hx-swap="innerHTML"
         hx-replace-url="/"
         hx-push-url="/"
         hx-on:click="
-        htmx.ajax('GET', '/hx/components/navbar-home-active-without-fade.html', {target:'#navbar', swap:'outerHTML'})
-      "
+          htmx.ajax('GET', '/hx/components/navbar-home-active.html', {target:'#navbar', swap:'outerHTML'})
+        "
       >
-        <i data-eva="home-outline" data-eva-fill="#ffffff" class="icon"></i>
+        <i data-eva="home-outline" data-eva-fill="#21ff5c" class="icon"></i>
       </a>
     </li>
-    <li class="navbar-title-home">About Me</li>
+    <li class="navbar-title-home">Homepage</li>
     <li>
       <a
-        class="active"
         hx-get="/hx/pages/about.html"
         hx-target="#page-content"
         hx-swap="innerHTML"
         hx-replace-url="/"
         hx-push-url="/about"
         hx-on:click="
-        htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
-      "
+          htmx.ajax('GET', '/hx/components/navbar-about-active.html', {target:'#navbar', swap:'outerHTML'})
+        "
       >
-        <i data-eva="person-outline" data-eva-fill="#21ff5c" class="icon"></i>
+        <i data-eva="person-outline" data-eva-fill="#ffffff" class="icon"></i>
       </a>
     </li>
   </ul>

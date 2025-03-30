@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script
+      src="https://unpkg.com/htmx.org@2.0.3"
+      integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/eva-icons"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wildan - About</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Wildan - About" />
+    <meta name="description" content="About Wildan's profile" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar-container-pages" id="navbar">
+      <ul id="navbar-ul">
+        <li>
+          <a
+            hx-get="/hx/pages/home.html"
+            hx-target="#page-content"
+            hx-swap="innerHTML"
+            hx-replace-url="/"
+            hx-push-url="/"
+            hx-on:click="
+              htmx.ajax('GET', '/hx/components/navbar-home-active.html', {target:'#navbar', swap:'outerHTML'})
+            "
+          >
+            <i data-eva="home-outline" data-eva-fill="#ffffff" class="icon"></i>
+          </a>
+        </li>
+        <li class="navbar-title-home">Anime Recommendation</li>
+        <li>
+          <a
+            class="active"
+            hx-get="/hx/pages/anime-recommendation.html"
+            hx-target="#page-content"
+            hx-swap="innerHTML"
+            hx-replace-url="/"
+            hx-push-url="/anime-recommendation"
+            hx-on:click="
+              htmx.ajax('GET', '/hx/components/navbar-anime-recommendation-active.html', {target:'#navbar', swap:'outerHTML'})
+            "
+          >
+            <i
+              data-eva="star-outline"
+              data-eva-fill="#21ff5c"
+              class="icon-pages"
+            ></i>
+          </a>
+        </li>
+      </ul>
+      <script>
+        eva.replace();
+      </script>
+    </div>
+    <!-- page content -->
+    <div id="page-content">
+      <div class="homepage">
+        <div class="flex-container">
+          <div>
+            <h1>Anime Recommendation</h1>
+            <h2>This Is Anime Recommendation from Me</h2>
+            <div class="warning-container">
+              <i
+                data-eva="alert-triangle-outline"
+                data-eva-fill="#ff6161"
+                class="icon"
+              ></i>
+              <p>This Website is under development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        Copyright © <span id="copyright-year"></span> All Rights Reserved.
+        Muhammad Wildan Nur Karim
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    document
+      .getElementById("copyright-year")
+      .appendChild(document.createTextNode(new Date().getFullYear()));
+
+    eva.replace();
+  </script>
+</html>
