@@ -14,8 +14,7 @@ a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(0,0,0,.3);
-  opacity: 70%;
+  background-color: rgba(23,24,24,.8);
   top: 1rem;
   left: 50%; /* Move the element to the center */
   width: 17rem;
@@ -31,8 +30,7 @@ a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(0,0,0,.3);
-  opacity: 70%;
+  background-color: rgba(23,24,24,.8);
   top: 1rem;
   left: 50%; /* Move the element to the center */
   width: 17rem;
@@ -131,12 +129,15 @@ li {
 h1 {
   color: white;
   margin: 1rem 0;
+  /* font-weight better from 600-700 for text that want to emphasize */
+  font-weight: 600;
 }
 
 h2 {
   color: white;
   opacity: 70%;
-  font-weight: 300;
+  /* font-weight better from 400-500 for normal text */
+  font-weight: 400; 
   margin: 1rem 0;
 }
 
@@ -261,13 +262,16 @@ footer {
   height: 9vh;
   text-align: center;
   background-color: #1e2124;
-  color: white;
-  font-size: small;
 }
 
 .footer-content {
   vertical-align: middle;
   padding-top: 2rem;
+  color: white;
+  font-size: small;
+  /* font-weight better from 400-500 for normal text */
+  font-weight: 400; 
+  opacity: 80%;
 }
 
 .has-bg-img{
