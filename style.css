@@ -261,8 +261,13 @@ li a:hover:not(.active) {
 /* anime recommendation div */
 .anime-recommendation {
   margin-top: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   text-align:left;
+}
+
+.anime-recommendation-content {
+  padding-top: 80vh;
+  background: linear-gradient(to bottom, transparent 0%, #1e2124 100%);
 }
 
 footer {
