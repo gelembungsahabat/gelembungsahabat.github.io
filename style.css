@@ -2,7 +2,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
-  background-color: #282b30;
 }
 
 a {
@@ -10,7 +9,7 @@ a {
 }
 
 .navbar-container-home {
-  position: sticky;
+  position: fixed;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -26,7 +25,7 @@ a {
 }
 
 .navbar-container-pages {
-  position: sticky;
+  position: fixed;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -249,14 +248,22 @@ li a:hover:not(.active) {
   width: 19rem;
 }
 
+/* homepage div */
 .homepage {
-  margin-top: 27vh;
+  padding-top: 35vh;
   min-height: 65vh;
   text-align:left;
-  margin-left: 5rem;
+  padding-left: 5rem;
   vertical-align: middle;
+  background-color: #282b30;
 }
 
+/* anime recommendation div */
+.anime-recommendation {
+  margin-top: 0;
+  min-height: 100vh;
+  text-align:left;
+}
 
 footer {
   height: 9vh;
@@ -290,4 +297,8 @@ footer {
 
 .project-list-img {
   background-image: url("/images/github-repo.png");
+}
+
+.makeine-img {
+  background-image: url("/images/makeine2.jpg");
 }
