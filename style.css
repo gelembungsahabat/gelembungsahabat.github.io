@@ -271,7 +271,9 @@ li a:hover:not(.active) {
   padding-top: 35vh;
   padding-left: 5rem;
   height: 80vh;
-  background: linear-gradient(to bottom, transparent 0%, #1e2124 100%), linear-gradient(to left, transparent 0%, #1e2124 100%);
+  background: 
+    linear-gradient(to bottom, transparent 0%, transparent 50%, #1e2124 100%),
+    linear-gradient(to left, transparent 0%, transparent 35%, #1e2124 100%);
 }
 
 footer {
