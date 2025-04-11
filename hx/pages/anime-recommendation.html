@@ -70,8 +70,18 @@
       dolor, nec pretium dolor lorem ut risus. Sed ornare tincidunt sapien vitae
       viverra.
     </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        Copyright © <span id="copyright-year"></span> All Rights Reserved.
+        Muhammad Wildan Nur Karim
+      </div>
+    </footer>
   </div>
   <script>
     eva.replace();
+    document
+      .getElementById("copyright-year")
+      .appendChild(document.createTextNode(new Date().getFullYear()));
   </script>
 </div>

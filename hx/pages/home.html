@@ -43,7 +43,17 @@
       </div>
     </div>
   </div>
-  <script>
-    eva.replace();
-  </script>
 </div>
+<!-- footer -->
+<footer>
+  <div class="footer-content">
+    Copyright © <span id="copyright-year"></span> All Rights Reserved. Muhammad
+    Wildan Nur Karim
+  </div>
+</footer>
+<script>
+  eva.replace();
+  document
+    .getElementById("copyright-year")
+    .appendChild(document.createTextNode(new Date().getFullYear()));
+</script>
