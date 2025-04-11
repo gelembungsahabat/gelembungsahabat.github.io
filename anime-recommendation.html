@@ -91,56 +91,36 @@
           </div>
         </div>
         <div class="section">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          eleifend placerat iaculis. Ut varius justo tortor, non accumsan dui
-          faucibus sed. Proin in dolor pharetra, pellentesque dui et, feugiat
-          mi. Ut non elit blandit, accumsan mi commodo, lobortis dolor. Vivamus
-          a efficitur justo, ac sollicitudin orci. Aenean sapien elit, dignissim
-          dapibus massa ut, tristique semper leo. Etiam sit amet leo eget lectus
-          vulputate cursus. Aliquam blandit, neque nec ullamcorper fringilla,
-          enim augue volutpat velit, at consectetur augue justo nec lectus. Duis
-          dapibus odio ipsum, nec posuere ex dignissim a. Duis fringilla tortor
-          sed turpis consequat tempus. Donec vitae sapien est. Vestibulum ante
-          ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-          curae; Sed aliquam felis ut purus blandit gravida. Etiam pharetra,
-          justo et pulvinar venenatis, tortor dolor placerat nunc, et vehicula
-          nulla erat nec nunc. Nullam faucibus metus eget nisi congue porta.
-          Nullam molestie varius molestie. Nullam posuere metus vel convallis
-          efficitur. Suspendisse aliquet dui dictum euismod maximus. Suspendisse
-          nibh massa, vehicula sed neque ut, hendrerit sagittis nibh. Quisque
-          libero mauris, auctor nec ullamcorper non, commodo nec arcu. Aenean
-          lacinia nisl at lectus eleifend pharetra. Nulla viverra, enim sodales
-          commodo aliquam, ipsum leo viverra dolor, id malesuada urna nisl vitae
-          nisi. Duis fringilla tortor mauris, ut consectetur nunc porttitor in.
-          Mauris vitae scelerisque ligula. Duis sed commodo ante. Mauris
-          bibendum elit sem, ornare egestas massa bibendum non. Fusce sodales
-          tellus eget ante dapibus dignissim. Pellentesque elementum, odio id
-          sodales vestibulum, eros magna blandit velit, in vehicula leo justo
-          sed sapien. Maecenas hendrerit felis ut tincidunt faucibus. Maecenas
-          nec efficitur leo. Proin feugiat lorem et sem aliquam, id tincidunt
-          mauris consectetur. Quisque sed turpis malesuada, lacinia neque sed,
-          vehicula risus. Maecenas facilisis nec est eleifend aliquet. Aenean at
-          justo ante. Suspendisse tincidunt mi et massa finibus tincidunt. In
-          hac habitasse platea dictumst. Quisque lobortis non risus eget
-          egestas. Pellentesque varius ultrices dolor eu sollicitudin.
-          Suspendisse et tempor lectus. Pellentesque rhoncus in leo non aliquam.
-          Nam pellentesque gravida aliquet. Nullam ut vestibulum ligula. Morbi
-          fermentum volutpat libero quis commodo. Aenean a sapien est. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Aenean sed nisi quis nisl mollis dapibus. Quisque
-          consequat est odio, auctor mattis nulla pulvinar quis. Quisque rutrum
-          auctor rutrum. Aliquam erat volutpat. Integer non mollis leo, a
-          tristique mauris. Etiam ligula lorem, semper at mi quis, suscipit
-          sollicitudin odio. Fusce fermentum libero quis urna condimentum
-          egestas. Maecenas rhoncus augue tellus. Vivamus ut tincidunt mi. Nulla
-          libero eros, condimentum sit amet ornare sit amet, porta et ipsum.
-          Nulla gravida tortor metus, a aliquam enim laoreet vitae. Vivamus
-          vulputate quis enim sit amet faucibus. Aliquam eget ligula eu quam
-          elementum consectetur vel in ante. Sed vel velit dolor. Nam volutpat
-          vel justo in tempus. Cras et dignissim augue, eu porta arcu. Morbi
-          eleifend, turpis non maximus aliquet, neque enim semper dolor, nec
-          pretium dolor lorem ut risus. Sed ornare tincidunt sapien vitae
-          viverra.
+          <div class="card-container">
+            <a
+              href="https://github.com/gelembungsahabat?tab=repositories"
+              class="card has-bg-img project-list-img"
+            >
+              <div class="card-title-container">
+                <span class="card-title">Project List</span>
+              </div>
+            </a>
+            <a
+              class="card has-bg-img anime-recommendation-img"
+              hx-get="/hx/pages/anime-recommendation.html"
+              hx-target="#page-content"
+              hx-swap="innerHTML"
+              hx-replace-url="/"
+              hx-push-url="/anime-recommendation"
+              hx-on:click="
+                htmx.ajax('GET', '/hx/components/navbar-anime-recommendation-active.html', {target:'#navbar', swap:'outerHTML'})
+              "
+            >
+              <div class="card-title-container">
+                <span class="card-title">Anime Recommendation</span>
+              </div>
+            </a>
+            <div class="card has-bg-img fun-things-img">
+              <div class="card-title-container">
+                <span class="card-title">Fun Things</span>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- footer -->
         <footer>
