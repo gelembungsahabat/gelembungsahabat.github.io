@@ -325,7 +325,7 @@ footer {
   padding-left: 5rem;
   height: 100%;
   transform-style: preserve-3d;
-  z-index: -1;
+  z-index: -100;
   background: 
     linear-gradient(to bottom, transparent 0%, transparent 50%, #1e2124 100%),
     linear-gradient(to left, transparent 0%, transparent 35%, #1e2124 100%);
@@ -343,6 +343,7 @@ footer {
   width: 100%;
   object-fit: cover;
   z-index: -100;
+  overflow: hidden;
 }
 
 .title {
