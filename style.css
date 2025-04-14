@@ -172,6 +172,13 @@ li a:hover:not(.active) {
   margin-right: 5rem;
 }
 
+.anime-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
 @media (max-width: 800px) {
   .card-container {
     flex-direction: column;
@@ -318,7 +325,7 @@ footer {
 
 .section {
   /* font-size: 2rem; */
-  padding: 2rem;
+  padding: 5rem;
   background-color: #333;
   color: white;
   z-index: 1;
