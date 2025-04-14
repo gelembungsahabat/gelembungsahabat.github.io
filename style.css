@@ -322,7 +322,7 @@ footer {
   background-color: #333;
   color: white;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 /* BG IMAGE STUFF */
@@ -350,4 +350,16 @@ footer {
 
 .ousama-ranking-img {
   background-image: url("/images/ousama-ranking.png");
+}
+
+.death-note-img {
+  background-image: url("/images/death-note.png");
+}
+
+.vivy-img {
+  background-image: url("/images/vivy.png");
+}
+
+.code-geass-img {
+  background-image: url("/images/code-geass.png");
 }
