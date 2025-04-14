@@ -277,24 +277,6 @@ footer {
   opacity: 80%;
 }
 
-.has-bg-img{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.anime-recommendation-img {
-  background-image: url("/images/rin.png");
-}
-
-.fun-things-img {
-  background-image: url("/images/cloud-minichocobo.png");
-}
-
-.project-list-img {
-  background-image: url("/images/github-repo.png");
-}
-
 /* PARALLAX STUFF */
 .wrapper {
   height: 100vh;
@@ -341,4 +323,31 @@ footer {
   color: white;
   z-index: 1;
   min-height: 100vh;
+}
+
+/* BG IMAGE STUFF */
+.has-bg-img{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.anime-recommendation-img {
+  background-image: url("/images/rin.png");
+}
+
+.fun-things-img {
+  background-image: url("/images/cloud-minichocobo.png");
+}
+
+.project-list-img {
+  background-image: url("/images/github-repo.png");
+}
+
+.witch-watch-img {
+  background-image: url("/images/witch-watch.png");
+}
+
+.ousama-ranking-img {
+  background-image: url("/images/ousama-ranking.png");
 }
