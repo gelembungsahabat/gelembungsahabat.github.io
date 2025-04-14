@@ -2,50 +2,75 @@
   <div class="wrapper">
     <div class="header">
       <img
-        src="/images/makeine2.jpg"
+        src="/images/makeine2.png"
         alt="makeine-background"
         class="background"
       />
-      <div class="flex-container">
-        <div>
-          <h1>Anime Recommendation</h1>
-          <h2>This Is Anime Recommendation from Me</h2>
-          <div class="warning-container">
-            <i
-              data-eva="alert-triangle-outline"
-              data-eva-fill="#ff6161"
-              class="icon"
-            ></i>
-            <p>This Website is under development</p>
-          </div>
+      <div class="anime-recommendation-title">
+        <h1>Anime Recommendation</h1>
+        <h2>This Is Anime Recommendation from Me</h2>
+        <div class="warning-container">
+          <i
+            data-eva="alert-triangle-outline"
+            data-eva-fill="#ff6161"
+            class="icon"
+          ></i>
+          <p>This Website is under development</p>
         </div>
       </div>
     </div>
     <div class="section">
+      <h1>My Top 10 Anime Recommendation</h1>
+      <h2>
+        Keep in mind, this Anime Recommendation is based from my opinion
+        (subjective).
+      </h2>
       <div class="card-container">
-        <a
-          href="https://github.com/gelembungsahabat?tab=repositories"
-          class="card has-bg-img project-list-img"
-        >
+        <div class="card has-bg-img fun-things-img">
           <div class="card-title-container">
-            <span class="card-title">Project List</span>
+            <span class="card-title">Fun Things</span>
           </div>
-        </a>
-        <a
-          class="card has-bg-img anime-recommendation-img"
-          hx-get="/hx/pages/anime-recommendation.html"
-          hx-target="#page-content"
-          hx-swap="innerHTML"
-          hx-replace-url="/"
-          hx-push-url="/anime-recommendation"
-          hx-on:click="
-            htmx.ajax('GET', '/hx/components/navbar-anime-recommendation-active.html', {target:'#navbar', swap:'outerHTML'})
-          "
-        >
+        </div>
+        <div class="card has-bg-img fun-things-img">
           <div class="card-title-container">
-            <span class="card-title">Anime Recommendation</span>
+            <span class="card-title">Fun Things</span>
           </div>
-        </a>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
+        <div class="card has-bg-img fun-things-img">
+          <div class="card-title-container">
+            <span class="card-title">Fun Things</span>
+          </div>
+        </div>
         <div class="card has-bg-img fun-things-img">
           <div class="card-title-container">
             <span class="card-title">Fun Things</span>

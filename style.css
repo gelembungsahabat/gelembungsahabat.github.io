@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-.navbar-container-home {
+.navbar-container-home, .navbar-container-pages {
   position: fixed;
   margin: 0;
   padding: 0;
@@ -20,49 +20,35 @@ a {
   width: 17rem;
   border-radius: 50px;
   transform: translateX(-50%); /* Adjust the element's position to truly center it */
-  animation-name: navbar-container-home;
   animation-duration: 2s;
   z-index: 100;
+}
+
+.navbar-container-home {
+  animation-name: navbar-container-home;
 }
 
 .navbar-container-pages {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(23,24,24,.8);
-  top: 1rem;
-  left: 50%; /* Move the element to the center */
-  width: 17rem;
-  border-radius: 50px;
-  transform: translateX(-50%); /* Adjust the element's position to truly center it */
   animation-name: navbar-container-pages;
+}
+
+.navbar-title-home, .navbar-title-pages {
+  text-align: center;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 50px;
   animation-duration: 2s;
-  z-index: 100;
+  visibility: hidden;
+  white-space: nowrap;
 }
 
 .navbar-title-home {
-  text-align: center;
-  color: white;
-  background-color: black;
-  overflow: hidden;
-  border-radius: 50px;
   animation-name: navbar-title-home;
-  animation-duration: 2s;
-  visibility: hidden;
-  white-space: nowrap;
 }
 
 .navbar-title-pages {
-  text-align: center;
-  color: white;
-  background-color: black;
-  overflow: hidden;
-  border-radius: 50px;
   animation-name: navbar-title-pages;
-  animation-duration: 2s;
-  visibility: hidden;
-  white-space: nowrap;
 }
 
 @keyframes navbar-title-home {
@@ -321,7 +307,6 @@ footer {
   position: relative;
   display: flex;
   justify-content: left;
-  align-items: center;
   padding-left: 5rem;
   height: 100%;
   transform-style: preserve-3d;
@@ -329,7 +314,6 @@ footer {
   background: 
     linear-gradient(to bottom, transparent 0%, transparent 50%, #1e2124 100%),
     linear-gradient(to left, transparent 0%, transparent 35%, #1e2124 100%);
-
 }
 
 .background {
@@ -346,13 +330,12 @@ footer {
   overflow: hidden;
 }
 
-.title {
-  font-size: 7rem;
-  color: black;
+.anime-recommendation-title {
+  margin-top: 35vh;
 }
 
 .section {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   padding: 2rem;
   background-color: #333;
   color: white;
