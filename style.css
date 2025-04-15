@@ -196,6 +196,7 @@ li a:hover:not(.active) {
   box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
   cursor: pointer;
   transition-duration: 300ms;
+  margin: 1rem 0;
 }
 
 .card:hover {
@@ -369,4 +370,24 @@ footer {
 
 .code-geass-img {
   background-image: url("/images/code-geass.png");
+}
+
+.makeine-img {
+  background-image: url("/images/makeine.png");
+}
+
+.opm-img {
+  background-image: url("/images/opm.png");
+}
+
+.op-fan-letter-img {
+  background-image: url("/images/op-fan-letter.png");
+}
+
+.fmab-img {
+  background-image: url("/images/fmab.png");
+}
+
+.onk-img {
+  background-image: url("/images/oshi-no-ko.png");
 }
