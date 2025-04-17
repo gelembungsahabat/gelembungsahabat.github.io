@@ -175,7 +175,8 @@ li a:hover:not(.active) {
 .anime-card-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
   margin-top: 4rem;
 }
 
