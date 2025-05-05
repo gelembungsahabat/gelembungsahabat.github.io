@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --bg-color: #282b30;
+  --pd-left: 5rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+section {
+  height: 65vh;
+  -webkit-scroll-snap-align: start;
+  scroll-snap-align: center;
+  margin-left: var(--pd-left);
+  padding-top: 35vh; /* creates space at top and bottom */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* homepage div */
+.homepage {
+  text-align: left;
+  vertical-align: middle;
+  background-color: var(--bg-color);
+
+  overflow-y: auto;
+  height: 100vh;
+  -webkit-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0; /* visual spacing */
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.warning-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: rgba(255, 97, 97, 0.1);
+  color: rgba(255, 97, 97);
+  border-radius: 10px;
+  padding: 0 1rem;
+  width: 19rem;
+}
+
+/* CARD STUFF */
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  margin-right: 5rem;
+}
+
+.anime-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
   }
 }
 
 .card {
-  padding: 2em;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  border-color: grey;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition-duration: 300ms;
+  margin: 1rem 0;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+}
+
+.card-title-container {
+  padding: 0.5rem;
+  align-self: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, transparent 0%, #1e2124 100%);
+}
+
+.card-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 40px black,
+    0 0 80px black;
+}
+
+/* BG IMAGE STUFF */
+.has-bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.anime-recommendation-img {
+  background-image: url("/src/assets/images/rin.png");
+}
+
+.fun-things-img {
+  background-image: url("/src/assets/images/cloud-minichocobo.png");
+}
+
+.project-list-img {
+  background-image: url("/src/assets/images/github-repo.png");
 }
