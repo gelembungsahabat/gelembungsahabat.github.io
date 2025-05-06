@@ -1,15 +1,9 @@
 import "./App.css";
-import { animateScroll } from "react-scroll";
 import { type WheelEvent } from "react";
 import { IoWarningOutline } from "react-icons/io5";
 
 function App() {
-  const options = {
-    duration: 400,
-    smooth: true,
-  };
   const handleScroll = (event: WheelEvent<HTMLDivElement>) => {
-    animateScroll.scrollTo(60, options);
     console.log(event.deltaY);
   };
   return (
