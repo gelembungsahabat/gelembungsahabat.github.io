@@ -5,8 +5,8 @@
 
 section {
   height: 65vh;
-  -webkit-scroll-snap-align: start;
-  scroll-snap-align: center;
+  /* -webkit-scroll-snap-align: start;
+  scroll-snap-align: center; */
   margin-left: var(--pd-left);
   padding-top: 35vh; /* creates space at top and bottom */
 }
@@ -19,8 +19,13 @@ section {
 
   overflow-y: auto;
   height: 100vh;
-  -webkit-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
+  /* -webkit-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; */
+}
+
+.icon {
+  margin: 1rem 0;
+  size: 2rem;
 }
 
 .flex-container {
