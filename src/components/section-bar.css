@@ -1,5 +1,21 @@
-.section-bar {
+.section-bar-wrapper {
   position: fixed;
   right: 0;
-  top: 50vh;
+  top: 34vh;
+}
+
+.section-bar {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: gray;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.section-bar-active {
+  height: 4rem;
+  width: 0.5rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 10px;
 }
