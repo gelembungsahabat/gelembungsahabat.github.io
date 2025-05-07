@@ -1,9 +1,9 @@
 import "./App.css";
 import { type WheelEvent, useState, useEffect } from "react";
 import { SectionBar } from "./components/section-bar";
-import { Hero } from "./components/hero";
-import { AnimeRecommendation } from "./components/anime-recommendation";
-import { FunThings } from "./components/fun-things";
+import { Hero } from "./components/section/hero";
+import { AnimeRecommendation } from "./components/section/anime-recommendation";
+import { FunThings } from "./components/section/fun-things";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
