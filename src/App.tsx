@@ -8,7 +8,9 @@ function App() {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-    sections[currentSection].scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      sections[currentSection].scrollIntoView({ behavior: "smooth" });
+    }, 100);
   }, [currentSection]);
 
   const scroll = (e: WheelEvent<Element>) => {
