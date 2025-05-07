@@ -5,10 +5,8 @@
 
 section {
   height: 65vh;
-  /* -webkit-scroll-snap-align: start;
-  scroll-snap-align: center; */
   margin-left: var(--pd-left);
-  padding-top: 35vh; /* creates space at top and bottom */
+  padding-top: 35vh;
 }
 
 /* homepage div */
@@ -16,11 +14,10 @@ section {
   text-align: left;
   vertical-align: middle;
   background-color: var(--bg-color);
-
   overflow-y: auto;
   height: 100vh;
-  /* -webkit-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory; */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
 .icon {
@@ -32,7 +29,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 0; /* visual spacing */
+  padding: 1rem 0;
 }
 
 @media (max-width: 800px) {

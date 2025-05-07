@@ -3,11 +3,21 @@ import { type WheelEvent } from "react";
 import { IoWarningOutline } from "react-icons/io5";
 
 function App() {
-  const handleScroll = (event: WheelEvent<HTMLDivElement>) => {
-    console.log(event.deltaY);
+  let section = 0;
+
+  const scroll = (e: WheelEvent<Element>) => {
+    const sections = document.querySelectorAll("section");
+    if (e.deltaY >= 1 && section < 1) {
+      section = section + 1;
+    }
+    if (e.deltaY <= 1 && section >= 1) {
+      section = section - 1;
+    }
+
+    sections[section].scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="homepage" onWheel={handleScroll}>
+    <div className="homepage" onWheel={scroll}>
       <section>
         <div className="flex-container">
           <div>
