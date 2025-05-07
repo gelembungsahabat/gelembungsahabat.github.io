@@ -13,6 +13,22 @@ function App() {
     }, 100);
   }, [currentSection]);
 
+  // prevent ctrl + scroll to zoom on browser
+  useEffect(() => {
+    const rootWrapper = document.getElementById("root");
+    if (rootWrapper) {
+      rootWrapper.addEventListener(
+        "wheel",
+        (event) => {
+          if (event.ctrlKey) {
+            event.preventDefault();
+          }
+        },
+        true
+      );
+    }
+  }, []);
+
   const scroll = (e: WheelEvent<Element>) => {
     if (e.deltaY >= 1 && currentSection < 2) {
       setCurrentSection((prevState) => prevState + 1);
