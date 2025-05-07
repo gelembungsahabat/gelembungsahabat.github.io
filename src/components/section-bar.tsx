@@ -1,23 +1,23 @@
 import "./section-bar.css";
 
-const Bar = (props: { section: number; recentSection: number }) => {
-  const { section, recentSection } = props;
+const Bar = (props: { section: number; currentSection: number }) => {
+  const { section, currentSection } = props;
   return (
     <div
       className={
-        section === recentSection ? "section-bar-active" : "section-bar"
+        section === currentSection ? "section-bar-active" : "section-bar"
       }
     ></div>
   );
 };
 
-export const SectionBar = (props: { section: number }) => {
-  const { section } = props;
+export const SectionBar = (props: { currentSection: number }) => {
+  const { currentSection } = props;
   return (
     <div className="section-bar-wrapper">
-      <Bar section={0} recentSection={section} />
-      <Bar section={1} recentSection={section} />
-      <Bar section={2} recentSection={section} />
+      <Bar section={0} currentSection={currentSection} />
+      <Bar section={1} currentSection={currentSection} />
+      <Bar section={2} currentSection={currentSection} />
     </div>
   );
 };

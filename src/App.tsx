@@ -4,19 +4,19 @@ import { IoWarningOutline } from "react-icons/io5";
 import { SectionBar } from "./components/section-bar";
 
 function App() {
-  const [section, setSection] = useState(0);
+  const [currentSection, setCurrentSection] = useState(0);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-    sections[section].scrollIntoView({ behavior: "smooth" });
-  }, [section]);
+    sections[currentSection].scrollIntoView({ behavior: "smooth" });
+  }, [currentSection]);
 
   const scroll = (e: WheelEvent<Element>) => {
-    if (e.deltaY >= 1 && section < 2) {
-      setSection((prevState) => prevState + 1);
+    if (e.deltaY >= 1 && currentSection < 2) {
+      setCurrentSection((prevState) => prevState + 1);
     }
-    if (e.deltaY <= 1 && section >= 1) {
-      setSection((prevState) => prevState - 1);
+    if (e.deltaY <= 1 && currentSection >= 1) {
+      setCurrentSection((prevState) => prevState - 1);
     }
   };
 
@@ -80,7 +80,7 @@ function App() {
           </div>
         </section>
       </div>
-      <SectionBar section={section} />
+      <SectionBar currentSection={currentSection} />
     </>
   );
 }
