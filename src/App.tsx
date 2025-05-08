@@ -9,13 +9,6 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
 
   // ScrollWheel to 'section' functionality
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    setTimeout(() => {
-      sections[currentSection].scrollIntoView({ behavior: "smooth" });
-    }, 100);
-  }, [currentSection]);
-
   const scroll = (e: WheelEvent<Element>) => {
     if (e.deltaY >= 1 && currentSection < 2) {
       setCurrentSection((prevState) => prevState + 1);
@@ -24,6 +17,13 @@ function App() {
       setCurrentSection((prevState) => prevState - 1);
     }
   };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    setTimeout(() => {
+      sections[currentSection].scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }, [currentSection]);
 
   // Prevent (ctrl + scroll) to zoom on browser
   useEffect(() => {
@@ -48,7 +48,10 @@ function App() {
         <AnimeRecommendation />
         <FunThings />
       </div>
-      <SectionBar currentSection={currentSection} />
+      <SectionBar
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
     </>
   );
 }

@@ -10,6 +10,7 @@
   background-color: gray;
   margin: 1rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .section-bar-active {
@@ -18,4 +19,5 @@
   background-color: white;
   margin: 1rem;
   border-radius: 10px;
+  cursor: pointer;
 }
