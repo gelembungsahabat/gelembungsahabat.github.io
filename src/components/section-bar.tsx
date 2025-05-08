@@ -38,6 +38,11 @@ export const SectionBar = (props: {
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       />
+      <Bar
+        section={3}
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
     </div>
   );
 };

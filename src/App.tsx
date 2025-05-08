@@ -4,13 +4,14 @@ import { SectionBar } from "./components/section-bar";
 import { Hero } from "./components/sections/hero";
 import { AnimeRecommendation } from "./components/sections/anime-recommendation";
 import { FunThings } from "./components/sections/fun-things";
+import { Articles } from "./components/sections/articles";
+import { usePreventKeyboardScrolling, usePreventMousewheelZoom } from "./hooks";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
 
-  // ScrollWheel to 'section' functionality
   const scroll = (e: WheelEvent<Element>) => {
-    if (e.deltaY >= 1 && currentSection < 2) {
+    if (e.deltaY >= 1 && currentSection < 3) {
       setCurrentSection((prevState) => prevState + 1);
     }
     if (e.deltaY <= 1 && currentSection >= 1) {
@@ -25,26 +26,14 @@ function App() {
     }, 100);
   }, [currentSection]);
 
-  // Prevent (ctrl + scroll) to zoom on browser
-  useEffect(() => {
-    const rootWrapper = document.getElementById("root");
-    if (rootWrapper) {
-      rootWrapper.addEventListener(
-        "wheel",
-        (event) => {
-          if (event.ctrlKey) {
-            event.preventDefault();
-          }
-        },
-        true
-      );
-    }
-  }, []);
+  usePreventMousewheelZoom();
+  usePreventKeyboardScrolling();
 
   return (
     <>
       <div className="homepage" onWheel={scroll}>
         <Hero />
+        <Articles />
         <AnimeRecommendation />
         <FunThings />
       </div>
