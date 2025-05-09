@@ -3,12 +3,6 @@
   --pd-left: 5rem;
 }
 
-section {
-  height: 65vh;
-  margin-left: var(--pd-left);
-  padding-top: 35vh;
-}
-
 /* homepage div */
 .homepage {
   text-align: left;
@@ -29,7 +23,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 35vh 0 1rem var(--pd-left);
 }
 
 @media (max-width: 800px) {

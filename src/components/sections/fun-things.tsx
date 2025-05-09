@@ -1,8 +1,9 @@
+import "./styles/fun-things.css";
 import { IoWarningOutline } from "react-icons/io5";
 
 export function FunThings() {
   return (
-    <section>
+    <section className="fun-things">
       <div className="flex-container">
         <div>
           <h1>Fun Things Section</h1>

@@ -4,14 +4,14 @@ import { SectionBar } from "./components/section-bar";
 import { Hero } from "./components/sections/hero";
 import { AnimeRecommendation } from "./components/sections/anime-recommendation";
 import { FunThings } from "./components/sections/fun-things";
-import { Articles } from "./components/sections/articles";
+// import { Articles } from "./components/sections/articles";
 import { usePreventKeyboardScrolling, usePreventMousewheelZoom } from "./hooks";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
 
   const scroll = (e: WheelEvent<Element>) => {
-    if (e.deltaY >= 1 && currentSection < 3) {
+    if (e.deltaY >= 1 && currentSection < 2) {
       setCurrentSection((prevState) => prevState + 1);
     }
     if (e.deltaY <= 1 && currentSection >= 1) {
@@ -33,7 +33,7 @@ function App() {
     <>
       <div className="homepage" onWheel={scroll}>
         <Hero />
-        <Articles />
+        {/* <Articles /> */}
         <AnimeRecommendation />
         <FunThings />
       </div>

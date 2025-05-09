@@ -1,17 +1,22 @@
-import { IoWarningOutline } from "react-icons/io5";
+import "./styles/anime-recommendation.css";
+import { animeRecommendationData, type AnimeRecommendation } from "../../data";
 
 export function AnimeRecommendation() {
   return (
-    <section>
-      <div className="flex-container">
-        <div>
-          <h1>Anime Recommendation Section</h1>
-          <h2>Raw Anime Recommendation Section</h2>
-          <div className="warning-container">
-            <IoWarningOutline />
-            <p>This Website is under development</p>
-          </div>
+    <section className="anime-recommendation">
+      <div>
+        <h1>Anime Recommendation</h1>
+      </div>
+      <div className="anime-recommendation-wrapper">
+        {/* <div>
+          <h1>Anime Recommendation</h1>
+        </div> */}
+        <div className="anime-list">
+          {animeRecommendationData.map((coba: AnimeRecommendation) => {
+            return <div className="anime-list-item"> {coba.name}</div>;
+          })}
         </div>
+        <div className="anime-details">coba</div>
       </div>
     </section>
   );

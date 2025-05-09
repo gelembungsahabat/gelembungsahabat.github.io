@@ -1,8 +1,9 @@
+import "./styles/hero.css";
 import { IoWarningOutline } from "react-icons/io5";
 
 export function Hero() {
   return (
-    <section>
+    <section className="hero">
       <div className="flex-container">
         <div>
           <h1>Hi, I'm Muhammad Wildan</h1>
