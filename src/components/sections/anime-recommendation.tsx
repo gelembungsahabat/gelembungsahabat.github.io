@@ -54,8 +54,7 @@ export function AnimeRecommendation() {
         <div
           className="anime-details-wrapper"
           style={{
-            backgroundImage:
-              "url(" + animeRecommendationData[selectedAnimeIndex].imgUrl + ")",
+            backgroundImage: `url(${animeRecommendationData[selectedAnimeIndex].imgUrl})`,
 
             backgroundPosition: "center",
             backgroundSize: "cover",
