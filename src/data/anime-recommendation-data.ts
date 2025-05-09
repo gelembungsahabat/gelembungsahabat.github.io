@@ -1,56 +1,69 @@
 export type AnimeRecommendation = {
   name: string;
   details: string;
+  imgUrl: string;
+  genre: string;
 };
 
 export const animeRecommendationData: AnimeRecommendation[] = [
   {
     name: "Witch Watch",
-    details: `Nico Wakatsuki has finished her six years of witch training and is moving back to town by herself. 
-    As a new witch, she must choose a familiar to accompany her. However, unlike the other witches, she wishes to pick a 
-    non-animal familiar. There's no better companion than Morihito "Moi" Otogi—her childhood friend who happens to be an 
-    ogre. Morihito is vehemently opposed to being her servant, but he reluctantly accepts his fate after learning that a 
-    curse would revert him into a strange cow-tiger hybrid were he to disobey a witch's order.Due to Morihito's father 
-    leaving for a business trip and Nico's mother remaining behind in the Witches' Holy Land, the two teens 
-    find themselves living together under the same roof. While Nico is ecstatic to be living with her crush, 
-    Morihito finds that her magical antics and overall clumsiness create more problems than solutions. With a prophesied 
-    disaster to befall Nico within the year, Morihito must do everything he can to protect her as her bodyguard while 
-    also upholding his duties as her familiar.`,
+    details: `If you've been stressed about your fkin life, just watch this shit bruh, this is a good shit.`,
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Ousama Ranking",
     details: "Details2",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Death Note",
     details: "Details3",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Vivy: Flourite Eye's Song",
     details: "Details4",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Code Geass: Hangyaku no Lelouch",
     details: "Details5",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Makeine: Too Many Losing Heroines!",
     details: "Details6",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "One Punch Man (Season 1 GOATED)",
     details: "Details7",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "One Piece Fan Letter",
     details: "Details8",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "Fullmetal Alchemist: Brotherhood",
     details: "Details9",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
   {
     name: "[Oshi no Ko]",
     details: "Details10",
+    imgUrl: "/src/assets/images/witch-watch.png",
+    genre: "Comedy, Supernatural",
   },
 ];

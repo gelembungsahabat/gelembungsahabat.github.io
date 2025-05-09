@@ -19,7 +19,7 @@ const AnimeRecommendationItem = (props: {
       }
       onClick={() => setSelectedAnimeIndex(index)}
     >
-      {animeName}
+      <h1>{animeName}</h1>
     </div>
   );
 };
@@ -41,6 +41,7 @@ export function AnimeRecommendation() {
             (anime: AnimeRecommendation, index: number) => {
               return (
                 <AnimeRecommendationItem
+                  key={index}
                   index={index}
                   selectedAnimeIndex={selectedAnimeIndex}
                   setSelectedAnimeIndex={setSelectedAnimeIndex}
@@ -50,8 +51,22 @@ export function AnimeRecommendation() {
             }
           )}
         </div>
-        <div className="anime-details">
-          {animeRecommendationData[selectedAnimeIndex].details}
+        <div
+          className="anime-details-wrapper"
+          style={{
+            backgroundImage:
+              "url(" + animeRecommendationData[selectedAnimeIndex].imgUrl + ")",
+
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="anime-details-text">
+            <h1>{animeRecommendationData[selectedAnimeIndex].name}</h1>
+            <h2>{animeRecommendationData[selectedAnimeIndex].genre}</h2>
+            {animeRecommendationData[selectedAnimeIndex].details}
+          </div>
         </div>
       </div>
     </section>
