@@ -1,6 +1,7 @@
 import "./styles/anime-recommendation.css";
 import { animeRecommendationData, type AnimeRecommendation } from "../../data";
 import { useState } from "react";
+import { usePreventScrolling } from "../../hooks/usePreventScrolling";
 
 const AnimeRecommendationItem = (props: {
   index: number;
@@ -25,13 +26,17 @@ const AnimeRecommendationItem = (props: {
 
 export function AnimeRecommendation() {
   const [selectedAnimeIndex, setSelectedAnimeIndex] = useState(0);
+
+  // prevent scrolling on anime-list
+  usePreventScrolling("anime-list");
+
   return (
     <section className="anime-recommendation">
       <div>
         <h1>Anime Recommendation</h1>
       </div>
       <div className="anime-recommendation-wrapper">
-        <div className="anime-list" id="anime-list">
+        <div className="anime-list">
           {animeRecommendationData.map(
             (anime: AnimeRecommendation, index: number) => {
               return (

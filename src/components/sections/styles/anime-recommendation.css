@@ -49,6 +49,9 @@
   background-color: rgba(128, 128, 128, 0.433);
   padding: 1rem;
 }
+.anime-list-item:hover {
+  background-color: rgba(255, 192, 203, 0.266);
+}
 
 .anime-list-item-active {
   background-color: rgba(255, 192, 203, 0.566);
