@@ -25,13 +25,33 @@
   align-items: center;
 }
 
+.anime-list::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Track */
+.anime-list::-webkit-scrollbar-track {
+  background-color: rgba(128, 128, 128, 0.372);
+  border-radius: 10px;
+}
+
+/* Handle */
+.anime-list::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.anime-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.426);
+}
+
 .anime-list-item {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.433);
   padding: 1rem;
 }
 
 .anime-list-item-active {
-  background-color: rgba(255, 192, 203, 0.696);
+  background-color: rgba(255, 192, 203, 0.566);
   padding: 1.5rem;
 }
 

@@ -31,7 +31,7 @@ export function AnimeRecommendation() {
         <h1>Anime Recommendation</h1>
       </div>
       <div className="anime-recommendation-wrapper">
-        <div className="anime-list">
+        <div className="anime-list" id="anime-list">
           {animeRecommendationData.map(
             (anime: AnimeRecommendation, index: number) => {
               return (
