@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div className="homepage" onWheel={scroll}>
-        <Hero />
+        <Hero setCurrentSection={setCurrentSection} />
         {/* <Articles /> */}
         <AnimeRecommendation />
         <FunThings />
