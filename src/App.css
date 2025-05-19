@@ -110,13 +110,13 @@
 }
 
 .anime-recommendation-img {
-  background-image: url("/src/assets/images/rin.png");
+  background-image: url("/images/rin.png");
 }
 
 .fun-things-img {
-  background-image: url("/src/assets/images/cloud-minichocobo.png");
+  background-image: url("/images/cloud-minichocobo.png");
 }
 
 .project-list-img {
-  background-image: url("/src/assets/images/github-repo.png");
+  background-image: url("/images/github-repo.png");
 }
