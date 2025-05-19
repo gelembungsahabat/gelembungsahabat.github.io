@@ -50,20 +50,16 @@ export function AnimeRecommendation() {
             }
           )}
         </div>
-        <div
-          className="anime-details-wrapper"
-          style={{
-            backgroundImage: `url(${
+        <div className="anime-details-wrapper">
+          <img
+            className="anime-details-bg-img"
+            src={`${
               import.meta.env.VITE_BASE_URL +
               animeRecommendationData[selectedAnimeIndex].imgUrl
-            })`,
-
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="anime-details-text">
+            }`}
+            key={animeRecommendationData[selectedAnimeIndex].imgUrl}
+          />
+          <div className="anime-details-text" style={{ zIndex: "100" }}>
             <h1>{animeRecommendationData[selectedAnimeIndex].name}</h1>
             <h2>{animeRecommendationData[selectedAnimeIndex].genre}</h2>
             {animeRecommendationData[selectedAnimeIndex].details}
