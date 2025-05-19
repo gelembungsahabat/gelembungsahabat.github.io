@@ -53,10 +53,7 @@ export function AnimeRecommendation() {
         <div className="anime-details-wrapper">
           <img
             className="anime-details-bg-img"
-            src={`${
-              import.meta.env.VITE_BASE_URL +
-              animeRecommendationData[selectedAnimeIndex].imgUrl
-            }`}
+            src={`${animeRecommendationData[selectedAnimeIndex].imgUrl}`}
             key={animeRecommendationData[selectedAnimeIndex].imgUrl}
           />
           <div className="anime-details-text" style={{ zIndex: "100" }}>
