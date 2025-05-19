@@ -26,7 +26,6 @@ const AnimeRecommendationItem = (props: {
 
 export function AnimeRecommendation() {
   const [selectedAnimeIndex, setSelectedAnimeIndex] = useState(0);
-
   // prevent scrolling on anime-list
   usePreventScrolling("anime-list");
 
@@ -54,7 +53,10 @@ export function AnimeRecommendation() {
         <div
           className="anime-details-wrapper"
           style={{
-            backgroundImage: `url(${animeRecommendationData[selectedAnimeIndex].imgUrl})`,
+            backgroundImage: `url(${
+              import.meta.env.VITE_BASE_URL +
+              animeRecommendationData[selectedAnimeIndex].imgUrl
+            })`,
 
             backgroundPosition: "center",
             backgroundSize: "cover",
