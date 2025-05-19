@@ -2,7 +2,6 @@ import "./styles/anime-recommendation.css";
 import { animeRecommendationData, type AnimeRecommendation } from "../../data";
 import { useState } from "react";
 import { usePreventScrolling } from "../../hooks/usePreventScrolling";
-import { getImgUrl } from "../../helpers/getImgUrl";
 
 const AnimeRecommendationItem = (props: {
   index: number;
@@ -51,15 +50,16 @@ export function AnimeRecommendation() {
             }
           )}
         </div>
-        <div className="anime-details-wrapper">
-          <img
-            className="anime-details-bg-img"
-            src={getImgUrl(
-              `${animeRecommendationData[selectedAnimeIndex].imgUrl}`
-            )}
-            key={animeRecommendationData[selectedAnimeIndex].imgUrl}
-          />
-          <div className="anime-details-text" style={{ zIndex: "100" }}>
+        <div
+          className="anime-details-wrapper"
+          style={{
+            backgroundImage: `url(${animeRecommendationData[selectedAnimeIndex].imgUrl})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="anime-details-text">
             <h1>{animeRecommendationData[selectedAnimeIndex].name}</h1>
             <h2>{animeRecommendationData[selectedAnimeIndex].genre}</h2>
             {animeRecommendationData[selectedAnimeIndex].details}
