@@ -53,10 +53,12 @@ export function AnimeRecommendation() {
         <div
           className="anime-details-wrapper"
           style={{
-            backgroundImage: `url(${animeRecommendationData[selectedAnimeIndex].imgUrl})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            background: `
+            linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),url(${animeRecommendationData[selectedAnimeIndex].imgUrl}) no-repeat center center`,
+            backgroundSize: "cover", // Ensures the image covers the whole area, even if it gets cropped
           }}
         >
           <div className="anime-details-text">
