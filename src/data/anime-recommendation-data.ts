@@ -49,25 +49,25 @@ Kage and Bojji's unlikely friendship lays the budding foundations of the prince'
   {
     name: "One Punch Man (Season 1 GOATED)",
     details: "Details7",
-    imgUrl: "/images/witch-watch.png",
+    imgUrl: "/images/opm.png",
     genre: "Comedy, Supernatural",
   },
   {
     name: "One Piece Fan Letter",
     details: "Details8",
-    imgUrl: "/images/witch-watch.png",
+    imgUrl: "/images/op-fan-letter.jpg",
     genre: "Comedy, Supernatural",
   },
   {
     name: "Fullmetal Alchemist: Brotherhood",
     details: "Details9",
-    imgUrl: "/images/witch-watch.png",
+    imgUrl: "/images/fmab.jpg",
     genre: "Comedy, Supernatural",
   },
   {
     name: "[Oshi no Ko]",
     details: "Details10",
-    imgUrl: "/images/witch-watch.png",
+    imgUrl: "/images/onk.jpg",
     genre: "Comedy, Supernatural",
   },
 ];
