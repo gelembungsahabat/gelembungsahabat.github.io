@@ -27,6 +27,7 @@ export function Hero(props: { setCurrentSection: (section: number) => void }) {
           <a
             className="card has-bg-img anime-recommendation-img"
             onClick={() => setCurrentSection(1)}
+            tabIndex={0}
           >
             <div className="card-title-container">
               <span className="card-title">Anime Recommendation</span>
@@ -35,6 +36,7 @@ export function Hero(props: { setCurrentSection: (section: number) => void }) {
           <a
             className="card has-bg-img fun-things-img"
             onClick={() => setCurrentSection(2)}
+            tabIndex={0}
           >
             <div className="card-title-container">
               <span className="card-title">Fun Things</span>

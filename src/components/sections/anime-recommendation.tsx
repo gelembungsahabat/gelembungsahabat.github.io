@@ -55,8 +55,8 @@ export function AnimeRecommendation() {
           style={{
             background: `
             linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
+              rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.9)
             ),url(${animeRecommendationData[selectedAnimeIndex].imgUrl}) no-repeat center center`,
             backgroundSize: "cover", // Ensures the image covers the whole area, even if it gets cropped
           }}

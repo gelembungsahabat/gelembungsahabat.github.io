@@ -93,4 +93,6 @@
   line-height: 1.5rem;
   color: white;
   margin: 2rem;
+  bottom: 0;
+  position: absolute;
 }
