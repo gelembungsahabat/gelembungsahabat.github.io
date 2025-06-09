@@ -1,3 +1,7 @@
 .fun-things {
   height: 100vh;
 }
+
+.fun-things-container {
+  padding-top: 20vh;
+}

@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 35vh 0 1rem var(--pd-left);
+  padding: 1rem 0 1rem var(--pd-left);
 }
 
 @media (max-width: 800px) {
