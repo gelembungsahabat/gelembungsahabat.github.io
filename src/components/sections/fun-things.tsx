@@ -18,6 +18,7 @@ export function FunThings() {
             src="/images/itachivsasuke.gif"
             alt="itachigif"
             style={{
+              borderRadius: "2rem",
               imageRendering: "pixelated",
               width: "50rem",
               height: "50rem",
