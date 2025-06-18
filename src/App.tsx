@@ -3,7 +3,7 @@ import { type WheelEvent, useState, useEffect } from "react";
 import { SectionBar } from "./components/section-bar";
 import { Hero } from "./components/sections/hero";
 import { AnimeRecommendation } from "./components/sections/anime-recommendation";
-import { FunThings } from "./components/sections/fun-things";
+import { FunThings } from "./components/sections/hiragana-quiz";
 import { usePreventMousewheelZoom } from "./hooks";
 
 function App() {

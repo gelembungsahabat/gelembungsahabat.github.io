@@ -40,7 +40,7 @@ export function Hero(props: { setCurrentSection: (section: number) => void }) {
               tabIndex={0}
             >
               <div className="card-title-container">
-                <span className="card-title">Fun Things</span>
+                <span className="card-title">Hiragana Quiz</span>
               </div>
             </a>
           </div>

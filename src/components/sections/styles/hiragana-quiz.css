@@ -1,0 +1,32 @@
+.hiragana-quiz {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiragana-quiz-container {
+  height: 85vh;
+  width: 90%;
+  background-color: #424549;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
+
+.hiragana-container {
+  background-color: rgb(105, 105, 194);
+  width: 8rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+input {
+  width: 5rem;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0 1rem 0;
+}
