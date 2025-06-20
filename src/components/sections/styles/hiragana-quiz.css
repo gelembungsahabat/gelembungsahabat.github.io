@@ -26,6 +26,10 @@
   border-radius: 1rem;
   margin: 3rem 3rem;
 }
+.hiragana-container:focus {
+  width: 9rem;
+  height: 13rem;
+}
 
 input {
   width: 5rem;
