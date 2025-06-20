@@ -8,7 +8,7 @@ function getRandomObjectEntries(obj: object, n: number) {
   return Object.fromEntries(selected);
 }
 
-const randomSubset = getRandomObjectEntries(hiraganaData, 16);
+const randomSubset = getRandomObjectEntries(hiraganaData, 15);
 
 export function FunThings() {
   return (
