@@ -12,9 +12,9 @@ function getRandomObjectEntries(obj: object, n: number) {
 const randomSubset = getRandomObjectEntries(hiraganaData, 15);
 
 export function FunThings() {
-  const [myStyle, setMyStyle] = useState({});
-  const changeBackground = (id: number) => {
-    setMyStyle((prevState: string) => ({
+  const [myStyle, setMyStyle] = useState<{ [key: number]: boolean }>({});
+  const toggleBackground = (id: number) => {
+    setMyStyle((prevState: { [key: number]: boolean }) => ({
       ...myStyle,
       [id]: !prevState[id],
     }));
@@ -30,18 +30,20 @@ export function FunThings() {
           <div
             className="hiragana-container"
             key={index}
-            style={{ backgroundColor: myStyle[`${index}`] ? "red" : "blue" }}
+            style={{
+              backgroundColor: myStyle[`${index}`] ? "red" : "blue",
+            }}
           >
             <h1 className="hiragana">{key}</h1>
             <input
               type="text"
               onBlur={(e: ChangeEvent<HTMLInputElement>) => {
                 const inputValue = e.target.value;
-                if (inputValue !== answer) {
-                  changeBackground(index);
+                if (inputValue !== answer && myStyle[`${index}`] !== true) {
+                  toggleBackground(index);
                 }
-                if (inputValue === answer && myStyle[`${index}`]) {
-                  changeBackground(index);
+                if (inputValue === answer && myStyle[`${index}`] === true) {
+                  toggleBackground(index);
                 }
               }}
             />
