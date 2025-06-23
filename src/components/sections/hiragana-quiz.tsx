@@ -31,7 +31,9 @@ export function FunThings() {
             className="hiragana-container"
             key={index}
             style={{
-              backgroundColor: myStyle[`${index}`] ? "red" : "blue",
+              backgroundColor: myStyle[`${index}`]
+                ? "red"
+                : "rgb(105, 105, 194)",
             }}
           >
             <h1 className="hiragana">{key}</h1>
