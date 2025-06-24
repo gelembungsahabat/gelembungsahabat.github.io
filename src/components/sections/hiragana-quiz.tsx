@@ -40,7 +40,7 @@ export function FunThings() {
             <input
               type="text"
               onBlur={(e: ChangeEvent<HTMLInputElement>) => {
-                const inputValue = e.target.value;
+                const inputValue = e.target.value.toLowerCase();
                 if (inputValue !== answer && myStyle[`${index}`] !== true) {
                   toggleBackground(index);
                 }
