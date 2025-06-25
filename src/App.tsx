@@ -1,5 +1,5 @@
 import "./App.css";
-import { type WheelEvent, useState, useEffect } from "react";
+import { type WheelEvent, useState, useEffect, useRef } from "react";
 import { SectionBar } from "./components/section-bar";
 import { Hero } from "./components/sections/hero";
 import { AnimeRecommendation } from "./components/sections/anime-recommendation";
@@ -8,8 +8,7 @@ import { usePreventMousewheelZoom } from "./hooks";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
-  const [startScreenY, setStartScreenY] = useState(0);
-  const [endScreenY, setEndScreenY] = useState(0);
+  const startScreenYRef = useRef(0);
 
   const scroll = (e: WheelEvent<Element>) => {
     if (e.deltaY >= 1 && currentSection < 2) {
@@ -21,17 +20,16 @@ function App() {
   };
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setStartScreenY(e.touches[0].screenY);
+    startScreenYRef.current = e.touches[0].screenY;
   };
 
   const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    setEndScreenY(e.changedTouches[0].screenY);
+    const endScreenY = e.changedTouches[0].screenY;
+    const startScreenY = startScreenYRef.current;
     if (startScreenY < endScreenY && currentSection >= 1) {
-      console.log("swipe down");
       setCurrentSection((prevState) => prevState - 1);
     }
     if (startScreenY > endScreenY && currentSection < 2) {
-      console.log("swipe up");
       setCurrentSection((prevState) => prevState + 1);
     }
   };
