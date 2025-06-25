@@ -2,6 +2,37 @@
   height: 100vh;
 }
 
-.hero-page-container {
-  padding-top: 35vh;
+/*-------------------------------------
+  2. Responsive Breakpoints
+--------------------------------------*/
+
+/* ≥ 600px: Tablets */
+@media (min-width: 600px) {
+  /* Tablet styles */
+
+  .hero-page-container {
+    padding-top: 5vh;
+    display: flex;
+  }
+}
+
+/* ≥ 1024px: Small Desktops */
+@media (min-width: 1024px) {
+  /* Desktop styles */
+
+  .hero-page-container {
+    padding-top: 14vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0 1rem var(--pd-left);
+  }
+}
+
+/* ≥ 1440px: Large Screens */
+@media (min-width: 1440px) {
+  /* Widescreen styles */
+
+  .hero-page-container {
+    padding-top: 35vh;
+  }
 }
