@@ -1,25 +1,70 @@
 :root {
   --bg-color: #282b30;
   --pd-left: 5rem;
+  --bold: 600;
 }
 
 /*-------------------------------------
   2. Responsive Breakpoints
 --------------------------------------*/
 
-/* ≥ 600px: Tablets */
-@media (min-width: 600px) {
-  /* Tablet styles */
+/* ≥ 320px: mobile size */
+@media (min-width: 320px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    margin: 0.3rem 0;
+  }
+
+  .card-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.7rem;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
 }
 
-/* ≥ 1024px: Small Desktops */
+/* ≥ 1024px: Laptop */
 @media (min-width: 1024px) {
-  /* Desktop styles */
+  /* Laptop styles */
+  .card {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+    margin: 0.3rem 0;
+  }
+
+  .card-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
 }
 
-/* ≥ 1440px: Large Screens */
+/* ≥ 1440px: PC Screens */
 @media (min-width: 1440px) {
-  /* Widescreen styles */
+  /* PC styles */
+  .card {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 5px;
+    margin: 0.3rem 0;
+  }
+
+  .card-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+  }
 }
 
 /* homepage div */
@@ -27,7 +72,7 @@
   text-align: left;
   vertical-align: middle;
   background-color: var(--bg-color);
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100vh;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
@@ -46,12 +91,6 @@
   padding: 1rem 0 1rem var(--pd-left);
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
 .warning-container {
   display: flex;
   flex-direction: row;
@@ -68,7 +107,6 @@
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
-  margin-right: 5rem;
 }
 
 .anime-card-container {
@@ -79,18 +117,10 @@
   margin-top: 4rem;
 }
 
-@media (max-width: 800px) {
-  .card-container {
-    flex-direction: column;
-  }
-}
-
 .card {
   position: relative;
   overflow: hidden;
   display: flex;
-  width: 20rem;
-  height: 20rem;
   border-color: grey;
   border-radius: 10px;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -115,7 +145,6 @@
 
 .card-title {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 2rem;
   line-height: 1;
   font-weight: 600;
   text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 40px black,

@@ -11,7 +11,7 @@ function getRandomObjectEntries(obj: object, n: number) {
 
 const randomSubset = getRandomObjectEntries(hiraganaData, 15);
 
-export function FunThings() {
+export function HiraganaQuiz() {
   const [myStyle, setMyStyle] = useState<{ [key: number]: boolean }>({});
   const toggleBackground = (id: number) => {
     setMyStyle((prevState: { [key: number]: boolean }) => ({
@@ -36,7 +36,7 @@ export function FunThings() {
                 : "rgb(105, 105, 194)",
             }}
           >
-            <h1 className="hiragana">{key}</h1>
+            <p className="hiragana">{key}</p>
             <input
               type="text"
               onBlur={(e: ChangeEvent<HTMLInputElement>) => {

@@ -1,38 +1,41 @@
 import "./App.css";
-import { type WheelEvent, useState, useEffect } from "react";
+import { type WheelEvent, useState, useEffect, useRef } from "react";
 import { SectionBar } from "./components/section-bar";
-import { Hero } from "./components/sections/hero";
-import { AnimeRecommendation } from "./components/sections/anime-recommendation";
-import { FunThings } from "./components/sections/hiragana-quiz";
+import {
+  AnimeRecommendation,
+  Articles,
+  Hero,
+  HiraganaQuiz,
+} from "./components/sections";
+
 import { usePreventMousewheelZoom } from "./hooks";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState(0);
-  const [startScreenY, setStartScreenY] = useState(0);
-  const [endScreenY, setEndScreenY] = useState(0);
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+  const startScreenYRef = useRef(0);
+  const maxSectionIndex = 3;
 
   const scroll = (e: WheelEvent<Element>) => {
-    if (e.deltaY >= 1 && currentSection < 2) {
-      setCurrentSection((prevState) => prevState + 1);
+    if (e.deltaY >= 1 && currentSectionIndex < maxSectionIndex) {
+      setCurrentSectionIndex((prevState) => prevState + 1);
     }
-    if (e.deltaY <= 1 && currentSection >= 1) {
-      setCurrentSection((prevState) => prevState - 1);
+    if (e.deltaY <= 1 && currentSectionIndex >= 1) {
+      setCurrentSectionIndex((prevState) => prevState - 1);
     }
   };
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setStartScreenY(e.touches[0].screenY);
+    startScreenYRef.current = e.touches[0].screenY;
   };
 
   const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    setEndScreenY(e.changedTouches[0].screenY);
-    if (startScreenY < endScreenY && currentSection >= 1) {
-      console.log("swipe down");
-      setCurrentSection((prevState) => prevState - 1);
+    const endScreenY = e.changedTouches[0].screenY;
+    const startScreenY = startScreenYRef.current;
+    if (startScreenY < endScreenY && currentSectionIndex >= 1) {
+      setCurrentSectionIndex((prevState) => prevState - 1);
     }
-    if (startScreenY > endScreenY && currentSection < 2) {
-      console.log("swipe up");
-      setCurrentSection((prevState) => prevState + 1);
+    if (startScreenY > endScreenY && currentSectionIndex < maxSectionIndex) {
+      setCurrentSectionIndex((prevState) => prevState + 1);
     }
   };
 
@@ -41,25 +44,28 @@ function App() {
 
     // Arrow key scrolling
     const onKeyDown = (e: KeyboardEvent) => {
-      if (["ArrowUp"].includes(e.code) && currentSection >= 1) {
+      if (["ArrowUp"].includes(e.code) && currentSectionIndex >= 1) {
         e.preventDefault();
-        setCurrentSection((prevState) => prevState - 1);
+        setCurrentSectionIndex((prevState) => prevState - 1);
       }
-      if (["ArrowDown"].includes(e.code) && currentSection < 2) {
+      if (
+        ["ArrowDown"].includes(e.code) &&
+        currentSectionIndex < maxSectionIndex
+      ) {
         e.preventDefault();
-        setCurrentSection((prevState) => prevState + 1);
+        setCurrentSectionIndex((prevState) => prevState + 1);
       }
     };
     window.addEventListener("keydown", onKeyDown, false);
 
     // Scroll to section
     setTimeout(() => {
-      sections[currentSection].scrollIntoView({ behavior: "smooth" });
+      sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
     }, 100);
 
     // Prevent KeyDown being triggered 2 times
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [currentSection, setCurrentSection]);
+  }, [currentSectionIndex, setCurrentSectionIndex]);
 
   usePreventMousewheelZoom();
 
@@ -71,13 +77,14 @@ function App() {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <Hero setCurrentSection={setCurrentSection} />
+        <Hero setCurrentSection={setCurrentSectionIndex} />
         <AnimeRecommendation />
-        <FunThings />
+        <HiraganaQuiz />
+        <Articles />
       </div>
       <SectionBar
-        currentSection={currentSection}
-        setCurrentSection={setCurrentSection}
+        currentSection={currentSectionIndex}
+        setCurrentSection={setCurrentSectionIndex}
       />
     </>
   );

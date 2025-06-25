@@ -1,7 +1,11 @@
 import "./styles/anime-recommendation.css";
 import { animeRecommendationData, type AnimeRecommendation } from "../../data";
 import { useState } from "react";
-import { usePreventScrolling } from "../../hooks/usePreventScrolling";
+import { usePreventScrolling } from "../../hooks";
+import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 
 const AnimeRecommendationItem = (props: {
   index: number;
@@ -26,8 +30,21 @@ const AnimeRecommendationItem = (props: {
 
 export function AnimeRecommendation() {
   const [selectedAnimeIndex, setSelectedAnimeIndex] = useState(0);
+
   // prevent scrolling on anime-list
   usePreventScrolling("anime-list");
+
+  // previous and next button functionality on mobile and tablet
+  const CarouselOnClick = (state: "previous" | "next") => {
+    if (selectedAnimeIndex > 0 && state === "previous") {
+      return setSelectedAnimeIndex(selectedAnimeIndex - 1);
+    }
+    if (selectedAnimeIndex < 8 && state === "next") {
+      return setSelectedAnimeIndex(selectedAnimeIndex + 1);
+    }
+  };
+
+  const imgUrl = animeRecommendationData[selectedAnimeIndex].imgUrl;
 
   return (
     <section className="anime-recommendation">
@@ -53,18 +70,33 @@ export function AnimeRecommendation() {
         <div
           className="anime-details-wrapper"
           style={{
-            background: `
-            linear-gradient(
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            backgroundImage: `linear-gradient(
               rgba(0, 0, 0, 0.1),
               rgba(0, 0, 0, 0.9)
-            ),url(${animeRecommendationData[selectedAnimeIndex].imgUrl}) no-repeat center center`,
-            backgroundSize: "cover", // Ensures the image covers the whole area, even if it gets cropped
+            ), url(${imgUrl})`,
           }}
         >
           <div className="anime-details-text">
             <h1>{animeRecommendationData[selectedAnimeIndex].name}</h1>
             <h2>{animeRecommendationData[selectedAnimeIndex].genre}</h2>
             {animeRecommendationData[selectedAnimeIndex].details}
+          </div>
+          <div className="arrow-button-wrapper">
+            <button
+              className="arrow-button"
+              onClick={() => CarouselOnClick("previous")}
+            >
+              <MdOutlineArrowBackIos />
+            </button>
+            <button
+              className="arrow-button"
+              onClick={() => CarouselOnClick("next")}
+            >
+              <MdOutlineArrowForwardIos />
+            </button>
           </div>
         </div>
       </div>

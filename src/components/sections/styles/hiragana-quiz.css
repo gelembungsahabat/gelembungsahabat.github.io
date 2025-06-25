@@ -8,23 +8,22 @@
 
 .hiragana-quiz-container {
   height: 85vh;
-  width: 47%;
   background-color: #424549;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   border-radius: 20px;
   overflow: auto;
   overflow-x: hidden;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
 }
 
 .hiragana-container {
-  width: 8rem;
-  height: 12rem;
+  position: relative;
   text-align: center;
   border-radius: 1rem;
-  margin: 3rem 3rem;
 }
 
 .hiragana-container:focus {
@@ -33,15 +32,16 @@
 }
 
 input {
-  width: 5rem;
-  height: 2rem;
   text-align: center;
   border-radius: 5px;
-  margin: 0 0 1rem 0;
   background-color: white;
   color: black;
   font-size: large;
   border: 1px;
+  position: absolute;
+  left: 50%; /* Position X halfway in */
+  bottom: 0;
+  transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
 }
 
 input[type="text"]:focus {
@@ -50,5 +50,39 @@ input[type="text"]:focus {
 }
 
 .hiragana {
-  font-size: 4rem;
+  margin: 1rem 0;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-weight: var(--bold);
+}
+
+@media (min-width: 320px) {
+  .hiragana-container {
+    width: 4rem;
+    height: 7rem;
+    margin: 0.5rem 0.5rem;
+  }
+  input {
+    width: 3rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hiragana-container {
+    width: 6rem;
+    height: 8rem;
+  }
+}
+
+/* ≥ 1440px: Large Screens */
+@media (min-width: 1440px) {
+  .hiragana-container {
+    width: 8rem;
+    height: 10rem;
+    margin: 3rem 3rem;
+  }
+  input {
+    width: 5rem;
+    height: 2rem;
+  }
 }

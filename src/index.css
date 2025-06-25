@@ -18,8 +18,8 @@ a {
 h1 {
   margin: 1rem 0;
   /* font-weight better from 600-700 for text that want to emphasize */
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: var(--bold);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
   /* font-weight better from 400-500 for normal text */
   font-weight: 400;
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 body {
