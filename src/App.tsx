@@ -8,6 +8,8 @@ import { usePreventMousewheelZoom } from "./hooks";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
+  const [startScreenY, setStartScreenY] = useState(0);
+  const [endScreenY, setEndScreenY] = useState(0);
 
   const scroll = (e: WheelEvent<Element>) => {
     if (e.deltaY >= 1 && currentSection < 2) {
@@ -15,6 +17,22 @@ function App() {
     }
     if (e.deltaY <= 1 && currentSection >= 1) {
       setCurrentSection((prevState) => prevState - 1);
+    }
+  };
+
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setStartScreenY(e.touches[0].screenY);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    setEndScreenY(e.changedTouches[0].screenY);
+    if (startScreenY < endScreenY && currentSection >= 1) {
+      console.log("swipe down");
+      setCurrentSection((prevState) => prevState - 1);
+    }
+    if (startScreenY > endScreenY && currentSection < 2) {
+      console.log("swipe up");
+      setCurrentSection((prevState) => prevState + 1);
     }
   };
 
@@ -47,7 +65,12 @@ function App() {
 
   return (
     <>
-      <div className="homepage" onWheel={scroll}>
+      <div
+        className="homepage"
+        onWheel={scroll}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <Hero setCurrentSection={setCurrentSection} />
         <AnimeRecommendation />
         <FunThings />

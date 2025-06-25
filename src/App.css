@@ -3,6 +3,25 @@
   --pd-left: 5rem;
 }
 
+/*-------------------------------------
+  2. Responsive Breakpoints
+--------------------------------------*/
+
+/* ≥ 600px: Tablets */
+@media (min-width: 600px) {
+  /* Tablet styles */
+}
+
+/* ≥ 1024px: Small Desktops */
+@media (min-width: 1024px) {
+  /* Desktop styles */
+}
+
+/* ≥ 1440px: Large Screens */
+@media (min-width: 1440px) {
+  /* Widescreen styles */
+}
+
 /* homepage div */
 .homepage {
   text-align: left;
@@ -12,6 +31,7 @@
   height: 100vh;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  touch-action: none;
 }
 
 .icon {
