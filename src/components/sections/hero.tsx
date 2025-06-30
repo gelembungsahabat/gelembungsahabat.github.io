@@ -1,5 +1,4 @@
 import "./styles/hero.css";
-import { IoWarningOutline } from "react-icons/io5";
 
 export function Hero(props: { setCurrentSection: (section: number) => void }) {
   const { setCurrentSection } = props;
@@ -9,10 +8,6 @@ export function Hero(props: { setCurrentSection: (section: number) => void }) {
         <div>
           <h1>Hi, I'm Muhammad Wildan</h1>
           <h2>Welcome to my personal blog!</h2>
-          <div className="warning-container">
-            <IoWarningOutline />
-            <p>This Website is under development</p>
-          </div>
         </div>
         <div className="card-container">
           <a

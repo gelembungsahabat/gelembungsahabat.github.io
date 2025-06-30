@@ -46,6 +46,7 @@
   }
 
   .card-container {
+    margin-right: 5rem;
     flex-direction: column;
   }
 }
@@ -60,7 +61,7 @@
   text-align: left;
   vertical-align: middle;
   background-color: var(--bg-color);
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100vh;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
@@ -95,7 +96,6 @@
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
-  margin-right: 5rem;
 }
 
 .anime-card-container {
