@@ -1,28 +1,26 @@
 .hero {
   height: 100vh;
-  padding: 7rem 2rem 0 2rem;
+  width: 100%;
+  position: relative;
 }
 
-/*-------------------------------------
-  2. Responsive Breakpoints
---------------------------------------*/
+.hero-page-container {
+  position: absolute;
+  width: 90%;
+}
 
-/* ≥ 600px: Tablets */
-@media (min-width: 600px) {
-  /* Tablet styles */
-
+/* ≥ 375px: mobile size */
+@media (min-width: 375px) {
   .hero-page-container {
-    padding-top: 5vh;
-    display: flex;
+    margin: 17vh 2rem 0 2rem;
   }
 }
 
 /* ≥ 1024px: Small Desktops */
 @media (min-width: 1024px) {
   /* Desktop styles */
-
   .hero-page-container {
-    padding-top: 14vh;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 0 1rem var(--pd-left);
@@ -32,8 +30,8 @@
 /* ≥ 1440px: Large Screens */
 @media (min-width: 1440px) {
   /* Widescreen styles */
-
   .hero-page-container {
-    padding-top: 35vh;
+    margin-top: 35vh;
+    justify-content: space-between;
   }
 }
