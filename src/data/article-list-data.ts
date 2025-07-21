@@ -17,17 +17,17 @@ export const articleListData: ArticleListData[] = [
   },
   {
     title: "Static site with ReactJS",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
+    subtitle: "We will learn how to make static site with ReactJS",
     imgUrl: "/images/opm.jpg",
   },
   {
     title: "Basic Image Processing",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
+    subtitle: "Basic image processing with image thresholding",
     imgUrl: "/images/opm.jpg",
   },
   {
     title: "HTMX 101",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
+    subtitle: "We can learn how tf this thing works",
     imgUrl: "/images/opm.jpg",
   },
 ];
