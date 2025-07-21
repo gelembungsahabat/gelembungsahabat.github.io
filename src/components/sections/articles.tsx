@@ -1,18 +1,18 @@
 import "./styles/articles.css";
-import { IoWarningOutline } from "react-icons/io5";
+import { articleListData } from "../../data";
 
 export function Articles() {
   return (
     <section className="articles">
       <h1>Articles Section</h1>
       <div className="articles-container">
-        <div>
-          <h2>Raw Articles Section</h2>
-          <div className="warning-container">
-            <IoWarningOutline />
-            <p>This Website is under development</p>
-          </div>
-        </div>
+        {articleListData.map((val, idx) => {
+          return (
+            <div className="article-card" key={idx}>
+              <h2>{val.title}</h2>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

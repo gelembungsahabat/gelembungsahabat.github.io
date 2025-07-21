@@ -15,9 +15,15 @@
   overflow: auto;
   overflow-x: hidden;
   gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+  width: 50%;
+}
+
+.article-card {
+  height: 10rem;
+  margin: 2rem;
+  background-color: gray;
+  border-radius: 1rem;
+  width: 100%;
 }
 
 /* ≥ 320px: mobile size */
@@ -42,6 +48,5 @@
   /* Widescreen styles */
   .articles-container {
     justify-content: space-between;
-    padding: 1rem 0 1rem var(--pd-left);
   }
 }
