@@ -16,37 +16,17 @@ export const articleListData: ArticleListData[] = [
     imgUrl: "/images/opm.jpg",
   },
   {
-    title: "install WSL for Windows",
+    title: "Static site with ReactJS",
     subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
     imgUrl: "/images/opm.jpg",
   },
   {
-    title: "install WSL for Windows",
+    title: "Basic Image Processing",
     subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
     imgUrl: "/images/opm.jpg",
   },
   {
-    title: "install WSL for Windows",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
-    imgUrl: "/images/opm.jpg",
-  },
-  {
-    title: "install WSL for Windows",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
-    imgUrl: "/images/opm.jpg",
-  },
-  {
-    title: "install WSL for Windows",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
-    imgUrl: "/images/opm.jpg",
-  },
-  {
-    title: "install WSL for Windows",
-    subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
-    imgUrl: "/images/opm.jpg",
-  },
-  {
-    title: "install WSL for Windows",
+    title: "HTMX 101",
     subtitle: "Tutorial about install WSL (Windows Subsystem Linux)",
     imgUrl: "/images/opm.jpg",
   },
