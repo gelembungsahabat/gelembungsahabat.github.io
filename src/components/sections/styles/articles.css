@@ -15,7 +15,6 @@
   overflow: auto;
   overflow-x: hidden;
   gap: 1rem;
-  width: 50%;
 }
 
 .article-card {
@@ -26,10 +25,23 @@
   width: 100%;
 }
 
+.content-wrapper {
+  margin: 2rem;
+}
+
+.title {
+  font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+}
+
+.subtitle {
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+
 /* ≥ 320px: mobile size */
 @media (min-width: 320px) {
   .articles-container {
     margin: 0 2rem 0 2rem;
+    width: 90%;
   }
 }
 
@@ -40,6 +52,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 70%;
   }
 }
 
@@ -48,5 +61,6 @@
   /* Widescreen styles */
   .articles-container {
     justify-content: space-between;
+    width: 50%;
   }
 }

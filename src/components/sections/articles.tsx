@@ -4,12 +4,15 @@ import { articleListData } from "../../data";
 export function Articles() {
   return (
     <section className="articles">
-      <h1>Articles Section</h1>
+      <h1>Tech Articles</h1>
       <div className="articles-container">
         {articleListData.map((val, idx) => {
           return (
             <div className="article-card" key={idx}>
-              <h2>{val.title}</h2>
+              <div className="content-wrapper">
+                <h1 className="title">{val.title}</h1>
+                <h2 className="subtitle">{val.subtitle}</h2>
+              </div>
             </div>
           );
         })}
