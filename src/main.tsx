@@ -3,11 +3,18 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { IconContext } from "react-icons";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { InstallWSL } from "./components/pages/install-wsl.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <IconContext.Provider value={{ size: "1.4rem", className: "icon" }}>
-      <App />
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <Routes>
+          <Route index element={<App />} />
+          <Route path="/install-wsl" element={<InstallWSL />} />
+        </Routes>
+      </BrowserRouter>
     </IconContext.Provider>
   </StrictMode>
 );

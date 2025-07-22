@@ -1,5 +1,6 @@
 import "./styles/articles.css";
 import { articleListData } from "../../data";
+import { Link } from "react-router-dom";
 
 export function Articles() {
   return (
@@ -9,10 +10,12 @@ export function Articles() {
         {articleListData.map((val, idx) => {
           return (
             <div className="article-card" key={idx}>
-              <div className="content-wrapper">
-                <h1 className="title">{val.title}</h1>
-                <h2 className="subtitle">{val.subtitle}</h2>
-              </div>
+              <Link to="/install-wsl">
+                <div className="content-wrapper">
+                  <h1 className="title">{val.title}</h1>
+                  <h2 className="subtitle">{val.subtitle}</h2>
+                </div>
+              </Link>
             </div>
           );
         })}
