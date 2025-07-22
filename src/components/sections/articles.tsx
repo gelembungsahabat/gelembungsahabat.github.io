@@ -9,14 +9,17 @@ export function Articles() {
       <div className="articles-container">
         {articleListData.map((val, idx) => {
           return (
-            <div className="article-card" key={idx}>
-              <Link to="/install-wsl">
-                <div className="content-wrapper">
-                  <h1 className="title">{val.title}</h1>
-                  <h2 className="subtitle">{val.subtitle}</h2>
-                </div>
-              </Link>
-            </div>
+            <Link
+              to="/install-wsl"
+              target="_blank"
+              className="article-card"
+              key={idx}
+            >
+              <div className="content-wrapper">
+                <h1 className="title">{val.title}</h1>
+                <h2 className="subtitle">{val.subtitle}</h2>
+              </div>
+            </Link>
           );
         })}
       </div>
