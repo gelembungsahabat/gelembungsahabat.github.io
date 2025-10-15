@@ -19,6 +19,7 @@ export function About() {
         playing tennis, hanging out with my wife and two cats, or running around
         Hyrule searching for Korok seeds K o r o k s e e d s .
       </p>
+      <hr />
     </section>
   );
 }

@@ -1,13 +1,16 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import "./styles/hero.css";
 
 export function Hero() {
   return (
-    <section>
-      <h1>Hi, I'm Muhammad Wildan</h1>
-      <h2>
-        Software Engineer specializing in Front-End and Robotics — make
-        complicated things simple.
-      </h2>
+    <section className="hero-wrapper">
+      <div className="header">
+        <h1>Hi, I'm Muhammad Wildan</h1>
+        <h2>
+          Software Engineer specializing in Front-End and Robotics — make
+          complicated things simple.
+        </h2>
+      </div>
       <div className="icons">
         <a
           href="https://github.com/gelembungsahabat"
