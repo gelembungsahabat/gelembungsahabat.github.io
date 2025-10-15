@@ -1,0 +1,62 @@
+.articles {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-container {
+  max-height: 70vh;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+.article-card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  color: white;
+}
+
+.article-card:hover {
+  background: rgba(66, 69, 73, 0.2);
+  backdrop-filter: blur(16px) saturate(180%);
+  transform: translateX(4px);
+}
+
+.content-wrapper {
+  margin: 1rem;
+}
+
+.title {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
+.subtitle {
+  font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(66, 69, 73);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.7);
+}

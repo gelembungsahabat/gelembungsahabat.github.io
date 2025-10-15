@@ -1,11 +1,68 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import App from "../components/App.tsx";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Wildan's Personal Blog</title>
+    <meta
+      name="description"
+      content="Wildan's personal blog sharing insights, projects, and thoughts about technology, software development, and life."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gelembungsahabat.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wildan's Personal Blog" />
+    <meta
+      property="og:description"
+      content="Wildan's personal blog about technology, software development, and creative projects."
+    />
+    <meta property="og:url" content="https://gelembungsahabat.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://gelembungsahabat.github.io/images/preview.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wildan's Personal Blog" />
+    <meta
+      name="twitter:description"
+      content="Wildan's personal blog about technology, software development, and creative projects."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gelembungsahabat.github.io/images/preview.png"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <App client:load />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    color: rgba(255, 255, 255, 0.87);
+    padding: 0;
+    margin: 0;
+  }
+</style>
