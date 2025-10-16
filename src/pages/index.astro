@@ -64,5 +64,20 @@ import App from "../components/App.tsx";
     color: rgba(255, 255, 255, 0.87);
     padding: 0;
     margin: 0;
+    background: radial-gradient(circle at top left, #0a0f1f 20%, #0f172a 80%),
+      linear-gradient(270deg, #0ff0b3, #036ed9, #7b2ff7, #ff0080);
+    background-size: 400% 400%;
+    animation: darkAurora 10s ease infinite;
+  }
+  @keyframes darkAurora {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 </style>
