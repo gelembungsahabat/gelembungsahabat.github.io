@@ -38,7 +38,7 @@ export function About() {
           </p>
         </div>
 
-        <p className="hero-short">
+        <p className="about-short">
           I build interactive, high-performance web apps that harmonize design
           and engineering.
         </p>

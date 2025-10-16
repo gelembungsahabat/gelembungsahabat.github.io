@@ -1,17 +1,21 @@
 .container {
   margin: 0 auto;
 }
-.about-heading {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
+
 .about-lead {
-  font-size: 1.125rem;
+  font-size: clamp(0.75rem, 2.5vw, 1.2rem);
   margin-bottom: 1rem;
   color: #e6e6e6;
 }
 .about-content p {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
   margin: 0.75rem 0;
   line-height: 1.6;
   color: #bbbbbb;
+}
+
+.about-short {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  margin: 0.75rem 0;
+  color: #e6e6e6;
 }
