@@ -1,13 +1,5 @@
 import "./App.css";
-import React, {
-  type WheelEvent,
-  useState,
-  useEffect,
-  useRef,
-  useMemo,
-  useCallback,
-} from "react";
-import { Articles, Hero, About } from "./sections";
+import { Articles, Hero, About, Experience } from "./sections";
 
 function App() {
   return (
@@ -17,6 +9,7 @@ function App() {
       </div>
       <div className="sections">
         <About />
+        <Experience />
         <Articles />
       </div>
     </div>
