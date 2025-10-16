@@ -33,6 +33,7 @@ export function Hero() {
             <FaInstagram size={"1.5rem"} />
           </a>
         </div>
+        <img src="/images/evernight.gif" alt="evernight-gif" />
       </div>
     </section>
   );
