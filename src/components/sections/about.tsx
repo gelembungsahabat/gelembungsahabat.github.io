@@ -1,25 +1,48 @@
+import "./styles/about.css";
+
 export function About() {
   return (
     <section>
-      <p>
-        I’m a developer passionate about crafting accessible, pixel-perfect user
-        interfaces that blend thoughtful design with robust engineering. My
-        favorite work lies at the intersection of design and development,
-        creating experiences that not only look great but are meticulously built
-        for performance and usability. Currently, I'm a Senior Front-End
-        Engineer at Klaviyo, specializing in accessibility. I contribute to the
-        creation and maintenance of UI components that power Klaviyo’s frontend,
-        ensuring our platform meets web accessibility standards and best
-        practices to deliver an inclusive user experience. In the past, I've had
-        the opportunity to develop software across a variety of settings — from
-        advertising agencies and large corporations to start-ups and small
-        digital product studios. Additionally, I also released a comprehensive
-        video course a few years ago, guiding learners through building a web
-        app with the Spotify API. In my spare time, I’m usually climbing,
-        playing tennis, hanging out with my wife and two cats, or running around
-        Hyrule searching for Korok seeds K o r o k s e e d s .
-      </p>
-      <hr />
+      <div className="container">
+        <p className="about-lead">
+          I’m a <strong>Software Engineer</strong> who loves turning ideas into
+          interactive, scalable, and meaningful digital experiences.
+        </p>
+
+        <div className="about-content">
+          <p>
+            My journey began in <strong>Electrical Engineering</strong>, where I
+            discovered how logic and creativity could blend through{" "}
+            <strong>robotics</strong>. That curiosity soon grew into a passion
+            for software, especially the front-end — where design meets
+            functionality and every detail shapes how people feel when using a
+            product.
+          </p>
+
+          <p>
+            Since then, I’ve built and maintained applications with technologies
+            like <code>ReactJS</code>, <code>TypeScript</code>,{" "}
+            <code>HTMX</code>, and <code>Go</code>. At <em>Zero One Group</em>,
+            I worked on internal dashboards and backend systems that improved
+            performance, streamlined workflows, and supported real users every
+            day.
+          </p>
+
+          <p>
+            I believe great engineering is about{" "}
+            <strong>clarity, collaboration, and care</strong> — writing code
+            that not only works, but communicates intention and creates impact.
+            When I’m not coding, you’ll probably find me exploring new tools,
+            learning robotics concepts, or rethinking how technology can make
+            life simpler.
+          </p>
+        </div>
+
+        <p className="hero-short">
+          I build interactive, high-performance web apps that harmonize design
+          and engineering.
+        </p>
+      </div>
     </section>
   );
 }
