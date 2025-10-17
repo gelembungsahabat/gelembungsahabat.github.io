@@ -1,5 +1,5 @@
 .articles-container {
-  max-height: 70vh;
+  margin-top: 3rem;
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
@@ -23,9 +23,9 @@
 }
 
 .title {
-  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 
 .subtitle {
-  font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
