@@ -6,7 +6,7 @@ export function Articles() {
   return (
     <section>
       <div className="articles-container">
-        <h1>Articles</h1>
+        <h1>Articles* [still on progress]</h1>
         {articleListData
           .map((val, idx) => {
             return (
