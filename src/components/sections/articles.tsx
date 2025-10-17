@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export function Articles() {
   return (
-    <section className="articles">
+    <section>
       <div className="articles-container">
         <h1>Articles</h1>
         {articleListData
