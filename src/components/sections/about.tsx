@@ -22,25 +22,23 @@ export function About() {
           <p>
             Since then, I’ve built and maintained applications with technologies
             like <code>ReactJS</code>, <code>TypeScript</code>,{" "}
-            <code>HTMX</code>, and <code>Go</code>. At <em>Zero One Group</em>,
-            I worked on internal dashboards and backend systems that improved
-            performance, streamlined workflows, and supported real users every
-            day.
+            <code>HTMX</code>, and <code>Go</code>. I worked on internal
+            dashboards and backend systems that improved performance, and
+            streamlined workflows.
           </p>
 
           <p>
             I believe great engineering is about{" "}
             <strong>clarity, collaboration, and care</strong> — writing code
             that not only works, but communicates intention and creates impact.
-            When I’m not coding, you’ll probably find me exploring new tools,
-            learning robotics concepts, or rethinking how technology can make
-            life simpler.
+            When I’m not coding, you’ll probably find me exploring new tools, or
+            rethinking how technology can make life simpler.
           </p>
         </div>
 
         <p className="about-short">
-          I build interactive, high-performance web apps that harmonize design
-          and engineering.
+          I build high-performance web apps that harmonize design and
+          engineering.
         </p>
       </div>
     </section>
