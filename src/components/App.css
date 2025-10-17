@@ -55,6 +55,7 @@
   }
 
   .homepage {
+    margin: 2rem;
     display: grid;
     grid-template-columns: 30% 50%;
     justify-content: space-between;
