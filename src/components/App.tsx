@@ -4,14 +4,14 @@ import { Articles, Hero, About, Experience } from "./sections";
 function App() {
   return (
     <div className="homepage">
-      <div className="hero">
+      <header className="hero">
         <Hero />
-      </div>
-      <div className="sections">
+      </header>
+      <main className="sections">
         <About />
         <Experience />
         <Articles />
-      </div>
+      </main>
     </div>
   );
 }
