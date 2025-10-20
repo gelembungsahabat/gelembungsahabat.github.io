@@ -5,7 +5,9 @@ export function Hero() {
   return (
     <section className="hero-wrapper">
       <div className="header">
-        <h1>Hi, I'm Muhammad Wildan</h1>
+        <div className="greeting">
+          <h1>Hi, I'm Muhammad Wildan</h1>
+        </div>
         <h2>
           Software Engineer specializing in Front-End and Robotics — make
           complicated things simple.

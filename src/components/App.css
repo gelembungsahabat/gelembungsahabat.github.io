@@ -32,19 +32,6 @@
   .card-container {
     flex-direction: row;
   }
-
-  .homepage {
-    margin: 0 2rem;
-  }
-
-  .hero {
-    margin-top: 2rem;
-    text-align: left;
-  }
-
-  .sections {
-    margin-top: 2rem;
-  }
 }
 
 /* ≥ 1024px: Laptop */
@@ -79,12 +66,12 @@
     position: fixed;
     width: 30%;
     top: 0;
-    margin: 5rem 4rem;
+    margin: 3rem;
   }
 
   .sections {
-    margin-top: 5rem;
-    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-right: 3rem;
     grid-column-start: 2;
     grid-column-end: 3;
     justify-content: flex-end;
@@ -106,6 +93,10 @@
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.5rem;
   }
+}
+
+.homepage {
+  margin: 0 4rem;
 }
 
 a {
