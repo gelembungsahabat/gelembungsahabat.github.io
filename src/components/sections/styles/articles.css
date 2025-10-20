@@ -1,5 +1,5 @@
 .articles-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
@@ -28,4 +28,10 @@
 
 .subtitle {
   font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.more-articles-button {
+  background-color: transparent;
+  display: block;
+  margin: auto;
 }

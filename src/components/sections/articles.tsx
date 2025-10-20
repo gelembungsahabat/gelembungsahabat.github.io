@@ -19,11 +19,7 @@ export function Articles() {
             );
           })
           .slice(0, 5)}
-        <button
-          aria-label="Next article"
-          className="transparent-button"
-          style={{ display: "block", margin: "auto" }}
-        >
+        <button aria-label="Next article" className="more-articles-button">
           More Articles Here <FaArrowRight size={"0.7rem"} />
         </button>
       </div>

@@ -3,9 +3,8 @@
   --bold: 600;
   font-family: "Nunito", sans-serif;
   line-height: 1.5;
-
   color-scheme: light dark;
-
+  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,6 +32,19 @@
   .card-container {
     flex-direction: row;
   }
+
+  .homepage {
+    margin: 0 2rem;
+  }
+
+  .hero {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .sections {
+    margin-top: 2rem;
+  }
 }
 
 /* ≥ 1024px: Laptop */
@@ -58,6 +70,7 @@
     display: grid;
     grid-template-columns: 30% 50%;
     justify-content: space-between;
+    margin: 0 4rem;
   }
 
   .hero {
@@ -70,11 +83,12 @@
   }
 
   .sections {
-    margin-top: 1rem;
+    margin-top: 5rem;
     margin-right: 4rem;
     grid-column-start: 2;
     grid-column-end: 3;
     justify-content: flex-end;
+    text-align: left;
   }
 }
 
@@ -92,19 +106,6 @@
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.5rem;
   }
-}
-
-/* homepage div */
-.homepage {
-  margin: 4rem;
-}
-
-.hero {
-  text-align: left;
-}
-
-.sections {
-  text-align: left;
 }
 
 a {
@@ -139,10 +140,6 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-
-.transparent-button {
-  background-color: transparent;
 }
 
 button:hover:not([disabled]) {
