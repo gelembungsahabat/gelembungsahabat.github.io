@@ -18,18 +18,18 @@ export const articleListData: ArticleListData[] = [
     imgUrl: "/images/opm.jpg",
     href: "/install-wsl",
   },
-  {
-    title: "Setup SSH",
-    subtitle: "Tutorial about Setup SSH for Git remote",
-    imgUrl: "/images/opm.jpg",
-    href: "/ssh-setup",
-  },
-  {
-    title: "Setup Git",
-    subtitle: "Tutorial about Setup Git for development",
-    imgUrl: "/images/opm.jpg",
-    href: "/git-setup",
-  },
+  // {
+  //   title: "Setup SSH",
+  //   subtitle: "Tutorial about Setup SSH for Git remote",
+  //   imgUrl: "/images/opm.jpg",
+  //   href: "/ssh-setup",
+  // },
+  // {
+  //   title: "Setup Git",
+  //   subtitle: "Tutorial about Setup Git for development",
+  //   imgUrl: "/images/opm.jpg",
+  //   href: "/git-setup",
+  // },
   {
     title: "Anime Drawing",
     subtitle: "Anime drawing tips",

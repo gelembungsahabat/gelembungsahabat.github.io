@@ -14,7 +14,6 @@
   list-style: none;
   padding: 0;
   margin: 2rem 0;
-  color: #e5e5e5;
 }
 
 .experience-list li {
@@ -25,6 +24,11 @@
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.coba li {
+  display: flex;
+  width: 40rem;
 }
 
 .experience-list li:hover {
@@ -46,12 +50,10 @@
 .role {
   font-weight: 500;
   font-size: 1rem;
-  color: #fff;
   line-height: 1.4;
 }
 
 .company {
-  color: rgba(255, 255, 255, 0.6); /* highlight color (teal accent) */
   font-weight: 600;
 }
 
@@ -65,7 +67,6 @@
     order: 2;
     margin-top: 0.2rem;
     font-size: 0.85rem;
-    color: #aaa;
   }
 
   .role {

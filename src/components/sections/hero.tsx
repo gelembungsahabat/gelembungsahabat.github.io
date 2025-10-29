@@ -9,8 +9,8 @@ export function Hero() {
           <h1>Hi, I'm Muhammad Wildan</h1>
         </div>
         <h2>
-          Software Engineer specializing in Front-End and Robotics — make
-          complicated things simple.
+          Software Engineer specializing in Front-End — make complicated things
+          simple.
         </h2>
         <div className="icons">
           <a
