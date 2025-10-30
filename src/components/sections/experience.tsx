@@ -2,9 +2,9 @@ import "./styles/experience.css";
 
 export function Experience() {
   return (
-    <section className="experience">
+    <section className="experience" tabIndex={0}>
       <div className="experience__container">
-        <h1>Experience</h1>
+        <h1>Experiences</h1>
         <ul className="experience-list">
           <li>
             <span className="date">Apr 2021 – Mar 2025</span>

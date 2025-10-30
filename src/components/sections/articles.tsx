@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 export function Articles() {
   return (
     <section>
-      <div className="articles-container">
+      <div className="articles-container" tabIndex={0}>
         <h1>Articles* [still on progress]</h1>
         {articleListData
           .map((val, idx) => {
