@@ -1,5 +1,5 @@
 .container {
-  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .about-lead {
@@ -10,9 +10,4 @@
   font-size: clamp(0.7rem, 2.5vw, 1rem);
   margin: 0.75rem 0;
   line-height: 1.6;
-}
-
-.about-short {
-  font-size: clamp(0.7rem, 2.5vw, 1rem);
-  margin: 0.75rem 0;
 }

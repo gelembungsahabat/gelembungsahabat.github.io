@@ -35,6 +35,11 @@ export function Hero() {
             <FaInstagram style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
           </a>
         </div>
+        {/* <ul>
+          <li>about</li>
+          <li>experience</li>
+          <li>articles</li>
+        </ul> */}
       </div>
     </section>
   );

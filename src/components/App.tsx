@@ -9,7 +9,9 @@ function App() {
       </header>
       <main className="sections">
         <About />
+        <hr style={{ opacity: "35%" }} />
         <Experience />
+        <hr style={{ opacity: "35%" }} />
         <Articles />
       </main>
     </div>

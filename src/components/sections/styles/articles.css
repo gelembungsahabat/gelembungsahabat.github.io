@@ -1,5 +1,5 @@
 .articles-container {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
@@ -32,6 +32,4 @@
 
 .more-articles-button {
   background-color: transparent;
-  display: block;
-  margin: auto;
 }
