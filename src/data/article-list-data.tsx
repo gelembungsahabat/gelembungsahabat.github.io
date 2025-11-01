@@ -7,6 +7,12 @@ export type ArticleListData = {
 
 export const articleListData: ArticleListData[] = [
   {
+    title: "<div> Best Practice for Accessibility",
+    subtitle: "Divs Aren’t Evil — Misusing Them Is",
+    imgUrl: "/images/opm.jpg",
+    href: "https://medium.com/@gelembungsahabat/divs-arent-evil-misusing-them-is-2f1845c695e2",
+  },
+  {
     title: "Basic Aeromodelling",
     subtitle: "Aeromodelling in a nutshell",
     imgUrl: "/images/opm.jpg",
