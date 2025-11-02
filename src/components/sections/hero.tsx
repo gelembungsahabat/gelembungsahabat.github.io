@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaMedium } from "react-icons/fa";
 import "./styles/hero.css";
 
 export function Hero() {
@@ -14,23 +14,23 @@ export function Hero() {
           <a
             href="https://github.com/gelembungsahabat"
             className="icons__link"
-            aria-label="Github Wildan"
+            aria-label="Github"
           >
             <FaGithub style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
           </a>
           <a
             href="https://www.linkedin.com/in/gelembungsahabat/"
             className="icons__link"
-            aria-label="LinkedIn Wildan"
+            aria-label="LinkedIn"
           >
             <FaLinkedin style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
           </a>
           <a
-            href="https://www.instagram.com/gelembungsahabat_"
+            href="https://medium.com/@gelembungsahabat"
             className="icons__link"
-            aria-label="Instagram Wildan"
+            aria-label="Medium"
           >
-            <FaInstagram style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
+            <FaMedium style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
           </a>
         </div>
       </div>
