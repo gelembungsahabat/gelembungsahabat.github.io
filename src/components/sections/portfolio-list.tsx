@@ -1,0 +1,28 @@
+import "./styles/portfolio.css";
+import { portfolioListData } from "../../data";
+import { FaArrowRight } from "react-icons/fa";
+
+export function Portfolio() {
+  return (
+    <section>
+      <div className="portfolio-container" tabIndex={0}>
+        <h1>Portfolio* [still on progress]</h1>
+        {portfolioListData
+          .map((val, idx) => {
+            return (
+              <a href={val.href} className="article-card" key={idx}>
+                <div className="content-wrapper">
+                  <h1 className="title">{val.title}</h1>
+                  <h2 className="subtitle">{val.subtitle}</h2>
+                </div>
+              </a>
+            );
+          })
+          .slice(0, 5)}
+        <button aria-label="Next article" className="more-portfolio-button">
+          More Portfolio Here <FaArrowRight size={"0.7rem"} />
+        </button>
+      </div>
+    </section>
+  );
+}

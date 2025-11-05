@@ -1,5 +1,6 @@
 import "./App.css";
 import { Articles, Hero, About, Experience } from "./sections";
+import { Portfolio } from "./sections/portfolio-list";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <About />
         <hr style={{ opacity: "35%" }} />
         <Experience />
+        <hr style={{ opacity: "35%" }} />
+        <Portfolio />
         <hr style={{ opacity: "35%" }} />
         <Articles />
       </main>

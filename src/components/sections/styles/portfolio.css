@@ -1,0 +1,35 @@
+.portfolio-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+.article-card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  color: black;
+}
+
+.article-card:hover {
+  background: rgba(66, 69, 73, 0.2);
+  backdrop-filter: blur(16px) saturate(180%);
+  transform: translateX(4px);
+}
+
+.content-wrapper {
+  margin: 1rem;
+}
+
+.title {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+.subtitle {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.more-portfolio-button {
+  background-color: transparent;
+}
