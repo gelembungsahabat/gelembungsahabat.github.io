@@ -7,8 +7,8 @@ export type PortfolioListData = {
 
 export const portfolioListData: PortfolioListData[] = [
   {
-    title: "NMHI clone portfolio",
-    subtitle: "NMHI clone portfolio with nextjs and vercel",
+    title: "Otaku Website Portfolio",
+    subtitle: "Otaku website portfolio with Nextjs and deployed on Vercel",
     imgUrl: "/images/opm.jpg",
     href: "https://anime-page-portfolio.vercel.app/",
   },
