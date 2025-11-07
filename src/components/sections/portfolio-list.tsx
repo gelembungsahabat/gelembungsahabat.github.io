@@ -5,7 +5,7 @@ export function Portfolio() {
   return (
     <section>
       <div className="portfolio-container" tabIndex={0}>
-        <h1>Portfolio* [still on progress]</h1>
+        <h1>Portfolio - Personal Project</h1>
         {portfolioListData
           .map((val, idx) => {
             return (

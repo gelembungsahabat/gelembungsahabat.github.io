@@ -1,12 +1,12 @@
 import "./styles/articles.css";
 import { articleListData } from "../../data";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 
 export function Articles() {
   return (
     <section>
       <div className="articles-container" tabIndex={0}>
-        <h1>Articles* [still on progress]</h1>
+        <h1>Article</h1>
         {articleListData
           .map((val, idx) => {
             return (
@@ -18,10 +18,10 @@ export function Articles() {
               </a>
             );
           })
-          .slice(0, 5)}
-        <button aria-label="Next article" className="more-articles-button">
+          .slice(0, 1)}
+        {/* <button aria-label="Next article" className="more-articles-button">
           More Articles Here <FaArrowRight size={"0.7rem"} />
-        </button>
+        </button> */}
       </div>
     </section>
   );
