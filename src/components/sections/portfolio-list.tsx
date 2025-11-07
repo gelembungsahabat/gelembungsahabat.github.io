@@ -1,6 +1,5 @@
 import "./styles/portfolio.css";
 import { portfolioListData } from "../../data";
-import { FaArrowRight } from "react-icons/fa";
 
 export function Portfolio() {
   return (
@@ -19,9 +18,6 @@ export function Portfolio() {
             );
           })
           .slice(0, 5)}
-        <button aria-label="Next article" className="more-portfolio-button">
-          More Portfolio Here <FaArrowRight size={"0.7rem"} />
-        </button>
       </div>
     </section>
   );
