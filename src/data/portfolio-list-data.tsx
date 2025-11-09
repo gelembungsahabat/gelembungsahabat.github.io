@@ -13,6 +13,12 @@ export const portfolioListData: PortfolioListData[] = [
     href: "https://gelembungsahabat-github-pages-v1.vercel.app/",
   },
   {
+    title: "Anime Search App [still WIP]",
+    subtitle: "Anime Search App using JikanAPI",
+    imgUrl: "/images/opm.jpg",
+    href: "https://anime-search-app-omega.vercel.app/",
+  },
+  {
     title: "Otaku Website Portfolio",
     subtitle: "Otaku website portfolio with Nextjs and deployed on Vercel",
     imgUrl: "/images/opm.jpg",
