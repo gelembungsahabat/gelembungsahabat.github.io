@@ -12,8 +12,8 @@ export function Articles() {
             return (
               <a href={val.href} className="article-card" key={idx}>
                 <div className="content-wrapper">
-                  <h1 className="title">{val.title}</h1>
-                  <h2 className="subtitle">{val.subtitle}</h2>
+                  <h2 className="title">{val.title}</h2>
+                  <h3 className="subtitle">{val.subtitle}</h3>
                 </div>
               </a>
             );

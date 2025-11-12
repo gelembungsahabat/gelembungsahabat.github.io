@@ -6,7 +6,7 @@ export function Hero() {
     <section className="hero-wrapper" tabIndex={0}>
       <div className="header">
         <h1 className="greeting">Hi, I'm Muhammad Wildan</h1>
-        <h2>
+        <h2 className="personal-branding">
           Software Engineer specializing in Front-End — make complicated things
           simple.
         </h2>

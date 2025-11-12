@@ -111,11 +111,15 @@ h1 {
 }
 
 h2 {
-  opacity: 70%;
   /* font-weight better from 400-500 for normal text */
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+h3 {
+  opacity: 65%;
   font-weight: 400;
   margin: 1rem 0;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 p {
