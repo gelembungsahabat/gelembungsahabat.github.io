@@ -6,7 +6,7 @@ export function Articles() {
   return (
     <section>
       <div className="articles-container" tabIndex={0}>
-        <h1>Article</h1>
+        <h2>Article</h2>
         {articleListData
           .map((val, idx) => {
             return (

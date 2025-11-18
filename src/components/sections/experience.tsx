@@ -4,7 +4,7 @@ export function Experience() {
   return (
     <section className="experience" tabIndex={0}>
       <div className="experience__container">
-        <h1>Experiences</h1>
+        <h2>Experiences</h2>
         <ul className="experience-list">
           <li>
             <span className="date">Apr 2021 – Mar 2025</span>
