@@ -11,8 +11,8 @@ export function Portfolio() {
             return (
               <a href={val.href} className="article-card" key={idx}>
                 <div className="content-wrapper">
-                  <h2 className="title">{val.title}</h2>
-                  <h3 className="subtitle">{val.subtitle}</h3>
+                  <h3>{val.title}</h3>
+                  <h4>{val.subtitle}</h4>
                 </div>
               </a>
             );
