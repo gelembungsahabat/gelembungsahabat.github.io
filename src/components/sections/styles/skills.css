@@ -30,42 +30,28 @@
   padding: var(--space-xl);
   box-shadow: var(--shadow-glass-soft);
   transition: all var(--transition-liquid);
+  transform: translateZ(0);
+  contain: layout style paint;
 }
 
 .skill-category:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-4px) translateZ(0);
   border-color: var(--border-glass-strong);
 }
 
-/* Category-specific glows - Frontend (purple) */
 .skill-category:nth-child(1):hover {
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 32px rgba(139, 92, 246, 0.2);
   border-color: var(--primary);
 }
 
-/* Category-specific glows - Backend (blue) */
 .skill-category:nth-child(2):hover {
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 32px rgba(59, 130, 246, 0.2);
   border-color: var(--secondary);
 }
 
-/* Category-specific glows - Tools (teal) */
 .skill-category:nth-child(3):hover {
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 32px rgba(20, 184, 166, 0.2);
   border-color: var(--accent-teal);
 }
 
-/* Category-specific glows - Soft Skills (pink) */
 .skill-category:nth-child(4):hover {
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 32px rgba(236, 72, 153, 0.2);
   border-color: var(--accent-pink);
 }
 
@@ -140,46 +126,45 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid transparent;
+    border: 1px solid transparent;
   transition: all var(--transition-smooth);
+  transform: translateZ(0);
 }
 
 .proficiency-expert {
-  background: rgba(220, 252, 231, 0.4);
-  color: #15803d;
-  border-color: rgba(134, 239, 172, 0.3);
+  background: rgba(16, 185, 129, 0.35);
+  color: #ffffff;
+  border-color: rgba(16, 185, 129, 0.5);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .proficiency-expert:hover {
-  background: rgba(220, 252, 231, 0.6);
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
-  transform: scale(1.05);
+  background: rgba(16, 185, 129, 0.5);
+  transform: scale(1.05) translateZ(0);
 }
 
 .proficiency-advanced {
-  background: rgba(219, 234, 254, 0.4);
-  color: #1e40af;
-  border-color: rgba(147, 197, 253, 0.3);
+  background: rgba(59, 130, 246, 0.35);
+  color: #ffffff;
+  border-color: rgba(59, 130, 246, 0.5);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .proficiency-advanced:hover {
-  background: rgba(219, 234, 254, 0.6);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
-  transform: scale(1.05);
+  background: rgba(59, 130, 246, 0.5);
+  transform: scale(1.05) translateZ(0);
 }
 
 .proficiency-intermediate {
-  background: rgba(254, 243, 199, 0.4);
-  color: #92400e;
-  border-color: rgba(252, 211, 77, 0.3);
+  background: rgba(245, 158, 11, 0.35);
+  color: #ffffff;
+  border-color: rgba(245, 158, 11, 0.5);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .proficiency-intermediate:hover {
-  background: rgba(254, 243, 199, 0.6);
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
-  transform: scale(1.05);
+  background: rgba(245, 158, 11, 0.5);
+  transform: scale(1.05) translateZ(0);
 }
 
 .skill-years {

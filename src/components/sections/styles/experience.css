@@ -15,7 +15,7 @@
   gap: var(--space-xl);
 }
 
-/* Experience Card */
+/* Experience Card - Performance Optimized */
 .experience-card {
   background: var(--glass-medium);
   backdrop-filter: blur(var(--blur-medium));
@@ -26,6 +26,8 @@
   box-shadow: var(--shadow-glass-soft);
   transition: all var(--transition-liquid);
   position: relative;
+  transform: translateZ(0);
+  contain: layout style paint;
 }
 
 /* Gradient border effect on hover */
@@ -48,11 +50,8 @@
 }
 
 .experience-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px) translateZ(0);
   border-color: var(--border-glass-strong);
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 32px rgba(139, 92, 246, 0.2);
 }
 
 .experience-card:hover::before {
@@ -106,14 +105,15 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--primary);
+  font-weight: 600;
+  color: var(--text-primary);
   margin: 0;
   transition: all var(--transition-smooth);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .experience-card:hover .experience-company {
-  text-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
 .experience-company svg {
@@ -218,24 +218,22 @@
   display: inline-flex;
   align-items: center;
   padding: 0.25rem 0.75rem;
-  background: var(--glass-light);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
   border-radius: var(--radius-md);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   border: 1px solid var(--border-glass-light);
   transition: all var(--transition-smooth);
-  backface-visibility: hidden;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transform: translateZ(0);
 }
 
 .experience-technologies .tech-badge:hover {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  border-color: var(--primary);
-  transform: scale(1.05) rotateY(180deg);
-  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05) translateZ(0);
 }
 
 /* Experience Highlights */

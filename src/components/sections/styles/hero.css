@@ -9,6 +9,8 @@
   box-shadow: var(--shadow-glass-strong);
   transition: all var(--transition-liquid);
   position: relative;
+  transform: translateZ(0);
+  contain: layout style paint;
 }
 
 /* Gradient border effect */
@@ -29,10 +31,7 @@
 }
 
 .hero-wrapper:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    var(--shadow-glass-strong),
-    0 0 40px rgba(139, 92, 246, 0.2);
+  transform: translateY(-2px) translateZ(0);
 }
 
 .header {
@@ -85,28 +84,13 @@
 }
 
 .availability-badge {
-  background: rgba(220, 252, 231, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(220, 252, 231, 0.5);
   color: #15803d;
-  border: 1px solid rgba(134, 239, 172, 0.5);
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
-  }
-  50% {
-    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
-  }
+  border: 1px solid rgba(134, 239, 172, 0.6);
 }
 
 .location-badge {
-  background: var(--glass-light);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.25);
   color: var(--text-secondary);
   border: 1px solid var(--border-glass-light);
 }
@@ -143,9 +127,9 @@
 .stat-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: #ffffff;
   margin-bottom: 0.25rem;
-  text-shadow: 0 2px 8px rgba(139, 92, 246, 0.15);
+  text-shadow: 0 2px 12px rgba(139, 92, 246, 0.4);
 }
 
 .stat-label {
@@ -184,24 +168,19 @@
   border: 1px solid var(--border-glass-light);
   color: var(--text-primary);
   transition: all var(--transition-liquid);
+  transform: translateZ(0);
 }
 
 .icons__link:hover {
-  transform: scale(1.1);
+  transform: scale(1.05) translateZ(0);
   background: var(--primary);
   border-color: var(--primary);
   color: white;
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(59, 130, 246, 0.25);
 }
 
 .icons__link:nth-child(3):hover {
   background: var(--accent-teal);
   border-color: var(--accent-teal);
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(20, 184, 166, 0.25);
 }
 
 .icons__link:active {

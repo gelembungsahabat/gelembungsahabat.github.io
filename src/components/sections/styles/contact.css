@@ -83,6 +83,7 @@
   font-family: inherit;
   position: relative;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .btn-primary.btn-large {
@@ -95,36 +96,35 @@
 }
 
 .btn-primary.btn-large:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow:
-    var(--shadow-glass-strong),
-    0 12px 32px rgba(139, 92, 246, 0.35);
+  transform: translateY(-4px) scale(1.05) translateZ(0);
+  box-shadow: var(--shadow-glass-strong);
 }
 
 .btn-primary.btn-large:active {
-  transform: translateY(-2px) scale(1.02);
+  transform: translateY(-2px) scale(1.02) translateZ(0);
 }
 
 .btn-secondary.btn-large {
-  background: var(--glass-medium);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(var(--blur-medium));
   -webkit-backdrop-filter: blur(var(--blur-medium));
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-glass-soft);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary.btn-large:hover {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  transform: translateY(-4px) scale(1.05);
-  box-shadow:
-    var(--shadow-glass-medium),
-    0 8px 24px rgba(139, 92, 246, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px) scale(1.05) translateZ(0);
+  box-shadow: var(--shadow-glass-strong);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .btn-secondary.btn-large:active {
-  transform: translateY(-2px) scale(1.02);
+  transform: translateY(-2px) scale(1.02) translateZ(0);
 }
 
 .contact-links {
@@ -171,51 +171,37 @@
   padding: 0.5rem 1rem;
   border-radius: var(--radius-lg);
   background: var(--glass-light);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--border-glass-light);
+    border: 1px solid var(--border-glass-light);
   transition: all var(--transition-liquid);
+  transform: translateZ(0);
 }
 
 .social-link:hover {
-  transform: translateY(-2px) scale(1.05);
-  background: var(--glass-medium);
-  color: var(--primary);
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(139, 92, 246, 0.15);
+  transform: translateY(-2px) scale(1.05) translateZ(0);
+  background: rgba(139, 92, 246, 0.4);
+  color: #ffffff;
+  box-shadow: var(--shadow-glass-soft);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Platform-specific hover colors */
+/* Platform-specific hover colors - Simplified */
 .social-link:nth-child(1):hover {
-  /* LinkedIn */
-  background: linear-gradient(135deg, rgba(10, 102, 194, 0.3), rgba(59, 130, 246, 0.2));
-  color: #0a66c2;
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(135deg, rgba(10, 102, 194, 0.5), rgba(59, 130, 246, 0.4));
+  color: #ffffff;
 }
 
 .social-link:nth-child(2):hover {
-  /* GitHub */
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.2));
-  color: var(--secondary);
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(139, 92, 246, 0.4));
+  color: #ffffff;
 }
 
 .social-link:nth-child(3):hover {
-  /* Email */
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(139, 92, 246, 0.2));
-  color: var(--accent-pink);
-  box-shadow:
-    var(--shadow-glass-soft),
-    0 4px 16px rgba(236, 72, 153, 0.25);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.5), rgba(139, 92, 246, 0.4));
+  color: #ffffff;
 }
 
 .social-link:active {
-  transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1) translateZ(0);
 }
 
 .social-link svg {
