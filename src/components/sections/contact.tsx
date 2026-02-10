@@ -7,9 +7,8 @@ import {
 import "./styles/contact.css";
 
 export function Contact() {
-  // TODO: Update these with your actual contact information
-  const email = "muhammadwildan.career@gmail.com"; // Update with your real email
-  const linkedinUrl = "https://www.linkedin.com/in/gelembungsahabat"; // Update with your real LinkedIn URL
+  const email = "muhammadwildan.career@gmail.com";
+  const linkedinUrl = "https://www.linkedin.com/in/gelembungsahabat";
   const githubUrl = "https://github.com/gelembungsahabat";
   const resumeUrl = "/resume/muhammad-wildan-resume.pdf";
 
