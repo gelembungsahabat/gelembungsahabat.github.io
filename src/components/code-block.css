@@ -1,26 +1,46 @@
 .code-block {
   margin: var(--space-lg) 0;
   border-radius: var(--radius-lg);
-  background: var(--bg-primary);
-  border: 1px solid var(--border-primary);
+  background: var(--glass-dark);
+  backdrop-filter: blur(var(--blur-medium));
+  -webkit-backdrop-filter: blur(var(--blur-medium));
+  border: 1px solid var(--border-glass-strong);
+  box-shadow:
+    var(--shadow-glass-medium),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
 .code-block-head {
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border-primary);
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-glass-light);
   padding: var(--space-sm) var(--space-md);
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-glass-light);
   font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.code-block-head::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
 }
 
 .code-block-content {
   padding: var(--space-md);
-  color: var(--text-secondary);
+  color: rgba(226, 232, 240, 0.9);
   font-family: var(--font-mono);
   line-height: 1.6;
   font-size: 0.9375rem;
@@ -28,24 +48,36 @@
 }
 
 .code-block-content code {
-  color: var(--text-primary);
+  color: var(--text-glass-light);
   font-weight: 500;
   background: transparent;
   border: none;
   padding: 0;
 }
 
-/* Syntax highlighting */
+/* Syntax highlighting - Vibrant colors for glass */
 .code-block-content .keyword {
-  color: var(--primary);
+  color: #C792EA;
   font-weight: 600;
+  text-shadow: 0 0 8px rgba(199, 146, 234, 0.3);
 }
 
 .code-block-content .string {
-  color: var(--accent-success);
+  color: #C3E88D;
+  text-shadow: 0 0 8px rgba(195, 232, 141, 0.3);
 }
 
 .code-block-content .comment {
-  color: var(--text-tertiary);
+  color: #697098;
   font-style: italic;
+}
+
+.code-block-content .function {
+  color: #82AAFF;
+  text-shadow: 0 0 8px rgba(130, 170, 255, 0.3);
+}
+
+.code-block-content .number {
+  color: #F78C6C;
+  text-shadow: 0 0 8px rgba(247, 140, 108, 0.3);
 }

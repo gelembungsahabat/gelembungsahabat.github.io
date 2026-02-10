@@ -1,14 +1,45 @@
 .container {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-primary);
+  background: var(--glass-medium);
+  backdrop-filter: blur(var(--blur-medium));
+  -webkit-backdrop-filter: blur(var(--blur-medium));
+  border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   margin-bottom: var(--space-2xl);
-  transition: border-color 0.15s ease;
+  box-shadow: var(--shadow-glass-soft);
+  transition: all var(--transition-liquid);
+  position: relative;
 }
 
 .container:hover {
-  border-color: var(--border-secondary);
+  transform: translateY(-4px);
+  border-color: var(--border-glass-strong);
+  box-shadow:
+    var(--shadow-glass-medium),
+    0 8px 32px rgba(139, 92, 246, 0.1);
+}
+
+/* Gradient border on hover */
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg,
+    rgba(139, 92, 246, 0.3),
+    rgba(59, 130, 246, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.container:hover::before {
+  opacity: 1;
 }
 
 .about-lead {
@@ -39,8 +70,11 @@
   font-family: var(--font-mono);
   font-size: 0.875em;
   padding: 0.125rem 0.375rem;
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-primary);
+  background: var(--glass-light);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass-light);
+  border-left: 2px solid var(--primary);
   border-radius: var(--radius-sm);
   color: var(--primary);
   font-weight: 500;
@@ -49,11 +83,14 @@
 .about-content a {
   color: var(--primary);
   font-weight: 500;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration-color 0.15s ease;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size var(--transition-smooth);
 }
 
 .about-content a:hover {
-  text-decoration-color: var(--primary);
+  background-size: 100% 2px;
 }
