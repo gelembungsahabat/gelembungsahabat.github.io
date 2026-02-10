@@ -1,10 +1,15 @@
-import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaFileDownload,
+} from "react-icons/fa";
 import "./styles/contact.css";
 
 export function Contact() {
   // TODO: Update these with your actual contact information
-  const email = "wildan@example.com"; // Update with your real email
-  const linkedinUrl = "https://www.linkedin.com/in/muhammad-wildan"; // Update with your real LinkedIn URL
+  const email = "muhammadwildan.career@gmail.com"; // Update with your real email
+  const linkedinUrl = "https://www.linkedin.com/in/gelembungsahabat"; // Update with your real LinkedIn URL
   const githubUrl = "https://github.com/gelembungsahabat";
   const resumeUrl = "/resume/muhammad-wildan-resume.pdf";
 
@@ -68,7 +73,11 @@ export function Contact() {
               <span>GitHub</span>
             </a>
 
-            <a href={`mailto:${email}`} className="social-link" aria-label="Send email">
+            <a
+              href={`mailto:${email}`}
+              className="social-link"
+              aria-label="Send email"
+            >
               <FaEnvelope />
               <span>Email</span>
             </a>
