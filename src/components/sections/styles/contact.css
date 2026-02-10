@@ -1,0 +1,123 @@
+.section-contact {
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-3xl) var(--space-xl);
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-primary);
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.contact-description {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 640px) {
+  .contact-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.btn-large {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all 0.15s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary.btn-large {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary.btn-large:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-secondary.btn-large {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary.btn-large:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contact-links {
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border-primary);
+}
+
+.contact-links-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  transition: all 0.15s ease;
+}
+
+.social-link:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--primary);
+}
+
+.social-link svg {
+  font-size: 1.25rem;
+}
+
+.social-link span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}

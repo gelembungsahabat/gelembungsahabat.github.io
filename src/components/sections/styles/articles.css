@@ -1,8 +1,28 @@
 .articles-container {
   margin-bottom: var(--space-2xl);
-  display: flex;
-  flex-direction: column;
+}
+
+.articles-container h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.articles-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-xl);
 }
 
 .article-card {
