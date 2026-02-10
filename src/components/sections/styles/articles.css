@@ -1,35 +1,64 @@
 .articles-container {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2xl);
   display: flex;
-  flex-flow: row wrap;
-  overflow: hidden;
+  flex-direction: column;
+  gap: var(--space-lg);
 }
 
 .article-card {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  transition: background 0.3s ease, transform 0.3s ease;
-  width: 100%;
-  color: black;
+  display: block;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
 }
 
 .article-card:hover {
-  background: rgba(66, 69, 73, 0.2);
-  backdrop-filter: blur(16px) saturate(180%);
-  transform: translateX(4px);
+  border-color: var(--primary);
 }
 
 .content-wrapper {
-  margin: 1rem;
+  position: relative;
 }
 
 .title {
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-xs) 0;
+  transition: color 0.15s ease;
+}
+
+.article-card:hover .title {
+  color: var(--primary);
 }
 
 .subtitle {
-  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 .more-articles-button {
-  background-color: transparent;
+  margin-top: var(--space-md);
+  width: 100%;
+  padding: var(--space-md);
+  font-weight: 500;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.more-articles-button:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
 }

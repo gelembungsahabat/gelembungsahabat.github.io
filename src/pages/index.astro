@@ -1,68 +1,33 @@
 ---
-import App from "../components/App.tsx";
+import App from "../components/App";
+import "../components/App.css";
+
+const pageTitle = "Wildan - Frontend Developer";
+const description = "Frontend Developer specializing in React, TypeScript, and modern web technologies";
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wildan's Personal Blog</title>
-    <meta
-      name="description"
-      content="Wildan's personal blog sharing insights, projects, and thoughts about technology, software development, and life."
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://gelembungsahabat.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Wildan's Personal Blog" />
-    <meta
-      property="og:description"
-      content="Wildan's personal blog about technology, software development, and creative projects."
-    />
-    <meta property="og:url" content="https://gelembungsahabat.github.io/" />
+    <!-- SEO & Social -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://gelembungsahabat.github.io/images/preview.png"
-    />
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Wildan's Personal Blog" />
-    <meta
-      name="twitter:description"
-      content="Wildan's personal blog about technology, software development, and creative projects."
-    />
-    <meta
-      name="twitter:image"
-      content="https://gelembungsahabat.github.io/images/preview.png"
-    />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <App client:load />
   </body>
 </html>
-
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    color: black;
-    background: white;
-  }
-</style>

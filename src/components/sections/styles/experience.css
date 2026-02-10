@@ -1,8 +1,5 @@
 .experience {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: var(--space-2xl);
 }
 
 .experience__container {
@@ -12,59 +9,75 @@
 .experience-list {
   list-style: none;
   padding: 0;
-  margin: 2rem 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
 }
 
 .experience-list li {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  transition: border-color 0.15s ease;
   display: grid;
-  grid-template-columns: 10rem 1fr;
-  align-items: start;
-  gap: 1.2rem;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  transition: background 0.3s ease, transform 0.3s ease;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
 }
 
 .experience-list li:hover {
-  background: rgba(66, 69, 73, 0.2);
-  backdrop-filter: blur(16px) saturate(180%);
-  transform: translateX(4px);
+  border-color: var(--border-secondary);
 }
 
 .date {
-  color: #4b4a4a;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  font-weight: 400;
-  margin-left: 1rem;
-  justify-content: center;
-  align-items: center;
+  color: var(--text-tertiary);
+  font-size: clamp(0.875rem, 2vw, 0.9375rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  order: 1;
+}
+
+.content {
+  order: 2;
 }
 
 .role {
-  font-weight: 500;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
+  font-weight: 600;
   line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
 }
 
 .company {
-  font-weight: 600;
+  font-size: clamp(0.9375rem, 2vw, 1rem);
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: var(--space-sm);
 }
 
-/* responsive for mobile */
-@media (max-width: 640px) {
+.description {
+  font-size: clamp(0.9375rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Desktop layout */
+@media (min-width: 640px) {
   .experience-list li {
-    grid-template-columns: 1fr;
+    grid-template-columns: 140px 1fr;
+    gap: var(--space-xl);
   }
 
   .date {
-    order: 2;
-    margin-left: 1rem;
-    font-size: 0.85rem;
+    text-align: left;
+    order: 0;
   }
 
-  .role {
-    order: 1;
-    margin-left: 1rem;
+  .content {
+    order: 0;
   }
 }
