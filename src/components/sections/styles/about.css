@@ -11,7 +11,7 @@
 }
 
 .container:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.02);
   border-color: var(--border-glass-strong);
   box-shadow: var(--shadow-glass-medium);
 }
@@ -68,8 +68,7 @@
   font-size: 0.875em;
   padding: 0.125rem 0.375rem;
   background: rgba(139, 92, 246, 0.25);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-  border-left: 3px solid var(--primary);
+  border: 1px solid rgba(139, 92, 246, 0.4);
   border-radius: var(--radius-sm);
   color: #ffffff;
   font-weight: 600;

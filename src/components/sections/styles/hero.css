@@ -5,9 +5,8 @@
   padding: var(--space-lg);
   margin-bottom: var(--space-xl);
   box-shadow: var(--shadow-glass-strong);
-  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid);
+  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
   position: relative;
-  contain: layout style paint;
 }
 
 @media (min-width: 768px) {
@@ -16,7 +15,7 @@
   }
 }
 
-/* Gradient border effect */
+/* Gradient border effect — always visible on hero */
 .hero-wrapper::before {
   content: '';
   position: absolute;
@@ -24,18 +23,26 @@
   border-radius: inherit;
   padding: 1px;
   background: linear-gradient(135deg,
-    rgba(139, 92, 246, 0.5),
-    rgba(59, 130, 246, 0.3));
+    rgba(139, 92, 246, 0.4),
+    rgba(59, 130, 246, 0.25));
   -webkit-mask: linear-gradient(#fff 0 0) content-box,
                 linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+  transition: opacity var(--transition-smooth);
 }
 
 @media (hover: hover) {
   .hero-wrapper:hover {
     transform: translateY(-2px);
+    box-shadow: var(--shadow-glass-medium);
+  }
+
+  .hero-wrapper:hover::before {
+    background: linear-gradient(135deg,
+      rgba(139, 92, 246, 0.6),
+      rgba(59, 130, 246, 0.4));
   }
 }
 
@@ -288,7 +295,11 @@
     transform: none;
   }
 
-  /* Override 3-column stats — too cramped at 320px hero width */
+  .hero-wrapper:hover::before {
+    opacity: 0;
+  }
+
+  /* Override 3-column stats — tighter for 320px hero width */
   .hero-stats {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xs);

@@ -324,9 +324,6 @@ code {
     position: fixed;
     top: var(--space-2xl);
     width: 320px;
-    max-height: calc(100vh - var(--space-2xl) * 2);
-    overflow-y: auto;
-    border-radius: var(--radius-2xl);
   }
 
   .sections {
@@ -360,11 +357,6 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.35);
-}
-
-/* Hero sidebar scrollbar — thinner */
-.hero::-webkit-scrollbar {
-  width: 4px;
 }
 
 /* Firefox scrollbar */
