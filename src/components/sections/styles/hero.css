@@ -170,7 +170,7 @@
 }
 
 .stat-value {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0.25rem;
@@ -178,7 +178,7 @@
 }
 
 .stat-label {
-  font-size: 0.8125rem;
+  font-size: clamp(0.6875rem, 2vw, 0.8125rem);
   color: var(--text-secondary);
   font-weight: 500;
 }
