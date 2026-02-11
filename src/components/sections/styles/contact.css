@@ -24,8 +24,6 @@
   position: absolute;
   inset: 0;
   background: var(--glass-heavy);
-  backdrop-filter: blur(var(--blur-heavy));
-  -webkit-backdrop-filter: blur(var(--blur-heavy));
   border: 1px solid var(--border-glass-strong);
   border-radius: inherit;
   box-shadow:
@@ -83,31 +81,27 @@
   font-family: inherit;
   position: relative;
   overflow: hidden;
-  transform: translateZ(0);
+
 }
 
 .btn-primary.btn-large {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
   border: 1px solid var(--border-glass-strong);
   color: white;
   box-shadow: var(--shadow-glass-medium);
 }
 
 .btn-primary.btn-large:hover {
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-glass-medium);
 }
 
 .btn-primary.btn-large:active {
-  transform: translateY(0) scale(0.98) translateZ(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary.btn-large {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(var(--blur-medium));
-  -webkit-backdrop-filter: blur(var(--blur-medium));
+  background: rgba(255, 255, 255, 0.25);
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-glass-soft);
@@ -118,13 +112,13 @@
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border-color: rgba(255, 255, 255, 0.6);
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-glass-medium);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .btn-secondary.btn-large:active {
-  transform: translateY(0) scale(0.98) translateZ(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .contact-links {
@@ -173,11 +167,11 @@
   background: var(--glass-light);
     border: 1px solid var(--border-glass-light);
   transition: all var(--transition-liquid);
-  transform: translateZ(0);
+
 }
 
 .social-link:hover {
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
   background: rgba(139, 92, 246, 0.4);
   color: #ffffff;
   box-shadow: var(--shadow-glass-medium);
@@ -201,7 +195,7 @@
 }
 
 .social-link:active {
-  transform: translateY(0) scale(1) translateZ(0);
+  transform: translateY(0) scale(1);
 }
 
 .social-link svg {

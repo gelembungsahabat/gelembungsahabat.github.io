@@ -28,16 +28,13 @@
 .article-card {
   display: block;
   background: var(--glass-light);
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   text-decoration: none;
   box-shadow: var(--shadow-glass-soft);
-  transition: all var(--transition-liquid);
+  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
   position: relative;
-  transform: translateZ(0);
   contain: layout style paint;
 }
 
@@ -63,7 +60,7 @@
 }
 
 .article-card:hover {
-  transform: translateY(-4px) scale(1.02) translateZ(0);
+  transform: translateY(-4px) scale(1.02);
   border-color: var(--primary);
   box-shadow: var(--shadow-glass-medium);
 }
@@ -77,7 +74,7 @@
   z-index: 1;
 }
 
-.title {
+.content-wrapper h3 {
   font-size: clamp(1.125rem, 3vw, 1.25rem);
   font-weight: 600;
   line-height: 1.4;
@@ -87,12 +84,12 @@
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-.article-card:hover .title {
+.article-card:hover .content-wrapper h3 {
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
   transform: translateX(4px);
 }
 
-.subtitle {
+.content-wrapper h4 {
   font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: 400;
   line-height: 1.6;
@@ -101,27 +98,28 @@
 }
 
 .more-articles-button {
-  margin-top: var(--space-md);
-  width: 100%;
-  padding: var(--space-md);
-  font-weight: 500;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
-  border: 1px solid var(--border-glass-strong);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  background: var(--glass-medium);
+  border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-lg);
-  color: white;
+  color: var(--text-primary);
   cursor: pointer;
   box-shadow: var(--shadow-glass-soft);
-  transition: all var(--transition-liquid);
-  transform: translateZ(0);
+  transition: transform var(--transition-liquid), background var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
 }
 
 .more-articles-button:hover {
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: var(--border-glass-strong);
   box-shadow: var(--shadow-glass-medium);
 }
 
 .more-articles-button:active {
-  transform: translateY(0) scale(0.98) translateZ(0);
+  transform: translateY(0) scale(0.98);
 }

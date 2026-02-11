@@ -1,20 +1,17 @@
 .container {
   background: var(--glass-medium);
-  backdrop-filter: blur(var(--blur-medium));
-  -webkit-backdrop-filter: blur(var(--blur-medium));
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   margin-bottom: var(--space-2xl);
   box-shadow: var(--shadow-glass-soft);
-  transition: all var(--transition-liquid);
+  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
   position: relative;
-  transform: translateZ(0);
   contain: layout style paint;
 }
 
 .container:hover {
-  transform: translateY(-4px) translateZ(0);
+  transform: translateY(-4px);
   border-color: var(--border-glass-strong);
   box-shadow: var(--shadow-glass-medium);
 }
@@ -77,7 +74,7 @@
   color: #ffffff;
   font-weight: 600;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  transform: translateZ(0);
+
 }
 
 .about-content a {

@@ -1,13 +1,11 @@
 .hero-wrapper {
   background: var(--glass-heavy);
-  backdrop-filter: blur(var(--blur-heavy));
-  -webkit-backdrop-filter: blur(var(--blur-heavy));
   border: 1px solid var(--border-glass-strong);
   border-radius: var(--radius-2xl);
   padding: var(--space-lg);
   margin-bottom: var(--space-xl);
   box-shadow: var(--shadow-glass-strong);
-  transition: all var(--transition-liquid);
+  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid);
   position: relative;
   contain: layout style paint;
 }
@@ -100,6 +98,12 @@
   background: rgba(220, 252, 231, 0.5);
   color: #15803d;
   border: 1px solid rgba(134, 239, 172, 0.6);
+  animation: pulse-available 3s ease-in-out infinite;
+}
+
+@keyframes pulse-available {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(134, 239, 172, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(134, 239, 172, 0); }
 }
 
 .location-badge {
@@ -116,8 +120,6 @@
   margin-bottom: var(--space-xl);
   padding: var(--space-md);
   background: var(--glass-light);
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-glass-light);
   box-shadow: var(--shadow-glass-soft);
@@ -213,14 +215,12 @@
   padding: 0.5rem 0.875rem;
   border-radius: var(--radius-lg);
   background: var(--glass-light);
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
   border: 1px solid var(--border-glass-light);
   color: var(--text-primary);
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  transition: all var(--transition-liquid);
+  transition: transform var(--transition-liquid), background var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid), color var(--transition-liquid);
   position: relative;
 }
 
@@ -271,15 +271,35 @@
   outline-offset: 2px;
 }
 
-/* Mobile and tablet responsive */
-@media (max-width: 1279px) {
+/* Portrait mode - hero on top with spacing */
+@media (orientation: portrait), (max-width: 1023px) {
   .hero-wrapper {
     margin-bottom: var(--space-2xl);
   }
 }
 
-@media (min-width: 1280px) {
+/* Landscape mode - hero fixed on left */
+@media (min-width: 1024px) and (orientation: landscape) {
   .hero-wrapper {
     margin-bottom: 0;
+  }
+
+  .hero-wrapper:hover {
+    transform: none;
+  }
+
+  /* Override 3-column stats — too cramped at 320px hero width */
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xs);
+    padding: var(--space-sm);
+  }
+
+  .stat-value {
+    font-size: 1rem;
+  }
+
+  .stat-label {
+    font-size: 0.6875rem;
   }
 }

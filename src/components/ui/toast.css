@@ -4,10 +4,7 @@
   right: 2rem;
   z-index: 9999;
 
-  /* Glass morphism styling - minimal blur for performance */
   background: rgba(139, 92, 246, 0.95);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-lg, 1rem);
 
@@ -16,7 +13,7 @@
 
   /* Animation */
   animation: toast-slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateZ(0);
+
 }
 
 .toast-message {
@@ -30,11 +27,11 @@
 /* Slide-in animation */
 @keyframes toast-slide-in {
   from {
-    transform: translateX(120%) translateZ(0);
+    transform: translateX(120%);
     opacity: 0;
   }
   to {
-    transform: translateX(0) translateZ(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }

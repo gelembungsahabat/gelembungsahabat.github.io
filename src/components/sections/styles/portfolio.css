@@ -18,20 +18,16 @@
   }
 }
 
-/* Portfolio Card - Performance Optimized */
 .portfolio-card {
   background: var(--glass-medium);
-  backdrop-filter: blur(var(--blur-medium));
-  -webkit-backdrop-filter: blur(var(--blur-medium));
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-glass-soft);
-  transition: all var(--transition-liquid);
+  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
   display: flex;
   flex-direction: column;
   position: relative;
-  transform: translateZ(0);
   contain: layout style paint;
 }
 
@@ -55,7 +51,7 @@
 }
 
 .portfolio-card:hover {
-  transform: translateY(-4px) scale(1.02) translateZ(0);
+  transform: translateY(-4px) scale(1.02);
   border-color: var(--border-glass-strong);
   box-shadow: var(--shadow-glass-medium);
 }
@@ -73,7 +69,7 @@
   background: var(--glass-dark);
 }
 
-/* Glass overlay on image */
+/* Gradient overlay on image */
 .portfolio-image::after {
   content: '';
   position: absolute;
@@ -81,18 +77,12 @@
   background: linear-gradient(180deg,
     rgba(139, 92, 246, 0.1) 0%,
     rgba(59, 130, 246, 0.05) 100%);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  transition: all var(--transition-smooth);
+  transition: opacity var(--transition-smooth);
   pointer-events: none;
 }
 
 .portfolio-card:hover .portfolio-image::after {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  background: linear-gradient(180deg,
-    rgba(139, 92, 246, 0.05) 0%,
-    rgba(59, 130, 246, 0.02) 100%);
+  opacity: 0.5;
 }
 
 .portfolio-image img {
@@ -100,11 +90,11 @@
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-smooth);
-  transform: translateZ(0);
+
 }
 
 .portfolio-card:hover .portfolio-image img {
-  transform: scale(1.08) translateZ(0);
+  transform: scale(1.08);
 }
 
 .featured-badge {
@@ -122,7 +112,7 @@
   letter-spacing: 0.5px;
   box-shadow: var(--shadow-glass-soft);
   z-index: 1;
-  transform: translateZ(0);
+
 }
 
 @keyframes pulse-featured {
@@ -180,14 +170,14 @@
   border: 1px solid var(--border-glass-light);
   transition: all var(--transition-smooth);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-  transform: translateZ(0);
+
 }
 
 .tech-badge:hover {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border-color: rgba(255, 255, 255, 0.6);
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.05);
 }
 
 /* Portfolio Description */
@@ -248,31 +238,27 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  transform: translateZ(0);
+
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
   border: 1px solid var(--border-glass-strong);
   color: white;
   box-shadow: var(--shadow-glass-soft);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-glass-medium);
 }
 
 .btn-primary:active {
-  transform: translateY(0) scale(0.98) translateZ(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(var(--blur-light));
-  -webkit-backdrop-filter: blur(var(--blur-light));
+  background: rgba(255, 255, 255, 0.25);
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-glass-soft);
@@ -283,13 +269,13 @@
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border-color: rgba(255, 255, 255, 0.6);
-  transform: translateY(-2px) scale(1.02) translateZ(0);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: var(--shadow-glass-medium);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .btn-secondary:active {
-  transform: translateY(0) scale(0.98) translateZ(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-primary svg,
