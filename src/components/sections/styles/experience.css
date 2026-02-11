@@ -50,8 +50,9 @@
 }
 
 .experience-card:hover {
-  transform: translateY(-4px) translateZ(0);
+  transform: translateY(-4px) scale(1.02) translateZ(0);
   border-color: var(--border-glass-strong);
+  box-shadow: var(--shadow-glass-medium);
 }
 
 .experience-card:hover::before {
@@ -67,6 +68,7 @@
   padding-bottom: var(--space-lg);
   border-bottom: 1px solid var(--border-glass-light);
   position: relative;
+  z-index: 1;
 }
 
 .experience-header::after {
@@ -155,6 +157,8 @@
 /* Experience Sections */
 .experience-section {
   margin-bottom: var(--space-lg);
+  position: relative;
+  z-index: 1;
 }
 
 .experience-section h4 {
@@ -199,6 +203,8 @@
 /* Experience Technologies */
 .experience-technologies {
   margin-bottom: var(--space-md);
+  position: relative;
+  z-index: 1;
 }
 
 .experience-technologies h4 {

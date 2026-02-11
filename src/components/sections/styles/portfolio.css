@@ -55,8 +55,9 @@
 }
 
 .portfolio-card:hover {
-  transform: translateY(-4px) translateZ(0);
+  transform: translateY(-4px) scale(1.02) translateZ(0);
   border-color: var(--border-glass-strong);
+  box-shadow: var(--shadow-glass-medium);
 }
 
 .portfolio-card:hover::before {
@@ -140,6 +141,8 @@
   flex-direction: column;
   gap: var(--space-md);
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .portfolio-title {
