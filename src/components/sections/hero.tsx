@@ -3,7 +3,7 @@ import "./styles/hero.css";
 
 export function Hero() {
   return (
-    <section className="hero-wrapper" tabIndex={0}>
+    <section className="hero-wrapper">
       <div className="header">
         <div className="hero-header">
           <h1 className="greeting">Muhammad Wildan</h1>

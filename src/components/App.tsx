@@ -8,7 +8,7 @@ function App() {
       <header className="hero">
         <Hero />
       </header>
-      <main className="sections">
+      <main id="main-content" className="sections">
         <About />
         <hr style={{ opacity: "35%" }} />
         <Skills />

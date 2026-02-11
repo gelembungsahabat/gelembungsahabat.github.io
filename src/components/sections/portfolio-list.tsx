@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export function Portfolio() {
   return (
     <section>
-      <div className="portfolio-container" tabIndex={0}>
+      <div className="portfolio-container">
         <h2>Portfolio - Personal Projects</h2>
         <div className="portfolio-grid">
           {portfolioListData
@@ -16,8 +16,10 @@ export function Portfolio() {
                   <div className="portfolio-image">
                     <img
                       src={project.imgUrl}
-                      alt={`${project.title} screenshot`}
+                      alt={`Screenshot of ${project.title} - ${project.subtitle}`}
                       loading="lazy"
+                      width="800"
+                      height="465"
                     />
                     {project.featured && (
                       <span className="featured-badge">Featured</span>

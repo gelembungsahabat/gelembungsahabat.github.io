@@ -36,12 +36,12 @@ export const articleListData: ArticleListData[] = [
   //   imgUrl: "/images/opm.jpg",
   //   href: "/git-setup",
   // },
-  {
-    title: "Anime Drawing",
-    subtitle: "Anime drawing tips",
-    imgUrl: "/images/opm.jpg",
-    href: "/anime-drawing",
-  },
+  // {
+  //   title: "Anime Drawing",
+  //   subtitle: "Anime drawing tips",
+  //   imgUrl: "/images/opm.jpg",
+  //   href: "/anime-drawing",
+  // },
   {
     title: "CS2 Tips",
     subtitle: "Counter Strike 2 tips for beginner",

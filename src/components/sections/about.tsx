@@ -3,7 +3,8 @@ import "./styles/about.css";
 export function About() {
   return (
     <section>
-      <div className="container" tabIndex={0}>
+      <div className="container">
+        <h2 className="section-title">About Me</h2>
         <p className="about-lead">
           I’m a <strong>Software Engineer</strong> who loves turning ideas into
           interactive, scalable, and meaningful digital experiences.

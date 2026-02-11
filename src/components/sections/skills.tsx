@@ -3,7 +3,7 @@ import "./styles/skills.css";
 
 export function Skills() {
   return (
-    <section className="section-skills" tabIndex={0}>
+    <section className="section-skills">
       <h2 className="section-title">Skills & Technologies</h2>
 
       <div className="skills-grid">

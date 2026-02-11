@@ -1,9 +1,11 @@
+import { useState } from "react";
 import {
   FaEnvelope,
   FaLinkedin,
   FaGithub,
   FaFileDownload,
 } from "react-icons/fa";
+import { Toast } from "../ui/toast";
 import "./styles/contact.css";
 
 export function Contact() {
@@ -12,14 +14,15 @@ export function Contact() {
   const githubUrl = "https://github.com/gelembungsahabat";
   const resumeUrl = "/resume/muhammad-wildan-resume.pdf";
 
+  const [showToast, setShowToast] = useState(false);
+
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
-    // Optional: Add toast notification or temporary "Copied!" message
-    alert("Email copied to clipboard!");
+    setShowToast(true);
   };
 
   return (
-    <section className="section-contact" tabIndex={0}>
+    <section className="section-contact">
       <div className="contact-content">
         <h2 className="section-title">Let's Work Together</h2>
         <p className="contact-description">
@@ -83,6 +86,12 @@ export function Contact() {
           </div>
         </div>
       </div>
+
+      <Toast
+        message="Email copied to clipboard!"
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
+      />
     </section>
   );
 }
