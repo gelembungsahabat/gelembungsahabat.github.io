@@ -36,27 +36,36 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="icons" aria-label="Social Media Icons">
+        <div className="social-icons" aria-label="Social Media Links">
           <a
             href="https://github.com/gelembungsahabat"
-            className="icons__link"
+            className="social-icon-link"
             aria-label="Github"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaGithub style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
+            <FaGithub />
+            <span>GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/gelembungsahabat/"
-            className="icons__link"
+            className="social-icon-link"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaLinkedin style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
+            <FaLinkedin />
+            <span>LinkedIn</span>
           </a>
           <a
             href="https://medium.com/@gelembungsahabat"
-            className="icons__link"
+            className="social-icon-link"
             aria-label="Medium"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaMedium style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }} />
+            <FaMedium />
+            <span>Medium</span>
           </a>
         </div>
       </div>

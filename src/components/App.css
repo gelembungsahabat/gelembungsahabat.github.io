@@ -342,7 +342,8 @@ code {
   }
 }
 
-@media (min-width: 1024px) {
+/* Side-by-side layout only on large screens */
+@media (min-width: 1280px) {
   .homepage {
     display: grid;
     grid-template-columns: 320px 1fr;
@@ -351,7 +352,7 @@ code {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .homepage {
     grid-template-columns: 380px 1fr;
     gap: var(--space-3xl);
@@ -367,7 +368,8 @@ code {
   min-width: 0;
 }
 
-@media (min-width: 1024px) {
+/* Sticky sidebar only on large screens */
+@media (min-width: 1280px) {
   .hero {
     position: sticky;
     top: var(--space-2xl);
