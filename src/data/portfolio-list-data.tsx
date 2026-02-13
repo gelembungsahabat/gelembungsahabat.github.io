@@ -41,7 +41,7 @@ export const portfolioListData: PortfolioListData[] = [
     imgUrl: "/images/portfolio-v1.png",
     liveUrl: "https://gelembungsahabat-github-pages-v1.vercel.app/",
     githubUrl: "https://github.com/gelembungsahabat/github-pages-v1",
-    featured: false,
+    featured: true,
   },
   {
     title: "Otaku Website Portfolio",
@@ -57,6 +57,6 @@ export const portfolioListData: PortfolioListData[] = [
     imgUrl: "/images/otaku-website.png",
     liveUrl: "https://anime-page-portfolio.vercel.app/",
     githubUrl: "https://github.com/gelembungsahabat/otaku-portfolio",
-    featured: true,
+    featured: false,
   },
 ];
