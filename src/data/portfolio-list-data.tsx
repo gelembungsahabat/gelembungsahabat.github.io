@@ -28,6 +28,22 @@ export const portfolioListData: PortfolioListData[] = [
     featured: true,
   },
   {
+    title: "NihonGo",
+    subtitle: "learning Japanese using Next.js",
+    description:
+      "Portfolio website web development for learning Japanese. Built with Next.js for optimized performance, server-side rendering, and modern React patterns. Features dynamic routing, image optimization, and a unique visual identity. Makes your japanese from Zero to Hero",
+    techStack: ["Next.js", "React", "TypeScript", "CSS3", "Vercel"],
+    achievements: [
+      "Server-side rendering for optimal SEO",
+      "Image optimization with Next.js Image component",
+      "Dynamic routing for smooth navigation",
+    ],
+    imgUrl: "/images/nihon-go.png",
+    liveUrl: "https://gelembungsahabat-nihon-go.vercel.app/",
+    githubUrl: "https://github.com/gelembungsahabat/otaku-portfolio",
+    featured: true,
+  },
+  {
     title: "GitHub Pages Portfolio v1",
     subtitle: "First portfolio website with fullpage.js-style navigation",
     description:
@@ -41,22 +57,6 @@ export const portfolioListData: PortfolioListData[] = [
     imgUrl: "/images/portfolio-v1.png",
     liveUrl: "https://gelembungsahabat-github-pages-v1.vercel.app/",
     githubUrl: "https://github.com/gelembungsahabat/github-pages-v1",
-    featured: true,
-  },
-  {
-    title: "Otaku Website Portfolio",
-    subtitle: "Modern portfolio with anime aesthetic using Next.js",
-    description:
-      "Portfolio website combining professional web development with anime-inspired design. Built with Next.js for optimized performance, server-side rendering, and modern React patterns. Features dynamic routing, image optimization, and a unique visual identity.",
-    techStack: ["Next.js", "React", "TypeScript", "CSS3", "Vercel"],
-    achievements: [
-      "Server-side rendering for optimal SEO",
-      "Image optimization with Next.js Image component",
-      "Dynamic routing for smooth navigation",
-    ],
-    imgUrl: "/images/otaku-website.png",
-    liveUrl: "https://anime-page-portfolio.vercel.app/",
-    githubUrl: "https://github.com/gelembungsahabat/otaku-portfolio",
     featured: false,
   },
 ];
