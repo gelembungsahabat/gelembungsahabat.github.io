@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Glass shine overlay -->
+  <rect width="32" height="16" rx="7" fill="url(#shine)"/>
+  <rect width="32" height="1" y="16" fill="rgba(255,255,255,0)"/>
+  <!-- W lettermark -->
+  <text
+    x="16"
+    y="23"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"
+    font-weight="800"
+    font-size="20"
+    fill="white"
+    letter-spacing="-0.5">W</text>
+</svg>
