@@ -12,7 +12,7 @@ export function Contact() {
   const email = "muhammadwildan.career@gmail.com";
   const linkedinUrl = "https://www.linkedin.com/in/gelembungsahabat";
   const githubUrl = "https://github.com/gelembungsahabat";
-  const resumeUrl = "/resume/muhammad-wildan-resume.pdf";
+  const resumeUrl = "/resume/Muhammad_Wildan-Resume.pdf";
 
   const [showToast, setShowToast] = useState(false);
 
