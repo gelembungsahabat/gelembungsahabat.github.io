@@ -1,201 +1,103 @@
+/* ─── Skills section ──────────────────────────────────────────── */
 .section-skills {
-  margin-bottom: var(--space-3xl);
+  margin-bottom: var(--space-12);
 }
 
-.section-title {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: var(--space-xl);
-}
-
+/* 2-up grid on tablet+ */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-xl);
+  gap: var(--space-4);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* ─── Category card ───────────────────────────────────────────── */
 .skill-category {
-  background: var(--glass-medium);
-  border: 1px solid var(--border-glass-light);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  padding: var(--space-xl);
-  box-shadow: var(--shadow-glass-soft);
-  transition: transform var(--transition-liquid), box-shadow var(--transition-liquid), border-color var(--transition-liquid);
-  position: relative;
-  contain: layout style paint;
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
 }
 
-/* Gradient border effect */
-.skill-category::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg,
-    rgba(139, 92, 246, 0.4),
-    rgba(59, 130, 246, 0.3));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity var(--transition-smooth);
-}
-
-.skill-category:hover {
-  transform: translateY(-4px) scale(1.02);
-  border-color: var(--border-glass-strong);
-  box-shadow: var(--shadow-glass-medium);
-}
-
-.skill-category:hover::before {
-  opacity: 1;
-}
-
-.skill-category:nth-child(1):hover {
-  border-color: var(--primary);
-}
-
-.skill-category:nth-child(2):hover {
-  border-color: var(--secondary);
-}
-
-.skill-category:nth-child(3):hover {
-  border-color: var(--accent-teal);
-}
-
-.skill-category:nth-child(4):hover {
-  border-color: var(--accent-pink);
-}
-
+/* Category heading */
 .category-title {
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 var(--space-lg) 0;
-  padding-bottom: var(--space-sm);
-  border-bottom: none;
-  position: relative;
-  z-index: 1;
+  color: var(--text-1);
+  margin: 0 0 var(--space-4) 0;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.category-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary), transparent);
-  border-radius: 2px;
-}
-
-/* Category-specific gradient underlines */
-.skill-category:nth-child(1) .category-title::after {
-  background: linear-gradient(90deg, var(--primary), transparent);
-}
-
-.skill-category:nth-child(2) .category-title::after {
-  background: linear-gradient(90deg, var(--secondary), transparent);
-}
-
-.skill-category:nth-child(3) .category-title::after {
-  background: linear-gradient(90deg, var(--accent-teal), transparent);
-}
-
-.skill-category:nth-child(4) .category-title::after {
-  background: linear-gradient(90deg, var(--accent-pink), transparent);
-}
-
+/* ─── Skill list ──────────────────────────────────────────────── */
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  position: relative;
-  z-index: 1;
+  gap: var(--space-3);
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-1);
 }
 
 .skill-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-2);
 }
 
 .skill-name {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--text-1);
 }
 
-.skill-proficiency {
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.25rem 0.625rem;
-  border-radius: var(--radius-md);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-    border: 1px solid transparent;
-  transition: all var(--transition-smooth);
-
-}
-
-.proficiency-expert {
-  background: rgba(16, 185, 129, 0.35);
-  color: #ffffff;
-  border-color: rgba(16, 185, 129, 0.5);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.proficiency-expert:hover {
-  background: rgba(16, 185, 129, 0.5);
-  transform: scale(1.05);
-}
-
-.proficiency-advanced {
-  background: rgba(59, 130, 246, 0.35);
-  color: #ffffff;
-  border-color: rgba(59, 130, 246, 0.5);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.proficiency-advanced:hover {
-  background: rgba(59, 130, 246, 0.5);
-  transform: scale(1.05);
-}
-
-.proficiency-intermediate {
-  background: rgba(245, 158, 11, 0.35);
-  color: #ffffff;
-  border-color: rgba(245, 158, 11, 0.5);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.proficiency-intermediate:hover {
-  background: rgba(245, 158, 11, 0.5);
-  transform: scale(1.05);
-}
-
+/* Years — muted caption */
 .skill-years {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  font-style: italic;
+  font-size: 0.8125rem;
+  color: var(--text-3);
+}
+
+/* ─── Proficiency badge ───────────────────────────────────────── */
+/* Small pill that communicates level, not just decoration */
+.skill-proficiency {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+}
+
+/* Expert — success green */
+.proficiency-expert {
+  color: var(--success);
+  background: var(--success-bg);
+  border-color: var(--success-border);
+}
+
+/* Advanced — accent indigo */
+.proficiency-advanced {
+  color: var(--accent-light);
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+/* Intermediate — neutral, muted */
+.proficiency-intermediate {
+  color: var(--text-3);
+  background: var(--surface-2);
+  border-color: var(--border);
 }
