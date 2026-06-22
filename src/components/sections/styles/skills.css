@@ -1,103 +1,33 @@
-/* ─── Skills section ──────────────────────────────────────────── */
 .section-skills {
   margin-bottom: var(--space-12);
 }
 
-/* 2-up grid on tablet+ */
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-4);
-}
-
-@media (min-width: 640px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ─── Category card ───────────────────────────────────────────── */
-.skill-category {
+.skills-content {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  padding: var(--space-5);
+  padding: var(--space-6);
   box-shadow: var(--shadow-sm);
 }
 
-/* Category heading */
-.category-title {
+@media (min-width: 768px) {
+  .skills-content {
+    padding: var(--space-8);
+  }
+}
+
+.skills-content p {
   font-size: 0.9375rem;
-  font-weight: 600;
+  line-height: 1.8;
+  color: var(--text-2);
+  margin-bottom: var(--space-3);
+}
+
+.skills-content p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-content strong {
   color: var(--text-1);
-  margin: 0 0 var(--space-4) 0;
-  padding-bottom: var(--space-3);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-/* ─── Skill list ──────────────────────────────────────────────── */
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.skill-name {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--text-1);
-}
-
-/* Years — muted caption */
-.skill-years {
-  font-size: 0.8125rem;
-  color: var(--text-3);
-}
-
-/* ─── Proficiency badge ───────────────────────────────────────── */
-/* Small pill that communicates level, not just decoration */
-.skill-proficiency {
-  font-size: 0.6875rem;
   font-weight: 600;
-  padding: 0.2rem 0.55rem;
-  border-radius: 9999px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-  border: 1px solid transparent;
-  flex-shrink: 0;
-}
-
-/* Expert — success green */
-.proficiency-expert {
-  color: var(--success);
-  background: var(--success-bg);
-  border-color: var(--success-border);
-}
-
-/* Advanced — accent indigo */
-.proficiency-advanced {
-  color: var(--accent-light);
-  background: var(--accent-bg);
-  border-color: var(--accent-border);
-}
-
-/* Intermediate — neutral, muted */
-.proficiency-intermediate {
-  color: var(--text-3);
-  background: var(--surface-2);
-  border-color: var(--border);
 }
