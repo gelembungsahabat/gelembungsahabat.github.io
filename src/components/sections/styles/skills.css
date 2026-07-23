@@ -1,3 +1,4 @@
+/* ─── Skills section ──────────────────────────────────────────── */
 .section-skills {
   margin-bottom: var(--space-12);
 }
@@ -8,6 +9,9 @@
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 @media (min-width: 768px) {
@@ -16,18 +20,87 @@
   }
 }
 
-.skills-content p {
+/* ─── Skill category ─────────────────────────────────────────── */
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.skill-category + .skill-category {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.skill-category-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   font-size: 0.9375rem;
-  line-height: 1.8;
-  color: var(--text-2);
-  margin-bottom: var(--space-3);
-}
-
-.skills-content p:last-child {
-  margin-bottom: 0;
-}
-
-.skills-content strong {
-  color: var(--text-1);
   font-weight: 600;
+  color: var(--text-1);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.skill-category-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 0.8125rem;
+  color: var(--accent-light);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+/* ─── Badge list ─────────────────────────────────────────────── */
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-left: calc(1.75rem + var(--space-2)); /* align with category title text */
+}
+
+/* ─── Individual badge ───────────────────────────────────────── */
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.7rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-2);
+  line-height: 1.65;
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.skill-badge:hover {
+  color: var(--text-1);
+  background: var(--border);
+  border-color: var(--border);
+}
+
+/* ─── Responsive: single row layout on wider screens ──────────── */
+@media (min-width: 768px) {
+  .skill-category {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .skill-category-title {
+    min-width: 12rem;
+    padding-top: 0.2rem;
+  }
+
+  .skill-badges {
+    flex: 1;
+    padding-left: 0;
+  }
 }

@@ -22,6 +22,28 @@
   display: block;
 }
 
+.toast-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toast-success svg {
+  color: var(--green, #22c55e);
+}
+
+.toast-error svg {
+  color: var(--danger);
+}
+
+.toast-success svg {
+  color: var(--success);
+}
+
+.toast-error svg {
+  color: var(--danger);
+}
+
 @keyframes toast-in {
   from {
     transform: translateY(8px);

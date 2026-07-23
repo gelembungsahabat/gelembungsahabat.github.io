@@ -1,14 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import "./toast.css";
 
 interface ToastProps {
-  message: string;
+  message: string | ReactNode;
   isVisible: boolean;
   onClose: () => void;
   duration?: number;
 }
 
-export function Toast({ message, isVisible, onClose, duration = 3000 }: ToastProps) {
+export function Toast({
+  message,
+  isVisible,
+  onClose,
+  duration = 4000,
+}: ToastProps) {
   useEffect(() => {
     if (isVisible) {
       const timer = setTimeout(() => {
