@@ -3,8 +3,10 @@
   --bg:           #0f172a;   /* page background                     */
   --surface:      #1e293b;   /* card / raised surfaces              */
   --surface-2:    #293548;   /* slightly elevated surface           */
-  --border:       #334155;   /* default border                      */
-  --border-subtle:#1e2d40;   /* very faint divider                  */
+  --border:       #475569;   /* default border                      */
+  --border-subtle:#2a3a50;   /* very faint divider                  */
+  --border-glass-strong: rgba(148, 163, 184, 0.15);
+  --border-glass-light:  rgba(148, 163, 184, 0.08);
 
   /* Text — three distinct levels of hierarchy */
   --text-1: #f1f5f9;   /* primary   — headings, labels             */
